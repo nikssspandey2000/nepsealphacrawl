@@ -80,6 +80,40 @@ class DataCrawler:
             logging.info(f"Table {table_idx} for {symbol}: {df.shape[0]} rows, {df.shape[1]} columns")
         
         return table_data
+
+    @staticmethod
+    def save_to_csv(df, filename):
+        """Save dataframe to CSV, appending if file exists"""
+        try:
+            if os.path.exists(filename):
+                existing = pd.read_csv(filename)
+                # Remove existing rows for same symbols to avoid duplicates
+                if 'Symbol' in existing.columns and 'Symbol' in df.columns:
+                    existing = existing[~existing['Symbol'].isin(df['Symbol'])]
+                combined = pd.concat([existing, df], ignore_index=True)
+                combined.to_csv(filename, index=False)
+            else:
+                df.to_csv(filename, index=False)
+            logging.info(f"Saved to {filename}")
+            return True
+        except Exception as e:
+            logging.error(f"Failed to save CSV {filename}: {str(e)}")
+            return False
+
+    @staticmethod
+    def save_to_excel(book, excel_file):
+        """Save all sheets to Excel file"""
+        try:
+            with pd.ExcelWriter(excel_file, engine='openpyxl') as writer:
+                for sheet_name, df in book.items():
+                    # Excel sheet names max 31 chars
+                    safe_name = sheet_name[:31]
+                    df.to_excel(writer, sheet_name=safe_name, index=False)
+            logging.info(f"Saved to {excel_file}")
+            return True
+        except Exception as e:
+            logging.error(f"Failed to save Excel {excel_file}: {str(e)}")
+            return False
     
     async def crawl_all_urls(self):
         start_time = time.time()
@@ -87,9 +121,11 @@ class DataCrawler:
         urls = df_links['Link'].tolist()
         logging.info(f"Found {len(urls)} URLs to crawl")
         
-        # Fixed output filename
         excel_file = "nepsealpha.xlsx"
-        
+        sanitized_sheet = re.sub(r'[^a-zA-Z0-9]', '_', self.sheet_name)
+        csv_attrs = f"{sanitized_sheet}_Attributes.csv"
+        csv_add   = f"{sanitized_sheet}_Additional.csv"
+
         all_pivoted_data = []
         all_third_tables = []
         progress = tqdm(total=len(urls), desc="Crawling URLs")
@@ -164,57 +200,81 @@ class DataCrawler:
                 await asyncio.sleep(2)
         
         progress.close()
-        
-        # Prepare the Excel writer
+
+        # ── Build book dict for Excel ──────────────────────────────────────
+        book = {}
         if os.path.exists(excel_file):
-            # Load existing workbook
-            book = pd.read_excel(excel_file, sheet_name=None, engine='openpyxl')
-        else:
-            book = {}
-        
-        # Create sanitized sheet names
-        sanitized_sheet = re.sub(r'[^a-zA-Z0-9]', '_', self.sheet_name)
+            try:
+                book = pd.read_excel(excel_file, sheet_name=None, engine='openpyxl')
+            except Exception as e:
+                logging.warning(f"Could not read existing Excel: {e}. Starting fresh.")
+                book = {}
+
         sheet_name_attrs = f"{sanitized_sheet}_Attributes"
-        sheet_name_add = f"{sanitized_sheet}_Additional"
-        
-        # Update or add new sheets
+        sheet_name_add   = f"{sanitized_sheet}_Additional"
+
+        # ── Attributes / pivot data ────────────────────────────────────────
         if all_pivoted_data:
             pivoted_combined = pd.concat(all_pivoted_data, ignore_index=True)
             pivoted_combined.columns = [str(col).strip() for col in pivoted_combined.columns]
-            
             compare_cols = [col for col in pivoted_combined.columns if str(col).startswith('Compare')]
             if compare_cols:
                 pivoted_combined = pivoted_combined.drop(columns=compare_cols)
-            
+
             book[sheet_name_attrs] = pivoted_combined
-            logging.info(f"Prepared {sheet_name_attrs} sheet with {pivoted_combined.shape[0]} companies")
-        
+            logging.info(f"Prepared {sheet_name_attrs} with {pivoted_combined.shape[0]} rows")
+
+            # Save CSV
+            self.save_to_csv(pivoted_combined, csv_attrs)
+        else:
+            logging.warning("No pivot/attributes data collected!")
+
+        # ── Additional / third-table data ──────────────────────────────────
         if all_third_tables:
             third_tables_combined = pd.concat(all_third_tables, ignore_index=True)
             third_tables_combined.columns = [str(col).strip() for col in third_tables_combined.columns]
-            
+
             if 'Table_Index' in third_tables_combined.columns:
                 third_tables_combined = third_tables_combined.drop(columns=['Table_Index'])
-            
             if 'Symbol' in third_tables_combined.columns:
-                cols = ['Symbol'] + [col for col in third_tables_combined.columns if col != 'Symbol']
+                cols = ['Symbol'] + [c for c in third_tables_combined.columns if c != 'Symbol']
                 third_tables_combined = third_tables_combined[cols]
-            
+
             book[sheet_name_add] = third_tables_combined
-            logging.info(f"Prepared {sheet_name_add} sheet with {third_tables_combined.shape[0]} rows")
-        
-        # Write all sheets to Excel
-        with pd.ExcelWriter(excel_file, engine='openpyxl') as writer:
-            for sheet_name, df in book.items():
-                df.to_excel(writer, sheet_name=sheet_name, index=False)
-        
-        logging.info(f"Saved all data to {excel_file}")
+            logging.info(f"Prepared {sheet_name_add} with {third_tables_combined.shape[0]} rows")
+
+            # Save CSV
+            self.save_to_csv(third_tables_combined, csv_add)
+        else:
+            logging.warning("No additional/third-table data collected!")
+
+        # ── Write Excel ────────────────────────────────────────────────────
+        if book:
+            success = self.save_to_excel(book, excel_file)
+            if success:
+                print(f"\n✅ Excel saved: {excel_file}")
+            else:
+                print(f"\n❌ Excel save failed — check crawler_debug.log")
+        else:
+            logging.warning("No data to save!")
+
+        # ── Summary ────────────────────────────────────────────────────────
         total_time = time.time() - start_time
         mins, secs = divmod(total_time, 60)
         logging.info(f"Total execution time: {int(mins)} minutes {secs:.2f} seconds")
-        print(f"\nTotal execution time: {int(mins)} minutes {secs:.2f} seconds")
+        print(f"Total execution time: {int(mins)} minutes {secs:.2f} seconds")
+
+        # Print saved files
+        print("\nFiles saved:")
+        for f in [excel_file, csv_attrs, csv_add]:
+            if os.path.exists(f):
+                size = os.path.getsize(f) / 1024
+                print(f"  ✅ {f}  ({size:.1f} KB)")
+            else:
+                print(f"  ❌ {f}  (not created)")
         
         return True
+
 
 def run_crawler(sheet_name):
     os.makedirs("html", exist_ok=True)
@@ -238,7 +298,7 @@ def run_crawler(sheet_name):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run Data Crawler with specified sheet name')
     parser.add_argument('sheet_name', nargs='?', default='Link',
-                        help='Sheet name in Link.xlsx to process (default: Link)')
+                        help='Sheet name in NepseAlphaLink.xlsx to process (default: Link)')
     
     args = parser.parse_args()
     run_crawler(args.sheet_name)
