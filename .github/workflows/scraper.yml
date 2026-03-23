@@ -3,7 +3,7 @@ name: Daily NEPSE Scraper
 on:
   schedule:
     - cron: '15 11 * * *'  # 5 PM Nepal Time (NPT = UTC+5:45)
-  workflow_dispatch:        # allows manual trigger
+  workflow_dispatch:
 
 jobs:
   scrape:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5.6.0
         with:
           python-version: '3.11'
 
