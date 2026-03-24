@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>NEPSE Stock Analyzer Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0d1117;--surface:#161b22;--surface2:#21262d;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--green:#00c896;--blue:#58a6ff;--orange:#ff9800;--red:#f85149;--yellow:#d29922;--purple:#a371f7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:14px}
+.header{background:linear-gradient(135deg,#161b22,#0d1117);border-bottom:1px solid var(--border);padding:20px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.header h1{font-size:22px;font-weight:700;color:var(--green)}
+.header .subtitle{color:var(--muted);font-size:12px;margin-top:4px}
+.updated{font-size:11px;color:var(--muted);text-align:right}
+.container{max-width:1600px;margin:0 auto;padding:24px 16px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:24px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center}
+.stat .val{font-size:28px;font-weight:700;line-height:1}
+.stat .lbl{font-size:11px;color:var(--muted);margin-top:6px;text-transform:uppercase;letter-spacing:.5px}
+.stat.green .val{color:var(--green)}.stat.blue .val{color:var(--blue)}.stat.orange .val{color:var(--orange)}.stat.red .val{color:var(--red)}.stat.purple .val{color:var(--purple)}
+.section-title{font-size:16px;font-weight:600;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.cards{display:flex;gap:14px;overflow-x:auto;padding-bottom:8px;margin-bottom:28px;scrollbar-width:thin}
+.card{min-width:230px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;flex-shrink:0;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.card-strong-buy::before{background:var(--green)}.card-buy::before{background:#4caf50}.card-hold::before{background:var(--orange)}.card-avoid::before{background:var(--red)}.card-watch::before{background:var(--blue)}
+.card-rank{font-size:11px;color:var(--muted);font-weight:600}
+.card-symbol{font-size:20px;font-weight:700;margin:4px 0;color:var(--blue)}
+.card-rating{font-size:12px;margin-bottom:6px}
+.card-score{font-size:13px;color:var(--green);font-weight:600;margin-bottom:10px}
+.card-metrics{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.card-metrics span{background:var(--surface2);border-radius:4px;padding:2px 7px;font-size:11px;color:var(--muted)}
+.card-signals{list-style:none;font-size:11px;color:var(--muted);line-height:1.8}
+.charts{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:28px}
+.chart-box{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+.filters input{background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:7px 12px;font-size:13px;outline:none;width:200px}
+.filters input:focus{border-color:var(--blue)}
+.filter-btn{background:var(--surface2);border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:6px 14px;font-size:12px;cursor:pointer;transition:.2s}
+.filter-btn:hover,.filter-btn.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:auto}
+table{width:100%;border-collapse:collapse;min-width:900px}
+thead tr{background:var(--surface2);position:sticky;top:0;z-index:1}
+th{padding:10px 12px;text-align:left;font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;white-space:nowrap;cursor:pointer;user-select:none}
+th:hover{color:var(--text)}
+td{padding:10px 12px;border-top:1px solid var(--border);vertical-align:top}
+tr:hover td{background:var(--surface2)}
+.rank{color:var(--muted);font-weight:700}.symbol-cell{font-size:15px}.na{color:var(--muted)}
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;white-space:nowrap}
+.badge-sb{background:rgba(0,200,150,.15);color:var(--green);border:1px solid rgba(0,200,150,.3)}
+.badge-b{background:rgba(76,175,80,.15);color:#4caf50;border:1px solid rgba(76,175,80,.3)}
+.badge-h{background:rgba(255,152,0,.15);color:var(--orange);border:1px solid rgba(255,152,0,.3)}
+.badge-w{background:rgba(88,166,255,.15);color:var(--blue);border:1px solid rgba(88,166,255,.3)}
+.badge-a{background:rgba(248,81,73,.15);color:var(--red);border:1px solid rgba(248,81,73,.3)}
+.score-cell{min-width:110px}
+.score-bar{background:var(--surface2);border-radius:20px;height:20px;position:relative;overflow:hidden}
+.score-fill{background:linear-gradient(90deg,var(--green),var(--blue));height:100%;border-radius:20px}
+.score-bar span{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:700}
+.signal-list{list-style:none;font-size:11px;line-height:1.8;min-width:220px}
+.disclaimer{margin-top:32px;padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-size:11px;color:var(--muted);line-height:1.7}
+@media(max-width:768px){.charts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1>📊 NEPSE Stock Analyzer</h1>
+    <div class="subtitle">Fundamental + Technical scoring across all scraped NEPSE stocks</div>
+  </div>
+  <div class="updated">🕐 Last updated<br/>2026-03-24 15:48:25 NPT</div>
+</div>
+<div class="container">
+  <div class="stats">
+    <div class="stat green"><div class="val">251</div><div class="lbl">Stocks Analyzed</div></div>
+    <div class="stat green"><div class="val">0</div><div class="lbl">Strong Buy</div></div>
+    <div class="stat blue"><div class="val">0</div><div class="lbl">Buy</div></div>
+    <div class="stat orange"><div class="val">0</div><div class="lbl">Hold</div></div>
+    <div class="stat purple"><div class="val">26</div><div class="lbl">Watch</div></div>
+    <div class="stat red"><div class="val">225</div><div class="lbl">Avoid</div></div>
+  </div>
+  <div class="section-title">🏆 Top 10 Stock Picks</div>
+  <div class="cards">
+            <div class="card card-watch">
+                <div class="card-rank">#1</div>
+                <div class="card-symbol">ACLBSL</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 21.48%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 21.5%</li></ul>
+            </div>
+            <div class="card card-watch">
+                <div class="card-rank">#2</div>
+                <div class="card-symbol">ALBSL</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 25.79%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 25.8%</li></ul>
+            </div>
+            <div class="card card-watch">
+                <div class="card-rank">#3</div>
+                <div class="card-symbol">ANLB</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 22.27%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 22.3%</li></ul>
+            </div>
+            <div class="card card-watch">
+                <div class="card-rank">#4</div>
+                <div class="card-symbol">AVYAN</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 44.49%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 44.5%</li></ul>
+            </div>
+            <div class="card card-watch">
+                <div class="card-rank">#5</div>
+                <div class="card-symbol">CHDC</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 33.78%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 33.8%</li></ul>
+            </div>
+            <div class="card card-watch">
+                <div class="card-rank">#6</div>
+                <div class="card-symbol">DDBL</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 23.01%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 23.0%</li></ul>
+            </div>
+            <div class="card card-watch">
+                <div class="card-rank">#7</div>
+                <div class="card-symbol">GLBSL</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 27.57%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 27.6%</li></ul>
+            </div>
+            <div class="card card-watch">
+                <div class="card-rank">#8</div>
+                <div class="card-symbol">HDL</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 24.34%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 24.3%</li></ul>
+            </div>
+            <div class="card card-watch">
+                <div class="card-rank">#9</div>
+                <div class="card-symbol">HLBSL</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 20.78%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 20.8%</li></ul>
+            </div>
+            <div class="card card-watch">
+                <div class="card-rank">#10</div>
+                <div class="card-symbol">ILBS</div>
+                <div class="card-rating">⭐⭐ Watch</div>
+                <div class="card-score">Score: 15/100</div>
+                <div class="card-metrics">
+                    <span>LTP: <span class="na">N/A</span></span>
+                    <span>EPS: <span class="na">N/A</span></span>
+                    <span>PE: <span class="na">N/A</span></span>
+                    <span>ROE: 35.01%</span>
+                    <span>Div: <span class="na">N/A</span></span>
+                </div>
+                <ul class="card-signals"><li>✅ Strong ROE: 35.0%</li></ul>
+            </div></div>
+  <div class="charts">
+    <div class="chart-box">
+      <div class="section-title">Top 10 Stocks by Score</div>
+      <canvas id="barChart" height="200"></canvas>
+    </div>
+    <div class="chart-box">
+      <div class="section-title">Rating Distribution</div>
+      <canvas id="pieChart" height="200"></canvas>
+    </div>
+  </div>
+  <div class="filters">
+    <input id="search" type="text" placeholder="🔍 Search symbol..."/>
+    <button class="filter-btn active" onclick="filterTable('all',this)">All (251)</button>
+    <button class="filter-btn" onclick="filterTable('strong-buy',this)">Strong Buy (0)</button>
+    <button class="filter-btn" onclick="filterTable('buy',this)">Buy (0)</button>
+    <button class="filter-btn" onclick="filterTable('hold',this)">Hold (0)</button>
+    <button class="filter-btn" onclick="filterTable('watch',this)">Watch (26)</button>
+    <button class="filter-btn" onclick="filterTable('avoid',this)">Avoid (225)</button>
+  </div>
+  <div class="table-wrap">
+    <table id="stockTable">
+      <thead><tr>
+        <th onclick="sortTable(0)">#</th>
+        <th onclick="sortTable(1)">Symbol ↕</th>
+        <th onclick="sortTable(2)">Rating</th>
+        <th onclick="sortTable(3)">Score ↕</th>
+        <th onclick="sortTable(4)">LTP ↕</th>
+        <th onclick="sortTable(5)">EPS ↕</th>
+        <th onclick="sortTable(6)">PE ↕</th>
+        <th onclick="sortTable(7)">PB ↕</th>
+        <th onclick="sortTable(8)">ROE ↕</th>
+        <th onclick="sortTable(9)">Dividend ↕</th>
+        <th>52W Range</th>
+        <th>Analysis Signals</th>
+      </tr></thead>
+      <tbody id="tableBody">
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#1</td>
+            <td class="symbol-cell"><strong>ACLBSL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>21.48%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 21.5%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#2</td>
+            <td class="symbol-cell"><strong>ALBSL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>25.79%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 25.8%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#3</td>
+            <td class="symbol-cell"><strong>ANLB</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>22.27%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 22.3%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#4</td>
+            <td class="symbol-cell"><strong>AVYAN</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>44.49%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 44.5%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#5</td>
+            <td class="symbol-cell"><strong>CHDC</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>33.78%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 33.8%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#6</td>
+            <td class="symbol-cell"><strong>DDBL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>23.01%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 23.0%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#7</td>
+            <td class="symbol-cell"><strong>GLBSL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>27.57%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 27.6%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#8</td>
+            <td class="symbol-cell"><strong>HDL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>24.34%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 24.3%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#9</td>
+            <td class="symbol-cell"><strong>HLBSL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>20.78%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 20.8%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#10</td>
+            <td class="symbol-cell"><strong>ILBS</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>35.01%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 35.0%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#11</td>
+            <td class="symbol-cell"><strong>JBLB</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>23.32%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 23.3%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#12</td>
+            <td class="symbol-cell"><strong>MLBBL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>22.85%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 22.9%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#13</td>
+            <td class="symbol-cell"><strong>MSLB</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>23.44%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 23.4%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#14</td>
+            <td class="symbol-cell"><strong>NESDO</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>29.92%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 29.9%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#15</td>
+            <td class="symbol-cell"><strong>NRN</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>22.06%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 22.1%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#16</td>
+            <td class="symbol-cell"><strong>PFL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>163.01%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 163.0%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#17</td>
+            <td class="symbol-cell"><strong>RADHI</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>24.03%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 24.0%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#18</td>
+            <td class="symbol-cell"><strong>SAPDBL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>21.77%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 21.8%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#19</td>
+            <td class="symbol-cell"><strong>SFCL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>20.52%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 20.5%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#20</td>
+            <td class="symbol-cell"><strong>SHL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>26.35%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 26.4%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#21</td>
+            <td class="symbol-cell"><strong>SLBBL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>22.50%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 22.5%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#22</td>
+            <td class="symbol-cell"><strong>SLBSL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>25.56%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 25.6%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#23</td>
+            <td class="symbol-cell"><strong>SMB</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>32.66%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 32.7%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#24</td>
+            <td class="symbol-cell"><strong>SMFBS</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>29.84%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 29.8%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#25</td>
+            <td class="symbol-cell"><strong>UNL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>38.70%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 38.7%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="watch">
+            <td class="rank">#26</td>
+            <td class="symbol-cell"><strong>USHL</strong></td>
+            <td><span class="badge badge-w">⭐⭐ Watch</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:15%"></div><span>15</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>53.55%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>✅ Strong ROE: 53.5%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#27</td>
+            <td class="symbol-cell"><strong>ADBL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>11.39%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 11.4%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#28</td>
+            <td class="symbol-cell"><strong>BGWT</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>11.66%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 11.7%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#29</td>
+            <td class="symbol-cell"><strong>CBBL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>15.62%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 15.6%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#30</td>
+            <td class="symbol-cell"><strong>CFCL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>11.32%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 11.3%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#31</td>
+            <td class="symbol-cell"><strong>CIT</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>12.93%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 12.9%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#32</td>
+            <td class="symbol-cell"><strong>CYCL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>15.80%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 15.8%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#33</td>
+            <td class="symbol-cell"><strong>DLBS</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>11.30%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 11.3%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#34</td>
+            <td class="symbol-cell"><strong>EBL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>15.79%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 15.8%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#35</td>
+            <td class="symbol-cell"><strong>EDBL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>10.72%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 10.7%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#36</td>
+            <td class="symbol-cell"><strong>GBBL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>15.30%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 15.3%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#37</td>
+            <td class="symbol-cell"><strong>GBLBS</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>12.55%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 12.6%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#38</td>
+            <td class="symbol-cell"><strong>GILB</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>17.29%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 17.3%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#39</td>
+            <td class="symbol-cell"><strong>GMFBS</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>10.26%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 10.3%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#40</td>
+            <td class="symbol-cell"><strong>GRDBL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>10.72%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 10.7%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#41</td>
+            <td class="symbol-cell"><strong>GVL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>12.06%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 12.1%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#42</td>
+            <td class="symbol-cell"><strong>ICFC</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>12.92%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 12.9%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#43</td>
+            <td class="symbol-cell"><strong>JSLBB</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>12.19%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 12.2%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#44</td>
+            <td class="symbol-cell"><strong>KBL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>12.31%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 12.3%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#45</td>
+            <td class="symbol-cell"><strong>KMCDB</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>16.82%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 16.8%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#46</td>
+            <td class="symbol-cell"><strong>KSBBL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>12.13%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 12.1%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#47</td>
+            <td class="symbol-cell"><strong>MBL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>11.87%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 11.9%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#48</td>
+            <td class="symbol-cell"><strong>MEN</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>16.12%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 16.1%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#49</td>
+            <td class="symbol-cell"><strong>MERO</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>10.70%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 10.7%</li></ul></td>
+        </tr>
+        <tr class="stock-row" data-badge="avoid">
+            <td class="rank">#50</td>
+            <td class="symbol-cell"><strong>MFIL</strong></td>
+            <td><span class="badge badge-a">⭐ Avoid</span></td>
+            <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:8%"></div><span>8</span></div></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span></td>
+            <td>14.30%</td>
+            <td><span class="na">N/A</span></td>
+            <td><span class="na">N/A</span> – <span class="na">N/A</span></td>
+            <td class="signals-col"><ul class="signal-list"><li>⚠️ Moderate ROE: 14.3%</li></ul></td>
+        </tr></tbody>
+    </table>
+  </div>
+  <div class="disclaimer">
+    ⚠️ <strong>Disclaimer:</strong> This dashboard is for informational and educational purposes only.
+    Stock scores are algorithmically generated based on publicly available data from NepseAlpha.
+    This is <strong>NOT financial advice</strong>. Always do your own research (DYOR) before investing.
+    Past performance does not guarantee future results. Consult a SEBON-registered investment advisor.
+  </div>
+</div>
+<script>
+const barCtx = document.getElementById('barChart').getContext('2d');
+new Chart(barCtx,{type:'bar',data:{labels:["ACLBSL", "ALBSL", "ANLB", "AVYAN", "CHDC", "DDBL", "GLBSL", "HDL", "HLBSL", "ILBS"],datasets:[{label:'Score',data:[15, 15, 15, 15, 15, 15, 15, 15, 15, 15],backgroundColor:["#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336"],borderRadius:6,borderSkipped:false}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b949e'},grid:{color:'#21262d'}},y:{ticks:{color:'#8b949e'},grid:{color:'#21262d'},min:0,max:100}}}});
+const pieCtx = document.getElementById('pieChart').getContext('2d');
+new Chart(pieCtx,{type:'doughnut',data:{labels:['Strong Buy','Buy','Hold','Watch','Avoid'],datasets:[{data:[0,0,0,26,225],backgroundColor:['#00c896','#4caf50','#ff9800','#58a6ff','#f85149'],borderWidth:0,hoverOffset:8}]},options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:'#8b949e',font:{size:11}}}}}});
+function filterTable(badge,btn){document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.stock-row').forEach(row=>{row.style.display=(badge==='all'||row.dataset.badge===badge)?'':'none'})}
+document.getElementById('search').addEventListener('input',function(){const q=this.value.toLowerCase();document.querySelectorAll('.stock-row').forEach(row=>{row.style.display=row.querySelector('.symbol-cell').textContent.toLowerCase().includes(q)?'':'none'})});
+let sortDir={};
+function sortTable(col){const tbody=document.getElementById('tableBody');const rows=Array.from(tbody.querySelectorAll('tr'));sortDir[col]=!sortDir[col];rows.sort((a,b)=>{const av=a.cells[col].textContent.replace(/[^0-9.\-]/g,'');const bv=b.cells[col].textContent.replace(/[^0-9.\-]/g,'');const an=parseFloat(av),bn=parseFloat(bv);if(!isNaN(an)&&!isNaN(bn))return sortDir[col]?bn-an:an-bn;return sortDir[col]?b.cells[col].textContent.localeCompare(a.cells[col].textContent):a.cells[col].textContent.localeCompare(b.cells[col].textContent)});rows.forEach(r=>tbody.appendChild(r))}
+</script>
+</body>
+</html>
