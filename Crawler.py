@@ -2,13 +2,12 @@ import asyncio
 import pandas as pd
 import re
 import json
-from crawl4ai import AsyncWebCrawler
+from playwright.async_api import async_playwright
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import logging
 import time
 import os
-import sys
 import argparse
 import numpy as np
 from datetime import datetime
@@ -31,7 +30,8 @@ logging.basicConfig(
 def generate_dashboard(df_attrs: pd.DataFrame, df_add: pd.DataFrame, output_file="index.html"):
     def safe_float(val):
         try:
-            if pd.isna(val): return None
+            if pd.isna(val):
+                return None
             return float(str(val).replace(',', '').replace('%', '').strip())
         except:
             return None
@@ -48,20 +48,20 @@ def generate_dashboard(df_attrs: pd.DataFrame, df_add: pd.DataFrame, output_file
                     return safe_float(row[col])
             return None
 
-        eps        = get('EPS')
-        pe         = get('PE') or get('P/E')
-        pb         = get('PB') or get('P/B') or get('Book')
-        roe        = get('ROE')
-        roa        = get('ROA')
-        dividend   = get('Dividend') or get('DPS')
-        market_cap = get('Market Cap') or get('MarketCap') or get('Mkt Cap')
-        high_52    = get('52W High') or get('52 Week High') or get('52')
-        low_52     = get('52W Low') or get('52 Week Low')
-        ltp        = get('LTP') or get('Last') or get('Close') or get('Price')
-        volume     = get('Volume') or get('Traded') or get('Qty')
-        net_profit = get('Net Profit') or get('Profit')
-        debt_equity= get('Debt') or get('D/E')
-        current_r  = get('Current Ratio') or get('CR')
+        eps         = get('EPS')
+        pe          = get('PE') or get('P/E')
+        pb          = get('PB') or get('P/B') or get('Book')
+        roe         = get('ROE')
+        roa         = get('ROA')
+        dividend    = get('Dividend') or get('DPS')
+        market_cap  = get('Market Cap') or get('MarketCap') or get('Mkt Cap')
+        high_52     = get('52W High') or get('52 Week High') or get('52')
+        low_52      = get('52W Low') or get('52 Week Low')
+        ltp         = get('LTP') or get('Last') or get('Close') or get('Price')
+        volume      = get('Volume') or get('Traded') or get('Qty')
+        net_profit  = get('Net Profit') or get('Profit')
+        debt_equity = get('Debt') or get('D/E')
+        current_r   = get('Current Ratio') or get('CR')
 
         score = 0
         signals = []
@@ -148,11 +148,16 @@ def generate_dashboard(df_attrs: pd.DataFrame, df_add: pd.DataFrame, output_file
                 score += 3
                 signals.append(f"⚠️ Mid Cap")
 
-        if score >= 70:   rating, badge = "⭐⭐⭐⭐⭐ Strong Buy", "strong-buy"
-        elif score >= 50: rating, badge = "⭐⭐⭐⭐ Buy",         "buy"
-        elif score >= 30: rating, badge = "⭐⭐⭐ Hold",          "hold"
-        elif score >= 10: rating, badge = "⭐⭐ Watch",           "watch"
-        else:             rating, badge = "⭐ Avoid",             "avoid"
+        if score >= 70:
+            rating, badge = "⭐⭐⭐⭐⭐ Strong Buy", "strong-buy"
+        elif score >= 50:
+            rating, badge = "⭐⭐⭐⭐ Buy", "buy"
+        elif score >= 30:
+            rating, badge = "⭐⭐⭐ Hold", "hold"
+        elif score >= 10:
+            rating, badge = "⭐⭐ Watch", "watch"
+        else:
+            rating, badge = "⭐ Avoid", "avoid"
 
         scored.append({
             'Symbol': symbol, 'Score': score, 'Rating': rating, 'Badge': badge,
@@ -165,10 +170,14 @@ def generate_dashboard(df_attrs: pd.DataFrame, df_add: pd.DataFrame, output_file
     scored.sort(key=lambda x: x['Score'], reverse=True)
 
     def fmt(val, suffix=''):
-        if val is None: return '<span class="na">N/A</span>'
+        if val is None:
+            return '<span class="na">N/A</span>'
         return f"{val:,.2f}{suffix}" if isinstance(val, float) else str(val)
 
-    badge_map = {'strong-buy':'badge-sb','buy':'badge-b','hold':'badge-h','watch':'badge-w','avoid':'badge-a'}
+    badge_map = {
+        'strong-buy': 'badge-sb', 'buy': 'badge-b',
+        'hold': 'badge-h', 'watch': 'badge-w', 'avoid': 'badge-a'
+    }
 
     rows_html = ""
     cards_html = ""
@@ -179,13 +188,13 @@ def generate_dashboard(df_attrs: pd.DataFrame, df_add: pd.DataFrame, output_file
         <tr class="stock-row" data-badge="{s['Badge']}">
             <td class="rank">#{rank}</td>
             <td class="symbol-cell"><strong>{s['Symbol']}</strong></td>
-            <td><span class="badge {badge_map.get(s['Badge'],'badge-w')}">{s['Rating']}</span></td>
+            <td><span class="badge {badge_map.get(s['Badge'], 'badge-w')}">{s['Rating']}</span></td>
             <td class="score-cell"><div class="score-bar"><div class="score-fill" style="width:{min(s['Score'],100)}%"></div><span>{s['Score']}</span></div></td>
             <td>{fmt(s['LTP'])}</td>
             <td>{fmt(s['EPS'])}</td>
             <td>{fmt(s['PE'])}</td>
             <td>{fmt(s['PB'])}</td>
-            <td>{fmt(s['ROE'],'%')}</td>
+            <td>{fmt(s['ROE'], '%')}</td>
             <td>{fmt(s['Dividend'])}</td>
             <td>{fmt(s['52W_Low'])} – {fmt(s['52W_High'])}</td>
             <td class="signals-col"><ul class="signal-list">{sigs}</ul></td>
@@ -201,26 +210,28 @@ def generate_dashboard(df_attrs: pd.DataFrame, df_add: pd.DataFrame, output_file
                     <span>LTP: {fmt(s['LTP'])}</span>
                     <span>EPS: {fmt(s['EPS'])}</span>
                     <span>PE: {fmt(s['PE'])}</span>
-                    <span>ROE: {fmt(s['ROE'],'%')}</span>
+                    <span>ROE: {fmt(s['ROE'], '%')}</span>
                     <span>Div: {fmt(s['Dividend'])}</span>
                 </div>
                 <ul class="card-signals">{sigs}</ul>
             </div>"""
 
     total       = len(scored)
-    strong_buys = sum(1 for s in scored if s['Badge']=='strong-buy')
-    buys        = sum(1 for s in scored if s['Badge']=='buy')
-    holds       = sum(1 for s in scored if s['Badge']=='hold')
-    watches     = sum(1 for s in scored if s['Badge']=='watch')
-    avoids      = sum(1 for s in scored if s['Badge']=='avoid')
+    strong_buys = sum(1 for s in scored if s['Badge'] == 'strong-buy')
+    buys        = sum(1 for s in scored if s['Badge'] == 'buy')
+    holds       = sum(1 for s in scored if s['Badge'] == 'hold')
+    watches     = sum(1 for s in scored if s['Badge'] == 'watch')
+    avoids      = sum(1 for s in scored if s['Badge'] == 'avoid')
     updated     = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     top10_labels = json.dumps([s['Symbol'] for s in scored[:10]])
     top10_scores = json.dumps([s['Score']  for s in scored[:10]])
-    top10_colors = json.dumps(['#00c896' if s['Badge']=='strong-buy' else
-                               '#4caf50' if s['Badge']=='buy' else
-                               '#ff9800' if s['Badge']=='hold' else
-                               '#f44336' for s in scored[:10]])
+    top10_colors = json.dumps([
+        '#00c896' if s['Badge'] == 'strong-buy' else
+        '#4caf50' if s['Badge'] == 'buy' else
+        '#ff9800' if s['Badge'] == 'hold' else
+        '#f44336' for s in scored[:10]
+    ])
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -369,6 +380,33 @@ function sortTable(col){{const tbody=document.getElementById('tableBody');const 
 
 
 # ─────────────────────────────────────────────
+#  FETCH HTML USING PLAYWRIGHT (replaces crawl4ai)
+# ─────────────────────────────────────────────
+async def fetch_html_with_playwright(url: str, browser) -> str:
+    """Fetch a page using Playwright so JS-rendered content is captured."""
+    page = await browser.new_page()
+    try:
+        await page.set_extra_http_headers({
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Referer": "https://nepsealpha.com/",
+        })
+        await page.goto(url, wait_until="networkidle", timeout=60000)
+        # Wait for tables to appear
+        try:
+            await page.wait_for_selector("table", timeout=15000)
+        except Exception:
+            pass
+        html = await page.content()
+        return html
+    except Exception as e:
+        logging.error(f"Playwright fetch error for {url}: {e}")
+        return ""
+    finally:
+        await page.close()
+
+
+# ─────────────────────────────────────────────
 #  CRAWLER
 # ─────────────────────────────────────────────
 class DataCrawler:
@@ -395,12 +433,15 @@ class DataCrawler:
             rows = []
             body = table.find('tbody') or table
             for tr in body.find_all('tr'):
-                if tr.find('th'): continue
+                if tr.find('th'):
+                    continue
                 row = [cell.get_text(strip=True) for cell in tr.find_all('td')]
-                if row: rows.append(row)
-            if not rows: continue
+                if row:
+                    rows.append(row)
+            if not rows:
+                continue
             if headers and len(headers) != len(rows[0]):
-                headers = [f"Column_{j}" for j in range(1, len(rows[0])+1)]
+                headers = [f"Column_{j}" for j in range(1, len(rows[0]) + 1)]
             df = pd.DataFrame(rows, columns=headers)
             df['Table_Index'] = table_idx
             df['Symbol']      = symbol
@@ -435,47 +476,55 @@ class DataCrawler:
         all_pivoted, all_third = [], []
         progress = tqdm(total=len(urls), desc="Crawling")
 
-        for url in urls:
-            symbol = self.extract_symbol(url)
-            try:
-                async with AsyncWebCrawler() as crawler:
-                    result = await crawler.arun(
-                        url=url,
-                        headers={
-                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                            "Accept-Language": "en-US,en;q=0.5",
-                            "Referer": "https://nepsealpha.com/",
-                        },
-                        wait_for_content=True, wait_until="domcontentloaded",
-                        timeout=60000, screenshot=False
-                    )
-                if result and result.html:
-                    tables = self.extract_tables(result.html, url)
-                    if len(tables) >= 2:
-                        combined = pd.concat([tables[0], tables[1]], ignore_index=True)
-                        combined.columns = [str(c).strip() for c in combined.columns]
-                        combined = combined.drop(columns=[c for c in combined.columns if c.startswith('Compare')], errors='ignore')
-                        data_cols = [c for c in combined.columns if c not in ('Table_Index','Symbol')]
-                        if len(data_cols) >= 2:
-                            pivot_df = combined.pivot_table(
-                                index='Symbol', columns=data_cols[0],
-                                values=data_cols[1], aggfunc='first'
-                            ).reset_index()
-                            all_pivoted.append(pivot_df)
-                    if len(tables) >= 3:
-                        t3 = tables[2].copy()
-                        t3.columns = [str(c).strip() for c in t3.columns]
-                        t3 = t3.drop(columns=[c for c in t3.columns if c.startswith('Compare')], errors='ignore')
-                        all_third.append(t3)
-                progress.update(1)
-                progress.set_postfix({"OK": symbol})
-                await asyncio.sleep(2)
-            except Exception as e:
-                logging.error(f"Error {symbol}: {e}")
-                progress.update(1)
-                progress.set_postfix({"ERR": symbol})
-                await asyncio.sleep(2)
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=True,
+                args=[
+                    "--no-sandbox",
+                    "--disable-setuid-sandbox",
+                    "--disable-dev-shm-usage",
+                    "--disable-gpu",
+                ]
+            )
+
+            for url in urls:
+                symbol = self.extract_symbol(url)
+                try:
+                    html = await fetch_html_with_playwright(url, browser)
+                    if html:
+                        tables = self.extract_tables(html, url)
+                        if len(tables) >= 2:
+                            combined = pd.concat([tables[0], tables[1]], ignore_index=True)
+                            combined.columns = [str(c).strip() for c in combined.columns]
+                            combined = combined.drop(
+                                columns=[c for c in combined.columns if c.startswith('Compare')],
+                                errors='ignore'
+                            )
+                            data_cols = [c for c in combined.columns if c not in ('Table_Index', 'Symbol')]
+                            if len(data_cols) >= 2:
+                                pivot_df = combined.pivot_table(
+                                    index='Symbol', columns=data_cols[0],
+                                    values=data_cols[1], aggfunc='first'
+                                ).reset_index()
+                                all_pivoted.append(pivot_df)
+                        if len(tables) >= 3:
+                            t3 = tables[2].copy()
+                            t3.columns = [str(c).strip() for c in t3.columns]
+                            t3 = t3.drop(
+                                columns=[c for c in t3.columns if c.startswith('Compare')],
+                                errors='ignore'
+                            )
+                            all_third.append(t3)
+                    progress.update(1)
+                    progress.set_postfix({"OK": symbol})
+                    await asyncio.sleep(2)
+                except Exception as e:
+                    logging.error(f"Error {symbol}: {e}")
+                    progress.update(1)
+                    progress.set_postfix({"ERR": symbol})
+                    await asyncio.sleep(2)
+
+            await browser.close()
 
         progress.close()
 
@@ -506,7 +555,7 @@ class DataCrawler:
             if 'Table_Index' in df_add_out.columns:
                 df_add_out = df_add_out.drop(columns=['Table_Index'])
             if 'Symbol' in df_add_out.columns:
-                df_add_out = df_add_out[['Symbol']+[c for c in df_add_out.columns if c!='Symbol']]
+                df_add_out = df_add_out[['Symbol'] + [c for c in df_add_out.columns if c != 'Symbol']]
             book[f"{sanitized}_Additional"] = df_add_out
             self.save_csv(df_add_out, csv_add)
             print(f"✅ Additional: {df_add_out.shape[0]} rows")
@@ -535,7 +584,7 @@ class DataCrawler:
         print("\nOutput files:")
         for f in [excel_file, csv_attrs, csv_add, "index.html"]:
             if os.path.exists(f):
-                print(f"  ✅ {f}  ({os.path.getsize(f)/1024:.1f} KB)")
+                print(f"  ✅ {f}  ({os.path.getsize(f) / 1024:.1f} KB)")
             else:
                 print(f"  ❌ {f}  (not created)")
         return True
@@ -551,6 +600,7 @@ def run_crawler(sheet_name):
     except Exception as e:
         print(f"Failed: {e}")
         logging.error(f"Failed: {e}")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
