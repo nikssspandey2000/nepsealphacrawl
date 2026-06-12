@@ -79414,3 +79414,1010 @@ Call log:
 2026-06-11 18:26:23,304 - INFO - CSV saved: Link_Attributes.csv
 2026-06-11 18:26:23,364 - INFO - CSV saved: Link_Additional.csv
 2026-06-11 18:26:24,783 - INFO - Dashboard saved: index.html
+2026-06-12 14:15:51,862 - INFO - Found 251 URLs
+2026-06-12 14:16:40,615 - INFO - Found 5 tables for ACLBSL
+2026-06-12 14:16:40,624 - INFO - Table 3 for ACLBSL: 11r x 4c
+2026-06-12 14:16:40,625 - INFO - Table 4 for ACLBSL: 11r x 4c
+2026-06-12 14:16:40,627 - INFO - Table 5 for ACLBSL: 13r x 11c
+2026-06-12 14:17:30,396 - INFO - Found 5 tables for ADBL
+2026-06-12 14:17:30,404 - INFO - Table 3 for ADBL: 11r x 4c
+2026-06-12 14:17:30,405 - INFO - Table 4 for ADBL: 11r x 4c
+2026-06-12 14:17:30,407 - INFO - Table 5 for ADBL: 13r x 11c
+2026-06-12 14:18:21,031 - INFO - Found 5 tables for AHL
+2026-06-12 14:18:21,039 - INFO - Table 3 for AHL: 11r x 4c
+2026-06-12 14:18:21,040 - INFO - Table 4 for AHL: 15r x 4c
+2026-06-12 14:18:21,042 - INFO - Table 5 for AHL: 13r x 11c
+2026-06-12 14:19:10,984 - INFO - Found 5 tables for AHPC
+2026-06-12 14:19:10,992 - INFO - Table 3 for AHPC: 11r x 4c
+2026-06-12 14:19:10,993 - INFO - Table 4 for AHPC: 15r x 4c
+2026-06-12 14:19:10,994 - INFO - Table 5 for AHPC: 13r x 11c
+2026-06-12 14:20:01,745 - INFO - Found 5 tables for AKJCL
+2026-06-12 14:20:01,753 - INFO - Table 3 for AKJCL: 11r x 4c
+2026-06-12 14:20:01,754 - INFO - Table 4 for AKJCL: 15r x 4c
+2026-06-12 14:20:01,755 - INFO - Table 5 for AKJCL: 13r x 11c
+2026-06-12 14:20:51,735 - INFO - Found 5 tables for AKPL
+2026-06-12 14:20:51,743 - INFO - Table 3 for AKPL: 11r x 4c
+2026-06-12 14:20:51,744 - INFO - Table 4 for AKPL: 15r x 4c
+2026-06-12 14:20:51,745 - INFO - Table 5 for AKPL: 13r x 11c
+2026-06-12 14:21:42,238 - INFO - Found 5 tables for ALBSL
+2026-06-12 14:21:42,246 - INFO - Table 3 for ALBSL: 11r x 4c
+2026-06-12 14:21:42,247 - INFO - Table 4 for ALBSL: 11r x 4c
+2026-06-12 14:21:42,248 - INFO - Table 5 for ALBSL: 13r x 11c
+2026-06-12 14:22:31,754 - INFO - Found 5 tables for ALICL
+2026-06-12 14:22:31,762 - INFO - Table 3 for ALICL: 11r x 4c
+2026-06-12 14:22:31,763 - INFO - Table 4 for ALICL: 11r x 4c
+2026-06-12 14:22:31,765 - INFO - Table 5 for ALICL: 13r x 11c
+2026-06-12 14:23:21,314 - INFO - Found 5 tables for ANLB
+2026-06-12 14:23:21,322 - INFO - Table 3 for ANLB: 11r x 4c
+2026-06-12 14:23:21,323 - INFO - Table 4 for ANLB: 11r x 4c
+2026-06-12 14:23:21,324 - INFO - Table 5 for ANLB: 13r x 11c
+2026-06-12 14:24:11,838 - INFO - Found 5 tables for API
+2026-06-12 14:24:11,846 - INFO - Table 3 for API: 11r x 4c
+2026-06-12 14:24:11,847 - INFO - Table 4 for API: 15r x 4c
+2026-06-12 14:24:11,848 - INFO - Table 5 for API: 13r x 11c
+2026-06-12 14:25:02,452 - INFO - Found 5 tables for AVYAN
+2026-06-12 14:25:02,460 - INFO - Table 3 for AVYAN: 11r x 4c
+2026-06-12 14:25:02,461 - INFO - Table 4 for AVYAN: 11r x 4c
+2026-06-12 14:25:02,462 - INFO - Table 5 for AVYAN: 13r x 11c
+2026-06-12 14:25:52,227 - INFO - Found 5 tables for BARUN
+2026-06-12 14:25:52,235 - INFO - Table 3 for BARUN: 11r x 4c
+2026-06-12 14:25:52,236 - INFO - Table 4 for BARUN: 15r x 4c
+2026-06-12 14:25:52,237 - INFO - Table 5 for BARUN: 13r x 11c
+2026-06-12 14:26:42,170 - INFO - Found 4 tables for BBC
+2026-06-12 14:26:42,178 - INFO - Table 3 for BBC: 11r x 4c
+2026-06-12 14:26:42,179 - INFO - Table 4 for BBC: 11r x 4c
+2026-06-12 14:27:32,754 - INFO - Found 5 tables for BEDC
+2026-06-12 14:27:32,762 - INFO - Table 3 for BEDC: 11r x 4c
+2026-06-12 14:27:32,763 - INFO - Table 4 for BEDC: 15r x 4c
+2026-06-12 14:27:32,765 - INFO - Table 5 for BEDC: 13r x 11c
+2026-06-12 14:28:22,734 - INFO - Found 5 tables for BFC
+2026-06-12 14:28:22,742 - INFO - Table 3 for BFC: 11r x 4c
+2026-06-12 14:28:22,743 - INFO - Table 4 for BFC: 11r x 4c
+2026-06-12 14:28:22,745 - INFO - Table 5 for BFC: 13r x 10c
+2026-06-12 14:29:13,338 - INFO - Found 5 tables for BGWT
+2026-06-12 14:29:13,345 - INFO - Table 3 for BGWT: 11r x 4c
+2026-06-12 14:29:13,346 - INFO - Table 4 for BGWT: 15r x 4c
+2026-06-12 14:29:13,348 - INFO - Table 5 for BGWT: 13r x 11c
+2026-06-12 14:30:05,364 - INFO - Found 5 tables for BHDC
+2026-06-12 14:30:05,372 - INFO - Table 3 for BHDC: 11r x 4c
+2026-06-12 14:30:05,373 - INFO - Table 4 for BHDC: 15r x 4c
+2026-06-12 14:30:05,375 - INFO - Table 5 for BHDC: 13r x 11c
+2026-06-12 14:30:55,625 - INFO - Found 5 tables for BHL
+2026-06-12 14:30:55,633 - INFO - Table 3 for BHL: 11r x 4c
+2026-06-12 14:30:55,634 - INFO - Table 4 for BHL: 15r x 4c
+2026-06-12 14:30:55,635 - INFO - Table 5 for BHL: 13r x 11c
+2026-06-12 14:31:45,656 - INFO - Found 5 tables for BHPL
+2026-06-12 14:31:45,664 - INFO - Table 3 for BHPL: 11r x 4c
+2026-06-12 14:31:45,665 - INFO - Table 4 for BHPL: 15r x 4c
+2026-06-12 14:31:45,667 - INFO - Table 5 for BHPL: 13r x 11c
+2026-06-12 14:32:35,542 - INFO - Found 5 tables for BNHC
+2026-06-12 14:32:35,551 - INFO - Table 3 for BNHC: 11r x 4c
+2026-06-12 14:32:35,552 - INFO - Table 4 for BNHC: 15r x 4c
+2026-06-12 14:32:35,553 - INFO - Table 5 for BNHC: 13r x 11c
+2026-06-12 14:33:25,717 - INFO - Found 5 tables for BNL
+2026-06-12 14:33:25,726 - INFO - Table 3 for BNL: 11r x 4c
+2026-06-12 14:33:25,726 - INFO - Table 4 for BNL: 11r x 4c
+2026-06-12 14:33:25,728 - INFO - Table 5 for BNL: 13r x 11c
+2026-06-12 14:34:27,761 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=BNT: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=BNT", waiting until "networkidle"
+
+2026-06-12 14:35:18,388 - INFO - Found 5 tables for BPCL
+2026-06-12 14:35:18,397 - INFO - Table 3 for BPCL: 11r x 4c
+2026-06-12 14:35:18,397 - INFO - Table 4 for BPCL: 15r x 4c
+2026-06-12 14:35:18,399 - INFO - Table 5 for BPCL: 13r x 11c
+2026-06-12 14:36:09,015 - INFO - Found 5 tables for CBBL
+2026-06-12 14:36:09,023 - INFO - Table 3 for CBBL: 11r x 4c
+2026-06-12 14:36:09,024 - INFO - Table 4 for CBBL: 11r x 4c
+2026-06-12 14:36:09,025 - INFO - Table 5 for CBBL: 13r x 11c
+2026-06-12 14:36:58,790 - INFO - Found 5 tables for CFCL
+2026-06-12 14:36:58,798 - INFO - Table 3 for CFCL: 11r x 4c
+2026-06-12 14:36:58,799 - INFO - Table 4 for CFCL: 11r x 4c
+2026-06-12 14:36:58,800 - INFO - Table 5 for CFCL: 13r x 10c
+2026-06-12 14:37:49,412 - INFO - Found 5 tables for CGH
+2026-06-12 14:37:49,420 - INFO - Table 3 for CGH: 11r x 4c
+2026-06-12 14:37:49,421 - INFO - Table 4 for CGH: 11r x 4c
+2026-06-12 14:37:49,422 - INFO - Table 5 for CGH: 13r x 11c
+2026-06-12 14:38:39,185 - INFO - Found 5 tables for CHCL
+2026-06-12 14:38:39,194 - INFO - Table 3 for CHCL: 11r x 4c
+2026-06-12 14:38:39,195 - INFO - Table 4 for CHCL: 15r x 4c
+2026-06-12 14:38:39,196 - INFO - Table 5 for CHCL: 13r x 11c
+2026-06-12 14:39:29,755 - INFO - Found 5 tables for CHDC
+2026-06-12 14:39:29,763 - INFO - Table 3 for CHDC: 11r x 4c
+2026-06-12 14:39:29,764 - INFO - Table 4 for CHDC: 11r x 4c
+2026-06-12 14:39:29,765 - INFO - Table 5 for CHDC: 13r x 11c
+2026-06-12 14:40:20,063 - INFO - Found 5 tables for CHL
+2026-06-12 14:40:20,071 - INFO - Table 3 for CHL: 11r x 4c
+2026-06-12 14:40:20,072 - INFO - Table 4 for CHL: 15r x 4c
+2026-06-12 14:40:20,074 - INFO - Table 5 for CHL: 13r x 11c
+2026-06-12 14:41:10,699 - INFO - Found 5 tables for CIT
+2026-06-12 14:41:10,707 - INFO - Table 3 for CIT: 11r x 4c
+2026-06-12 14:41:10,708 - INFO - Table 4 for CIT: 11r x 4c
+2026-06-12 14:41:10,709 - INFO - Table 5 for CIT: 13r x 11c
+2026-06-12 14:42:02,554 - INFO - Found 5 tables for CITY
+2026-06-12 14:42:02,562 - INFO - Table 3 for CITY: 11r x 4c
+2026-06-12 14:42:02,563 - INFO - Table 4 for CITY: 11r x 4c
+2026-06-12 14:42:02,565 - INFO - Table 5 for CITY: 13r x 11c
+2026-06-12 14:42:52,104 - INFO - Found 5 tables for CKHL
+2026-06-12 14:42:52,112 - INFO - Table 3 for CKHL: 11r x 4c
+2026-06-12 14:42:52,113 - INFO - Table 4 for CKHL: 15r x 4c
+2026-06-12 14:42:52,115 - INFO - Table 5 for CKHL: 13r x 11c
+2026-06-12 14:43:41,705 - INFO - Found 5 tables for CLI
+2026-06-12 14:43:41,713 - INFO - Table 3 for CLI: 11r x 4c
+2026-06-12 14:43:41,714 - INFO - Table 4 for CLI: 11r x 4c
+2026-06-12 14:43:41,715 - INFO - Table 5 for CLI: 13r x 11c
+2026-06-12 14:44:32,286 - INFO - Found 5 tables for CORBL
+2026-06-12 14:44:32,294 - INFO - Table 3 for CORBL: 11r x 4c
+2026-06-12 14:44:32,295 - INFO - Table 4 for CORBL: 11r x 4c
+2026-06-12 14:44:32,297 - INFO - Table 5 for CORBL: 13r x 11c
+2026-06-12 14:45:22,025 - INFO - Found 5 tables for CREST
+2026-06-12 14:45:22,033 - INFO - Table 3 for CREST: 11r x 4c
+2026-06-12 14:45:22,034 - INFO - Table 4 for CREST: 11r x 4c
+2026-06-12 14:45:22,035 - INFO - Table 5 for CREST: 13r x 8c
+2026-06-12 14:46:11,833 - INFO - Found 5 tables for CYCL
+2026-06-12 14:46:11,842 - INFO - Table 3 for CYCL: 11r x 4c
+2026-06-12 14:46:11,843 - INFO - Table 4 for CYCL: 11r x 4c
+2026-06-12 14:46:11,844 - INFO - Table 5 for CYCL: 13r x 11c
+2026-06-12 14:47:01,742 - INFO - Found 5 tables for CZBIL
+2026-06-12 14:47:01,750 - INFO - Table 3 for CZBIL: 11r x 4c
+2026-06-12 14:47:01,751 - INFO - Table 4 for CZBIL: 11r x 4c
+2026-06-12 14:47:01,752 - INFO - Table 5 for CZBIL: 13r x 11c
+2026-06-12 14:47:51,593 - INFO - Found 5 tables for DDBL
+2026-06-12 14:47:51,601 - INFO - Table 3 for DDBL: 11r x 4c
+2026-06-12 14:47:51,602 - INFO - Table 4 for DDBL: 11r x 4c
+2026-06-12 14:47:51,604 - INFO - Table 5 for DDBL: 13r x 11c
+2026-06-12 14:48:41,370 - INFO - Found 5 tables for DHPL
+2026-06-12 14:48:41,378 - INFO - Table 3 for DHPL: 11r x 4c
+2026-06-12 14:48:41,379 - INFO - Table 4 for DHPL: 15r x 4c
+2026-06-12 14:48:41,381 - INFO - Table 5 for DHPL: 13r x 11c
+2026-06-12 14:49:31,794 - INFO - Found 5 tables for DLBS
+2026-06-12 14:49:31,802 - INFO - Table 3 for DLBS: 11r x 4c
+2026-06-12 14:49:31,803 - INFO - Table 4 for DLBS: 11r x 4c
+2026-06-12 14:49:31,805 - INFO - Table 5 for DLBS: 13r x 10c
+2026-06-12 14:50:22,092 - INFO - Found 5 tables for DOLTI
+2026-06-12 14:50:22,100 - INFO - Table 3 for DOLTI: 11r x 4c
+2026-06-12 14:50:22,102 - INFO - Table 4 for DOLTI: 15r x 4c
+2026-06-12 14:50:22,103 - INFO - Table 5 for DOLTI: 13r x 11c
+2026-06-12 14:51:12,745 - INFO - Found 5 tables for DORDI
+2026-06-12 14:51:12,753 - INFO - Table 3 for DORDI: 11r x 4c
+2026-06-12 14:51:12,754 - INFO - Table 4 for DORDI: 15r x 4c
+2026-06-12 14:51:12,756 - INFO - Table 5 for DORDI: 13r x 11c
+2026-06-12 14:52:02,783 - INFO - Found 5 tables for EBL
+2026-06-12 14:52:02,791 - INFO - Table 3 for EBL: 11r x 4c
+2026-06-12 14:52:02,792 - INFO - Table 4 for EBL: 11r x 4c
+2026-06-12 14:52:02,793 - INFO - Table 5 for EBL: 13r x 11c
+2026-06-12 14:52:53,425 - INFO - Found 5 tables for EDBL
+2026-06-12 14:52:53,433 - INFO - Table 3 for EDBL: 11r x 4c
+2026-06-12 14:52:53,434 - INFO - Table 4 for EDBL: 11r x 4c
+2026-06-12 14:52:53,435 - INFO - Table 5 for EDBL: 13r x 11c
+2026-06-12 14:53:43,341 - INFO - Found 5 tables for EHPL
+2026-06-12 14:53:43,349 - INFO - Table 3 for EHPL: 11r x 4c
+2026-06-12 14:53:43,350 - INFO - Table 4 for EHPL: 15r x 4c
+2026-06-12 14:53:43,351 - INFO - Table 5 for EHPL: 13r x 11c
+2026-06-12 14:54:33,575 - INFO - Found 5 tables for ENL
+2026-06-12 14:54:33,583 - INFO - Table 3 for ENL: 11r x 4c
+2026-06-12 14:54:33,584 - INFO - Table 4 for ENL: 11r x 4c
+2026-06-12 14:54:33,586 - INFO - Table 5 for ENL: 13r x 11c
+2026-06-12 14:55:23,900 - INFO - Found 5 tables for FMDBL
+2026-06-12 14:55:23,908 - INFO - Table 3 for FMDBL: 11r x 4c
+2026-06-12 14:55:23,909 - INFO - Table 4 for FMDBL: 11r x 4c
+2026-06-12 14:55:23,910 - INFO - Table 5 for FMDBL: 13r x 11c
+2026-06-12 14:56:13,683 - INFO - Found 5 tables for FOWAD
+2026-06-12 14:56:13,691 - INFO - Table 3 for FOWAD: 11r x 4c
+2026-06-12 14:56:13,692 - INFO - Table 4 for FOWAD: 11r x 4c
+2026-06-12 14:56:13,694 - INFO - Table 5 for FOWAD: 13r x 11c
+2026-06-12 14:57:04,165 - INFO - Found 5 tables for GBBL
+2026-06-12 14:57:04,173 - INFO - Table 3 for GBBL: 11r x 4c
+2026-06-12 14:57:04,174 - INFO - Table 4 for GBBL: 11r x 4c
+2026-06-12 14:57:04,176 - INFO - Table 5 for GBBL: 13r x 11c
+2026-06-12 14:58:06,210 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=GBIME: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=GBIME", waiting until "networkidle"
+
+2026-06-12 14:58:56,853 - INFO - Found 5 tables for GBLBS
+2026-06-12 14:58:56,861 - INFO - Table 3 for GBLBS: 11r x 4c
+2026-06-12 14:58:56,862 - INFO - Table 4 for GBLBS: 11r x 4c
+2026-06-12 14:58:56,864 - INFO - Table 5 for GBLBS: 13r x 10c
+2026-06-12 14:59:47,178 - INFO - Found 5 tables for GCIL
+2026-06-12 14:59:47,187 - INFO - Table 3 for GCIL: 11r x 4c
+2026-06-12 14:59:47,188 - INFO - Table 4 for GCIL: 11r x 4c
+2026-06-12 14:59:47,189 - INFO - Table 5 for GCIL: 13r x 11c
+2026-06-12 15:00:36,748 - INFO - Found 5 tables for GFCL
+2026-06-12 15:00:36,756 - INFO - Table 3 for GFCL: 11r x 4c
+2026-06-12 15:00:36,757 - INFO - Table 4 for GFCL: 11r x 4c
+2026-06-12 15:00:36,758 - INFO - Table 5 for GFCL: 13r x 11c
+2026-06-12 15:01:26,573 - INFO - Found 5 tables for GHL
+2026-06-12 15:01:26,581 - INFO - Table 3 for GHL: 11r x 4c
+2026-06-12 15:01:26,582 - INFO - Table 4 for GHL: 15r x 4c
+2026-06-12 15:01:26,584 - INFO - Table 5 for GHL: 13r x 11c
+2026-06-12 15:02:28,617 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=GILB: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=GILB", waiting until "networkidle"
+
+2026-06-12 15:03:19,106 - INFO - Found 5 tables for GLBSL
+2026-06-12 15:03:19,114 - INFO - Table 3 for GLBSL: 11r x 4c
+2026-06-12 15:03:19,115 - INFO - Table 4 for GLBSL: 11r x 4c
+2026-06-12 15:03:19,116 - INFO - Table 5 for GLBSL: 13r x 11c
+2026-06-12 15:04:09,208 - INFO - Found 5 tables for GLH
+2026-06-12 15:04:09,217 - INFO - Table 3 for GLH: 11r x 4c
+2026-06-12 15:04:09,218 - INFO - Table 4 for GLH: 15r x 4c
+2026-06-12 15:04:09,219 - INFO - Table 5 for GLH: 13r x 10c
+2026-06-12 15:04:59,205 - INFO - Found 5 tables for GMFBS
+2026-06-12 15:04:59,214 - INFO - Table 3 for GMFBS: 11r x 4c
+2026-06-12 15:04:59,215 - INFO - Table 4 for GMFBS: 11r x 4c
+2026-06-12 15:04:59,216 - INFO - Table 5 for GMFBS: 13r x 11c
+2026-06-12 15:05:49,111 - INFO - Found 5 tables for GMFIL
+2026-06-12 15:05:49,119 - INFO - Table 3 for GMFIL: 11r x 4c
+2026-06-12 15:05:49,120 - INFO - Table 4 for GMFIL: 11r x 4c
+2026-06-12 15:05:49,122 - INFO - Table 5 for GMFIL: 13r x 11c
+2026-06-12 15:06:38,754 - INFO - Found 5 tables for GMLI
+2026-06-12 15:06:38,762 - INFO - Table 3 for GMLI: 11r x 4c
+2026-06-12 15:06:38,763 - INFO - Table 4 for GMLI: 11r x 4c
+2026-06-12 15:06:38,764 - INFO - Table 5 for GMLI: 13r x 9c
+2026-06-12 15:07:29,336 - INFO - Found 5 tables for GRDBL
+2026-06-12 15:07:29,345 - INFO - Table 3 for GRDBL: 11r x 4c
+2026-06-12 15:07:29,346 - INFO - Table 4 for GRDBL: 11r x 4c
+2026-06-12 15:07:29,347 - INFO - Table 5 for GRDBL: 13r x 11c
+2026-06-12 15:08:18,921 - INFO - Found 5 tables for GUFL
+2026-06-12 15:08:18,929 - INFO - Table 3 for GUFL: 11r x 4c
+2026-06-12 15:08:18,930 - INFO - Table 4 for GUFL: 11r x 4c
+2026-06-12 15:08:18,932 - INFO - Table 5 for GUFL: 13r x 11c
+2026-06-12 15:09:09,146 - INFO - Found 5 tables for GVL
+2026-06-12 15:09:09,155 - INFO - Table 3 for GVL: 11r x 4c
+2026-06-12 15:09:09,156 - INFO - Table 4 for GVL: 15r x 4c
+2026-06-12 15:09:09,157 - INFO - Table 5 for GVL: 13r x 11c
+2026-06-12 15:09:59,042 - INFO - Found 5 tables for HATHY
+2026-06-12 15:09:59,050 - INFO - Table 3 for HATHY: 11r x 4c
+2026-06-12 15:09:59,051 - INFO - Table 4 for HATHY: 11r x 4c
+2026-06-12 15:09:59,052 - INFO - Table 5 for HATHY: 13r x 11c
+2026-06-12 15:10:48,936 - INFO - Found 5 tables for HBL
+2026-06-12 15:10:48,944 - INFO - Table 3 for HBL: 11r x 4c
+2026-06-12 15:10:48,945 - INFO - Table 4 for HBL: 11r x 4c
+2026-06-12 15:10:48,946 - INFO - Table 5 for HBL: 13r x 11c
+2026-06-12 15:11:50,980 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=HDHPC: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=HDHPC", waiting until "networkidle"
+
+2026-06-12 15:12:40,618 - INFO - Found 5 tables for HDL
+2026-06-12 15:12:40,626 - INFO - Table 3 for HDL: 11r x 4c
+2026-06-12 15:12:40,627 - INFO - Table 4 for HDL: 11r x 4c
+2026-06-12 15:12:40,628 - INFO - Table 5 for HDL: 13r x 11c
+2026-06-12 15:13:30,719 - INFO - Found 5 tables for HEI
+2026-06-12 15:13:30,727 - INFO - Table 3 for HEI: 11r x 4c
+2026-06-12 15:13:30,728 - INFO - Table 4 for HEI: 11r x 4c
+2026-06-12 15:13:30,729 - INFO - Table 5 for HEI: 13r x 11c
+2026-06-12 15:14:21,215 - INFO - Found 5 tables for HHL
+2026-06-12 15:14:21,223 - INFO - Table 3 for HHL: 11r x 4c
+2026-06-12 15:14:21,224 - INFO - Table 4 for HHL: 15r x 4c
+2026-06-12 15:14:21,225 - INFO - Table 5 for HHL: 13r x 11c
+2026-06-12 15:15:11,100 - INFO - Found 5 tables for HIDCL
+2026-06-12 15:15:11,108 - INFO - Table 3 for HIDCL: 11r x 4c
+2026-06-12 15:15:11,109 - INFO - Table 4 for HIDCL: 11r x 4c
+2026-06-12 15:15:11,111 - INFO - Table 5 for HIDCL: 13r x 11c
+2026-06-12 15:16:00,606 - INFO - Found 5 tables for HLBSL
+2026-06-12 15:16:00,615 - INFO - Table 3 for HLBSL: 11r x 4c
+2026-06-12 15:16:00,615 - INFO - Table 4 for HLBSL: 11r x 4c
+2026-06-12 15:16:00,617 - INFO - Table 5 for HLBSL: 13r x 11c
+2026-06-12 15:17:02,647 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=HLI: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=HLI", waiting until "networkidle"
+
+2026-06-12 15:17:53,524 - INFO - Found 5 tables for HPPL
+2026-06-12 15:17:53,532 - INFO - Table 3 for HPPL: 11r x 4c
+2026-06-12 15:17:53,533 - INFO - Table 4 for HPPL: 15r x 4c
+2026-06-12 15:17:53,535 - INFO - Table 5 for HPPL: 13r x 11c
+2026-06-12 15:18:43,019 - INFO - Found 5 tables for HRL
+2026-06-12 15:18:43,027 - INFO - Table 3 for HRL: 11r x 4c
+2026-06-12 15:18:43,028 - INFO - Table 4 for HRL: 11r x 4c
+2026-06-12 15:18:43,030 - INFO - Table 5 for HRL: 13r x 10c
+2026-06-12 15:19:33,416 - INFO - Found 5 tables for HURJA
+2026-06-12 15:19:33,424 - INFO - Table 3 for HURJA: 11r x 4c
+2026-06-12 15:19:33,425 - INFO - Table 4 for HURJA: 15r x 4c
+2026-06-12 15:19:33,426 - INFO - Table 5 for HURJA: 13r x 11c
+2026-06-12 15:20:23,113 - INFO - Found 5 tables for ICFC
+2026-06-12 15:20:23,121 - INFO - Table 3 for ICFC: 11r x 4c
+2026-06-12 15:20:23,122 - INFO - Table 4 for ICFC: 11r x 4c
+2026-06-12 15:20:23,124 - INFO - Table 5 for ICFC: 13r x 11c
+2026-06-12 15:21:25,157 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=IGI: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=IGI", waiting until "networkidle"
+
+2026-06-12 15:22:14,845 - INFO - Found 5 tables for IHL
+2026-06-12 15:22:14,853 - INFO - Table 3 for IHL: 11r x 4c
+2026-06-12 15:22:14,854 - INFO - Table 4 for IHL: 15r x 4c
+2026-06-12 15:22:14,855 - INFO - Table 5 for IHL: 13r x 11c
+2026-06-12 15:23:05,337 - INFO - Found 5 tables for ILBS
+2026-06-12 15:23:05,345 - INFO - Table 3 for ILBS: 11r x 4c
+2026-06-12 15:23:05,346 - INFO - Table 4 for ILBS: 11r x 4c
+2026-06-12 15:23:05,347 - INFO - Table 5 for ILBS: 13r x 11c
+2026-06-12 15:23:55,269 - INFO - Found 5 tables for ILI
+2026-06-12 15:23:55,278 - INFO - Table 3 for ILI: 11r x 4c
+2026-06-12 15:23:55,279 - INFO - Table 4 for ILI: 11r x 4c
+2026-06-12 15:23:55,280 - INFO - Table 5 for ILI: 13r x 11c
+2026-06-12 15:24:45,524 - INFO - Found 5 tables for JBBL
+2026-06-12 15:24:45,532 - INFO - Table 3 for JBBL: 11r x 4c
+2026-06-12 15:24:45,533 - INFO - Table 4 for JBBL: 11r x 4c
+2026-06-12 15:24:45,534 - INFO - Table 5 for JBBL: 13r x 11c
+2026-06-12 15:25:35,447 - INFO - Found 5 tables for JBLB
+2026-06-12 15:25:35,455 - INFO - Table 3 for JBLB: 11r x 4c
+2026-06-12 15:25:35,456 - INFO - Table 4 for JBLB: 11r x 4c
+2026-06-12 15:25:35,458 - INFO - Table 5 for JBLB: 13r x 11c
+2026-06-12 15:26:25,031 - INFO - Found 5 tables for JFL
+2026-06-12 15:26:25,040 - INFO - Table 3 for JFL: 11r x 4c
+2026-06-12 15:26:25,041 - INFO - Table 4 for JFL: 11r x 4c
+2026-06-12 15:26:25,042 - INFO - Table 5 for JFL: 13r x 11c
+2026-06-12 15:27:14,729 - INFO - Found 5 tables for JOSHI
+2026-06-12 15:27:14,737 - INFO - Table 3 for JOSHI: 11r x 4c
+2026-06-12 15:27:14,738 - INFO - Table 4 for JOSHI: 15r x 4c
+2026-06-12 15:27:14,740 - INFO - Table 5 for JOSHI: 13r x 9c
+2026-06-12 15:28:05,088 - INFO - Found 5 tables for JSLBB
+2026-06-12 15:28:05,097 - INFO - Table 3 for JSLBB: 11r x 4c
+2026-06-12 15:28:05,097 - INFO - Table 4 for JSLBB: 11r x 4c
+2026-06-12 15:28:05,099 - INFO - Table 5 for JSLBB: 13r x 11c
+2026-06-12 15:28:55,637 - INFO - Found 5 tables for KBL
+2026-06-12 15:28:55,645 - INFO - Table 3 for KBL: 11r x 4c
+2026-06-12 15:28:55,646 - INFO - Table 4 for KBL: 11r x 4c
+2026-06-12 15:28:55,648 - INFO - Table 5 for KBL: 13r x 11c
+2026-06-12 15:29:45,882 - INFO - Found 5 tables for KBSH
+2026-06-12 15:29:45,890 - INFO - Table 3 for KBSH: 11r x 4c
+2026-06-12 15:29:45,891 - INFO - Table 4 for KBSH: 15r x 4c
+2026-06-12 15:29:45,892 - INFO - Table 5 for KBSH: 13r x 11c
+2026-06-12 15:30:35,891 - INFO - Found 5 tables for KDL
+2026-06-12 15:30:35,899 - INFO - Table 3 for KDL: 11r x 4c
+2026-06-12 15:30:35,900 - INFO - Table 4 for KDL: 11r x 4c
+2026-06-12 15:30:35,902 - INFO - Table 5 for KDL: 13r x 11c
+2026-06-12 15:31:25,823 - INFO - Found 5 tables for KKHC
+2026-06-12 15:31:25,831 - INFO - Table 3 for KKHC: 11r x 4c
+2026-06-12 15:31:25,832 - INFO - Table 4 for KKHC: 15r x 4c
+2026-06-12 15:31:25,834 - INFO - Table 5 for KKHC: 13r x 11c
+2026-06-12 15:32:15,863 - INFO - Found 5 tables for KMCDB
+2026-06-12 15:32:15,871 - INFO - Table 3 for KMCDB: 11r x 4c
+2026-06-12 15:32:15,872 - INFO - Table 4 for KMCDB: 11r x 4c
+2026-06-12 15:32:15,873 - INFO - Table 5 for KMCDB: 13r x 11c
+2026-06-12 15:33:06,408 - INFO - Found 5 tables for KPCL
+2026-06-12 15:33:06,416 - INFO - Table 3 for KPCL: 11r x 4c
+2026-06-12 15:33:06,417 - INFO - Table 4 for KPCL: 15r x 4c
+2026-06-12 15:33:06,418 - INFO - Table 5 for KPCL: 13r x 11c
+2026-06-12 15:33:57,225 - INFO - Found 5 tables for KSBBL
+2026-06-12 15:33:57,233 - INFO - Table 3 for KSBBL: 11r x 4c
+2026-06-12 15:33:57,234 - INFO - Table 4 for KSBBL: 11r x 4c
+2026-06-12 15:33:57,235 - INFO - Table 5 for KSBBL: 13r x 11c
+2026-06-12 15:34:46,881 - INFO - Found 5 tables for LBBL
+2026-06-12 15:34:46,889 - INFO - Table 3 for LBBL: 11r x 4c
+2026-06-12 15:34:46,890 - INFO - Table 4 for LBBL: 11r x 4c
+2026-06-12 15:34:46,892 - INFO - Table 5 for LBBL: 13r x 11c
+2026-06-12 15:35:36,541 - INFO - Found 5 tables for LEC
+2026-06-12 15:35:36,549 - INFO - Table 3 for LEC: 11r x 4c
+2026-06-12 15:35:36,550 - INFO - Table 4 for LEC: 15r x 4c
+2026-06-12 15:35:36,552 - INFO - Table 5 for LEC: 13r x 11c
+2026-06-12 15:36:26,512 - INFO - Found 5 tables for LICN
+2026-06-12 15:36:26,520 - INFO - Table 3 for LICN: 11r x 4c
+2026-06-12 15:36:26,521 - INFO - Table 4 for LICN: 11r x 4c
+2026-06-12 15:36:26,522 - INFO - Table 5 for LICN: 13r x 11c
+2026-06-12 15:37:16,299 - INFO - Found 5 tables for LLBS
+2026-06-12 15:37:16,308 - INFO - Table 3 for LLBS: 11r x 4c
+2026-06-12 15:37:16,309 - INFO - Table 4 for LLBS: 11r x 4c
+2026-06-12 15:37:16,310 - INFO - Table 5 for LLBS: 13r x 11c
+2026-06-12 15:38:05,853 - INFO - Found 5 tables for LSL
+2026-06-12 15:38:05,861 - INFO - Table 3 for LSL: 11r x 4c
+2026-06-12 15:38:05,862 - INFO - Table 4 for LSL: 11r x 4c
+2026-06-12 15:38:05,864 - INFO - Table 5 for LSL: 13r x 11c
+2026-06-12 15:38:55,540 - INFO - Found 5 tables for MAKAR
+2026-06-12 15:38:55,548 - INFO - Table 3 for MAKAR: 11r x 4c
+2026-06-12 15:38:55,549 - INFO - Table 4 for MAKAR: 15r x 4c
+2026-06-12 15:38:55,551 - INFO - Table 5 for MAKAR: 13r x 11c
+2026-06-12 15:39:46,185 - INFO - Found 5 tables for MANDU
+2026-06-12 15:39:46,193 - INFO - Table 3 for MANDU: 11r x 4c
+2026-06-12 15:39:46,194 - INFO - Table 4 for MANDU: 15r x 4c
+2026-06-12 15:39:46,196 - INFO - Table 5 for MANDU: 13r x 11c
+2026-06-12 15:40:36,458 - INFO - Found 5 tables for MATRI
+2026-06-12 15:40:36,466 - INFO - Table 3 for MATRI: 11r x 4c
+2026-06-12 15:40:36,467 - INFO - Table 4 for MATRI: 11r x 4c
+2026-06-12 15:40:36,469 - INFO - Table 5 for MATRI: 13r x 11c
+2026-06-12 15:41:38,502 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=MBJC: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=MBJC", waiting until "networkidle"
+
+2026-06-12 15:42:28,260 - INFO - Found 5 tables for MBL
+2026-06-12 15:42:28,268 - INFO - Table 3 for MBL: 11r x 4c
+2026-06-12 15:42:28,269 - INFO - Table 4 for MBL: 11r x 4c
+2026-06-12 15:42:28,270 - INFO - Table 5 for MBL: 13r x 11c
+2026-06-12 15:43:18,265 - INFO - Found 5 tables for MCHL
+2026-06-12 15:43:18,273 - INFO - Table 3 for MCHL: 11r x 4c
+2026-06-12 15:43:18,274 - INFO - Table 4 for MCHL: 15r x 4c
+2026-06-12 15:43:18,276 - INFO - Table 5 for MCHL: 13r x 11c
+2026-06-12 15:44:08,731 - INFO - Found 5 tables for MDB
+2026-06-12 15:44:08,739 - INFO - Table 3 for MDB: 11r x 4c
+2026-06-12 15:44:08,740 - INFO - Table 4 for MDB: 11r x 4c
+2026-06-12 15:44:08,742 - INFO - Table 5 for MDB: 13r x 11c
+2026-06-12 15:44:59,332 - INFO - Found 5 tables for MEHL
+2026-06-12 15:44:59,340 - INFO - Table 3 for MEHL: 11r x 4c
+2026-06-12 15:44:59,341 - INFO - Table 4 for MEHL: 15r x 4c
+2026-06-12 15:44:59,343 - INFO - Table 5 for MEHL: 13r x 11c
+2026-06-12 15:45:49,156 - INFO - Found 5 tables for MEL
+2026-06-12 15:45:49,165 - INFO - Table 3 for MEL: 11r x 4c
+2026-06-12 15:45:49,166 - INFO - Table 4 for MEL: 15r x 4c
+2026-06-12 15:45:49,167 - INFO - Table 5 for MEL: 13r x 11c
+2026-06-12 15:46:39,449 - INFO - Found 5 tables for MEN
+2026-06-12 15:46:39,457 - INFO - Table 3 for MEN: 11r x 4c
+2026-06-12 15:46:39,458 - INFO - Table 4 for MEN: 15r x 4c
+2026-06-12 15:46:39,460 - INFO - Table 5 for MEN: 13r x 11c
+2026-06-12 15:47:30,227 - INFO - Found 5 tables for MERO
+2026-06-12 15:47:30,235 - INFO - Table 3 for MERO: 11r x 4c
+2026-06-12 15:47:30,236 - INFO - Table 4 for MERO: 11r x 4c
+2026-06-12 15:47:30,238 - INFO - Table 5 for MERO: 13r x 11c
+2026-06-12 15:48:19,950 - INFO - Found 5 tables for MFIL
+2026-06-12 15:48:19,958 - INFO - Table 3 for MFIL: 11r x 4c
+2026-06-12 15:48:19,959 - INFO - Table 4 for MFIL: 11r x 4c
+2026-06-12 15:48:19,961 - INFO - Table 5 for MFIL: 13r x 11c
+2026-06-12 15:49:10,611 - INFO - Found 5 tables for MHCL
+2026-06-12 15:49:10,619 - INFO - Table 3 for MHCL: 11r x 4c
+2026-06-12 15:49:10,620 - INFO - Table 4 for MHCL: 15r x 4c
+2026-06-12 15:49:10,621 - INFO - Table 5 for MHCL: 13r x 11c
+2026-06-12 15:50:00,869 - INFO - Found 5 tables for MHL
+2026-06-12 15:50:00,877 - INFO - Table 3 for MHL: 11r x 4c
+2026-06-12 15:50:00,878 - INFO - Table 4 for MHL: 15r x 4c
+2026-06-12 15:50:00,879 - INFO - Table 5 for MHL: 13r x 11c
+2026-06-12 15:50:50,736 - INFO - Found 5 tables for MHNL
+2026-06-12 15:50:50,745 - INFO - Table 3 for MHNL: 11r x 4c
+2026-06-12 15:50:50,746 - INFO - Table 4 for MHNL: 15r x 4c
+2026-06-12 15:50:50,747 - INFO - Table 5 for MHNL: 13r x 11c
+2026-06-12 15:51:41,267 - INFO - Found 5 tables for MKCL
+2026-06-12 15:51:41,275 - INFO - Table 3 for MKCL: 11r x 4c
+2026-06-12 15:51:41,276 - INFO - Table 4 for MKCL: 11r x 4c
+2026-06-12 15:51:41,278 - INFO - Table 5 for MKCL: 13r x 11c
+2026-06-12 15:52:31,721 - INFO - Found 5 tables for MKHC
+2026-06-12 15:52:31,729 - INFO - Table 3 for MKHC: 11r x 4c
+2026-06-12 15:52:31,730 - INFO - Table 4 for MKHC: 15r x 4c
+2026-06-12 15:52:31,732 - INFO - Table 5 for MKHC: 13r x 11c
+2026-06-12 15:53:21,669 - INFO - Found 5 tables for MKHL
+2026-06-12 15:53:21,677 - INFO - Table 3 for MKHL: 11r x 4c
+2026-06-12 15:53:21,678 - INFO - Table 4 for MKHL: 15r x 4c
+2026-06-12 15:53:21,680 - INFO - Table 5 for MKHL: 13r x 11c
+2026-06-12 15:54:11,194 - INFO - Found 5 tables for MKJC
+2026-06-12 15:54:11,203 - INFO - Table 3 for MKJC: 11r x 4c
+2026-06-12 15:54:11,204 - INFO - Table 4 for MKJC: 15r x 4c
+2026-06-12 15:54:11,205 - INFO - Table 5 for MKJC: 13r x 10c
+2026-06-12 15:55:00,805 - INFO - Found 5 tables for MLBBL
+2026-06-12 15:55:00,814 - INFO - Table 3 for MLBBL: 11r x 4c
+2026-06-12 15:55:00,815 - INFO - Table 4 for MLBBL: 11r x 4c
+2026-06-12 15:55:00,816 - INFO - Table 5 for MLBBL: 13r x 11c
+2026-06-12 15:55:50,644 - INFO - Found 5 tables for MLBL
+2026-06-12 15:55:50,652 - INFO - Table 3 for MLBL: 11r x 4c
+2026-06-12 15:55:50,653 - INFO - Table 4 for MLBL: 11r x 4c
+2026-06-12 15:55:50,654 - INFO - Table 5 for MLBL: 13r x 11c
+2026-06-12 15:56:41,317 - INFO - Found 5 tables for MLBS
+2026-06-12 15:56:41,325 - INFO - Table 3 for MLBS: 11r x 4c
+2026-06-12 15:56:41,326 - INFO - Table 4 for MLBS: 11r x 4c
+2026-06-12 15:56:41,327 - INFO - Table 5 for MLBS: 13r x 11c
+2026-06-12 15:57:31,521 - INFO - Found 5 tables for MLBSL
+2026-06-12 15:57:31,530 - INFO - Table 3 for MLBSL: 11r x 4c
+2026-06-12 15:57:31,531 - INFO - Table 4 for MLBSL: 11r x 4c
+2026-06-12 15:57:31,532 - INFO - Table 5 for MLBSL: 13r x 11c
+2026-06-12 15:58:21,337 - INFO - Found 5 tables for MMKJL
+2026-06-12 15:58:21,346 - INFO - Table 3 for MMKJL: 11r x 4c
+2026-06-12 15:58:21,347 - INFO - Table 4 for MMKJL: 15r x 4c
+2026-06-12 15:58:21,348 - INFO - Table 5 for MMKJL: 13r x 11c
+2026-06-12 15:59:11,057 - INFO - Found 5 tables for MNBBL
+2026-06-12 15:59:11,065 - INFO - Table 3 for MNBBL: 11r x 4c
+2026-06-12 15:59:11,066 - INFO - Table 4 for MNBBL: 11r x 4c
+2026-06-12 15:59:11,068 - INFO - Table 5 for MNBBL: 13r x 11c
+2026-06-12 16:00:01,496 - INFO - Found 5 tables for MPFL
+2026-06-12 16:00:01,504 - INFO - Table 3 for MPFL: 11r x 4c
+2026-06-12 16:00:01,505 - INFO - Table 4 for MPFL: 11r x 4c
+2026-06-12 16:00:01,507 - INFO - Table 5 for MPFL: 13r x 11c
+2026-06-12 16:00:51,923 - INFO - Found 5 tables for MSHL
+2026-06-12 16:00:51,931 - INFO - Table 3 for MSHL: 11r x 4c
+2026-06-12 16:00:51,932 - INFO - Table 4 for MSHL: 15r x 4c
+2026-06-12 16:00:51,933 - INFO - Table 5 for MSHL: 13r x 11c
+2026-06-12 16:01:42,218 - INFO - Found 5 tables for MSLB
+2026-06-12 16:01:42,226 - INFO - Table 3 for MSLB: 11r x 4c
+2026-06-12 16:01:42,227 - INFO - Table 4 for MSLB: 11r x 4c
+2026-06-12 16:01:42,228 - INFO - Table 5 for MSLB: 13r x 11c
+2026-06-12 16:02:32,420 - INFO - Found 5 tables for NABBC
+2026-06-12 16:02:32,428 - INFO - Table 3 for NABBC: 11r x 4c
+2026-06-12 16:02:32,429 - INFO - Table 4 for NABBC: 11r x 4c
+2026-06-12 16:02:32,431 - INFO - Table 5 for NABBC: 13r x 11c
+2026-06-12 16:03:22,843 - INFO - Found 5 tables for NABIL
+2026-06-12 16:03:22,851 - INFO - Table 3 for NABIL: 11r x 4c
+2026-06-12 16:03:22,852 - INFO - Table 4 for NABIL: 11r x 4c
+2026-06-12 16:03:22,853 - INFO - Table 5 for NABIL: 13r x 11c
+2026-06-12 16:04:13,189 - INFO - Found 5 tables for NADEP
+2026-06-12 16:04:13,198 - INFO - Table 3 for NADEP: 11r x 4c
+2026-06-12 16:04:13,199 - INFO - Table 4 for NADEP: 11r x 4c
+2026-06-12 16:04:13,200 - INFO - Table 5 for NADEP: 13r x 11c
+2026-06-12 16:05:03,853 - INFO - Found 5 tables for NBL
+2026-06-12 16:05:03,862 - INFO - Table 3 for NBL: 11r x 4c
+2026-06-12 16:05:03,862 - INFO - Table 4 for NBL: 11r x 4c
+2026-06-12 16:05:03,864 - INFO - Table 5 for NBL: 13r x 11c
+2026-06-12 16:05:54,307 - INFO - Found 5 tables for NESDO
+2026-06-12 16:05:54,316 - INFO - Table 3 for NESDO: 11r x 4c
+2026-06-12 16:05:54,317 - INFO - Table 4 for NESDO: 11r x 4c
+2026-06-12 16:05:54,318 - INFO - Table 5 for NESDO: 13r x 11c
+2026-06-12 16:06:44,523 - INFO - Found 5 tables for NFS
+2026-06-12 16:06:44,531 - INFO - Table 3 for NFS: 11r x 4c
+2026-06-12 16:06:44,532 - INFO - Table 4 for NFS: 11r x 4c
+2026-06-12 16:06:44,534 - INFO - Table 5 for NFS: 13r x 11c
+2026-06-12 16:07:34,758 - INFO - Found 5 tables for NGPL
+2026-06-12 16:07:34,766 - INFO - Table 3 for NGPL: 11r x 4c
+2026-06-12 16:07:34,767 - INFO - Table 4 for NGPL: 15r x 4c
+2026-06-12 16:07:34,769 - INFO - Table 5 for NGPL: 13r x 11c
+2026-06-12 16:08:25,156 - INFO - Found 5 tables for NHDL
+2026-06-12 16:08:25,165 - INFO - Table 3 for NHDL: 11r x 4c
+2026-06-12 16:08:25,166 - INFO - Table 4 for NHDL: 15r x 4c
+2026-06-12 16:08:25,167 - INFO - Table 5 for NHDL: 13r x 11c
+2026-06-12 16:09:15,626 - INFO - Found 5 tables for NHPC
+2026-06-12 16:09:15,634 - INFO - Table 3 for NHPC: 11r x 4c
+2026-06-12 16:09:15,635 - INFO - Table 4 for NHPC: 15r x 4c
+2026-06-12 16:09:15,637 - INFO - Table 5 for NHPC: 13r x 11c
+2026-06-12 16:10:06,101 - INFO - Found 5 tables for NICA
+2026-06-12 16:10:06,110 - INFO - Table 3 for NICA: 11r x 4c
+2026-06-12 16:10:06,111 - INFO - Table 4 for NICA: 11r x 4c
+2026-06-12 16:10:06,112 - INFO - Table 5 for NICA: 13r x 11c
+2026-06-12 16:10:56,628 - INFO - Found 5 tables for NICL
+2026-06-12 16:10:56,636 - INFO - Table 3 for NICL: 11r x 4c
+2026-06-12 16:10:56,637 - INFO - Table 4 for NICL: 11r x 4c
+2026-06-12 16:10:56,639 - INFO - Table 5 for NICL: 13r x 11c
+2026-06-12 16:11:46,646 - INFO - Found 5 tables for NICLBSL
+2026-06-12 16:11:46,654 - INFO - Table 3 for NICLBSL: 11r x 4c
+2026-06-12 16:11:46,655 - INFO - Table 4 for NICLBSL: 11r x 4c
+2026-06-12 16:11:46,656 - INFO - Table 5 for NICLBSL: 13r x 11c
+2026-06-12 16:12:36,547 - INFO - Found 5 tables for NIFRA
+2026-06-12 16:12:36,555 - INFO - Table 3 for NIFRA: 11r x 4c
+2026-06-12 16:12:36,556 - INFO - Table 4 for NIFRA: 11r x 4c
+2026-06-12 16:12:36,557 - INFO - Table 5 for NIFRA: 13r x 11c
+2026-06-12 16:13:27,185 - INFO - Found 5 tables for NIL
+2026-06-12 16:13:27,193 - INFO - Table 3 for NIL: 11r x 4c
+2026-06-12 16:13:27,194 - INFO - Table 4 for NIL: 11r x 4c
+2026-06-12 16:13:27,195 - INFO - Table 5 for NIL: 13r x 11c
+2026-06-12 16:14:16,937 - INFO - Found 5 tables for NIMB
+2026-06-12 16:14:16,945 - INFO - Table 3 for NIMB: 11r x 4c
+2026-06-12 16:14:16,946 - INFO - Table 4 for NIMB: 11r x 4c
+2026-06-12 16:14:16,947 - INFO - Table 5 for NIMB: 13r x 11c
+2026-06-12 16:15:07,515 - INFO - Found 5 tables for NLG
+2026-06-12 16:15:07,523 - INFO - Table 3 for NLG: 11r x 4c
+2026-06-12 16:15:07,524 - INFO - Table 4 for NLG: 11r x 4c
+2026-06-12 16:15:07,525 - INFO - Table 5 for NLG: 13r x 11c
+2026-06-12 16:15:57,242 - INFO - Found 5 tables for NLIC
+2026-06-12 16:15:57,250 - INFO - Table 3 for NLIC: 11r x 4c
+2026-06-12 16:15:57,251 - INFO - Table 4 for NLIC: 11r x 4c
+2026-06-12 16:15:57,252 - INFO - Table 5 for NLIC: 13r x 11c
+2026-06-12 16:16:47,436 - INFO - Found 5 tables for NLICL
+2026-06-12 16:16:47,445 - INFO - Table 3 for NLICL: 11r x 4c
+2026-06-12 16:16:47,446 - INFO - Table 4 for NLICL: 11r x 4c
+2026-06-12 16:16:47,447 - INFO - Table 5 for NLICL: 13r x 11c
+2026-06-12 16:17:37,647 - INFO - Found 5 tables for NLO
+2026-06-12 16:17:37,656 - INFO - Table 3 for NLO: 11r x 4c
+2026-06-12 16:17:37,657 - INFO - Table 4 for NLO: 11r x 4c
+2026-06-12 16:17:37,658 - INFO - Table 5 for NLO: 13r x 8c
+2026-06-12 16:18:27,483 - INFO - Found 5 tables for NMB
+2026-06-12 16:18:27,492 - INFO - Table 3 for NMB: 11r x 4c
+2026-06-12 16:18:27,493 - INFO - Table 4 for NMB: 11r x 4c
+2026-06-12 16:18:27,494 - INFO - Table 5 for NMB: 13r x 11c
+2026-06-12 16:19:18,045 - INFO - Found 5 tables for NMBMF
+2026-06-12 16:19:18,053 - INFO - Table 3 for NMBMF: 11r x 4c
+2026-06-12 16:19:18,054 - INFO - Table 4 for NMBMF: 11r x 4c
+2026-06-12 16:19:18,056 - INFO - Table 5 for NMBMF: 13r x 11c
+2026-06-12 16:20:08,833 - INFO - Found 5 tables for NMFBS
+2026-06-12 16:20:08,841 - INFO - Table 3 for NMFBS: 11r x 4c
+2026-06-12 16:20:08,842 - INFO - Table 4 for NMFBS: 11r x 4c
+2026-06-12 16:20:08,843 - INFO - Table 5 for NMFBS: 13r x 11c
+2026-06-12 16:20:59,353 - INFO - Found 5 tables for NMIC
+2026-06-12 16:20:59,361 - INFO - Table 3 for NMIC: 11r x 4c
+2026-06-12 16:20:59,362 - INFO - Table 4 for NMIC: 11r x 4c
+2026-06-12 16:20:59,363 - INFO - Table 5 for NMIC: 13r x 8c
+2026-06-12 16:21:49,278 - INFO - Found 5 tables for NMLBBL
+2026-06-12 16:21:49,286 - INFO - Table 3 for NMLBBL: 11r x 4c
+2026-06-12 16:21:49,287 - INFO - Table 4 for NMLBBL: 11r x 4c
+2026-06-12 16:21:49,289 - INFO - Table 5 for NMLBBL: 13r x 11c
+2026-06-12 16:22:39,128 - INFO - Found 5 tables for NRIC
+2026-06-12 16:22:39,137 - INFO - Table 3 for NRIC: 11r x 4c
+2026-06-12 16:22:39,138 - INFO - Table 4 for NRIC: 11r x 4c
+2026-06-12 16:22:39,140 - INFO - Table 5 for NRIC: 13r x 9c
+2026-06-12 16:23:29,819 - INFO - Found 5 tables for NRM
+2026-06-12 16:23:29,827 - INFO - Table 3 for NRM: 11r x 4c
+2026-06-12 16:23:29,828 - INFO - Table 4 for NRM: 11r x 4c
+2026-06-12 16:23:29,830 - INFO - Table 5 for NRM: 13r x 11c
+2026-06-12 16:24:20,242 - INFO - Found 5 tables for NRN
+2026-06-12 16:24:20,251 - INFO - Table 3 for NRN: 11r x 4c
+2026-06-12 16:24:20,252 - INFO - Table 4 for NRN: 11r x 4c
+2026-06-12 16:24:20,253 - INFO - Table 5 for NRN: 13r x 11c
+2026-06-12 16:25:10,880 - INFO - Found 5 tables for NTC
+2026-06-12 16:25:10,889 - INFO - Table 3 for NTC: 11r x 4c
+2026-06-12 16:25:10,890 - INFO - Table 4 for NTC: 11r x 4c
+2026-06-12 16:25:10,891 - INFO - Table 5 for NTC: 13r x 11c
+2026-06-12 16:26:00,547 - INFO - Found 5 tables for NUBL
+2026-06-12 16:26:00,555 - INFO - Table 3 for NUBL: 11r x 4c
+2026-06-12 16:26:00,556 - INFO - Table 4 for NUBL: 11r x 4c
+2026-06-12 16:26:00,558 - INFO - Table 5 for NUBL: 13r x 11c
+2026-06-12 16:26:51,154 - INFO - Found 5 tables for NWCL
+2026-06-12 16:26:51,162 - INFO - Table 3 for NWCL: 11r x 4c
+2026-06-12 16:26:51,163 - INFO - Table 4 for NWCL: 11r x 4c
+2026-06-12 16:26:51,164 - INFO - Table 5 for NWCL: 13r x 11c
+2026-06-12 16:27:53,197 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=NYADI: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=NYADI", waiting until "networkidle"
+
+2026-06-12 16:28:43,551 - INFO - Found 5 tables for OHL
+2026-06-12 16:28:43,559 - INFO - Table 3 for OHL: 11r x 4c
+2026-06-12 16:28:43,560 - INFO - Table 4 for OHL: 11r x 4c
+2026-06-12 16:28:43,562 - INFO - Table 5 for OHL: 13r x 11c
+2026-06-12 16:29:33,447 - INFO - Found 5 tables for OMPL
+2026-06-12 16:29:33,455 - INFO - Table 3 for OMPL: 11r x 4c
+2026-06-12 16:29:33,456 - INFO - Table 4 for OMPL: 11r x 4c
+2026-06-12 16:29:33,458 - INFO - Table 5 for OMPL: 13r x 8c
+2026-06-12 16:30:24,043 - INFO - Found 5 tables for PCBL
+2026-06-12 16:30:24,051 - INFO - Table 3 for PCBL: 11r x 4c
+2026-06-12 16:30:24,052 - INFO - Table 4 for PCBL: 11r x 4c
+2026-06-12 16:30:24,053 - INFO - Table 5 for PCBL: 13r x 11c
+2026-06-12 16:31:26,085 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=PFL: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=PFL", waiting until "networkidle"
+
+2026-06-12 16:32:15,641 - INFO - Found 5 tables for PHCL
+2026-06-12 16:32:15,649 - INFO - Table 3 for PHCL: 11r x 4c
+2026-06-12 16:32:15,650 - INFO - Table 4 for PHCL: 15r x 4c
+2026-06-12 16:32:15,652 - INFO - Table 5 for PHCL: 13r x 11c
+2026-06-12 16:33:05,359 - INFO - Found 5 tables for PMHPL
+2026-06-12 16:33:05,367 - INFO - Table 3 for PMHPL: 11r x 4c
+2026-06-12 16:33:05,368 - INFO - Table 4 for PMHPL: 15r x 4c
+2026-06-12 16:33:05,369 - INFO - Table 5 for PMHPL: 13r x 11c
+2026-06-12 16:33:55,825 - INFO - Found 5 tables for PMLI
+2026-06-12 16:33:55,836 - INFO - Table 3 for PMLI: 11r x 4c
+2026-06-12 16:33:55,837 - INFO - Table 4 for PMLI: 11r x 4c
+2026-06-12 16:33:55,838 - INFO - Table 5 for PMLI: 13r x 11c
+2026-06-12 16:34:45,840 - INFO - Found 5 tables for PPCL
+2026-06-12 16:34:45,848 - INFO - Table 3 for PPCL: 11r x 4c
+2026-06-12 16:34:45,849 - INFO - Table 4 for PPCL: 15r x 4c
+2026-06-12 16:34:45,850 - INFO - Table 5 for PPCL: 13r x 11c
+2026-06-12 16:35:36,141 - INFO - Found 5 tables for PPL
+2026-06-12 16:35:36,149 - INFO - Table 3 for PPL: 11r x 4c
+2026-06-12 16:35:36,150 - INFO - Table 4 for PPL: 15r x 4c
+2026-06-12 16:35:36,151 - INFO - Table 5 for PPL: 13r x 11c
+2026-06-12 16:36:25,880 - INFO - Found 5 tables for PRIN
+2026-06-12 16:36:25,888 - INFO - Table 3 for PRIN: 11r x 4c
+2026-06-12 16:36:25,889 - INFO - Table 4 for PRIN: 11r x 4c
+2026-06-12 16:36:25,890 - INFO - Table 5 for PRIN: 13r x 11c
+2026-06-12 16:37:15,635 - INFO - Found 5 tables for PROFL
+2026-06-12 16:37:15,643 - INFO - Table 3 for PROFL: 11r x 4c
+2026-06-12 16:37:15,644 - INFO - Table 4 for PROFL: 11r x 4c
+2026-06-12 16:37:15,645 - INFO - Table 5 for PROFL: 13r x 11c
+2026-06-12 16:38:05,297 - INFO - Found 5 tables for PRVU
+2026-06-12 16:38:05,305 - INFO - Table 3 for PRVU: 11r x 4c
+2026-06-12 16:38:05,306 - INFO - Table 4 for PRVU: 11r x 4c
+2026-06-12 16:38:05,307 - INFO - Table 5 for PRVU: 13r x 11c
+2026-06-12 16:38:55,655 - INFO - Found 5 tables for PURE
+2026-06-12 16:38:55,663 - INFO - Table 3 for PURE: 11r x 4c
+2026-06-12 16:38:55,664 - INFO - Table 4 for PURE: 15r x 4c
+2026-06-12 16:38:55,665 - INFO - Table 5 for PURE: 13r x 7c
+2026-06-12 16:39:46,087 - INFO - Found 5 tables for RADHI
+2026-06-12 16:39:46,095 - INFO - Table 3 for RADHI: 11r x 4c
+2026-06-12 16:39:46,096 - INFO - Table 4 for RADHI: 15r x 4c
+2026-06-12 16:39:46,098 - INFO - Table 5 for RADHI: 13r x 11c
+2026-06-12 16:40:36,056 - INFO - Found 5 tables for RAWA
+2026-06-12 16:40:36,065 - INFO - Table 3 for RAWA: 11r x 4c
+2026-06-12 16:40:36,066 - INFO - Table 4 for RAWA: 15r x 4c
+2026-06-12 16:40:36,067 - INFO - Table 5 for RAWA: 13r x 11c
+2026-06-12 16:41:26,293 - INFO - Found 5 tables for RBCL
+2026-06-12 16:41:26,300 - INFO - Table 3 for RBCL: 11r x 4c
+2026-06-12 16:41:26,301 - INFO - Table 4 for RBCL: 11r x 4c
+2026-06-12 16:41:26,302 - INFO - Table 5 for RBCL: 13r x 11c
+2026-06-12 16:42:16,682 - INFO - Found 5 tables for RFPL
+2026-06-12 16:42:16,689 - INFO - Table 3 for RFPL: 11r x 4c
+2026-06-12 16:42:16,690 - INFO - Table 4 for RFPL: 15r x 4c
+2026-06-12 16:42:16,692 - INFO - Table 5 for RFPL: 13r x 10c
+2026-06-12 16:43:06,254 - INFO - Found 5 tables for RHGCL
+2026-06-12 16:43:06,262 - INFO - Table 3 for RHGCL: 11r x 4c
+2026-06-12 16:43:06,263 - INFO - Table 4 for RHGCL: 15r x 4c
+2026-06-12 16:43:06,264 - INFO - Table 5 for RHGCL: 13r x 11c
+2026-06-12 16:43:55,946 - INFO - Found 5 tables for RHPL
+2026-06-12 16:43:55,955 - INFO - Table 3 for RHPL: 11r x 4c
+2026-06-12 16:43:55,956 - INFO - Table 4 for RHPL: 15r x 4c
+2026-06-12 16:43:55,957 - INFO - Table 5 for RHPL: 13r x 11c
+2026-06-12 16:44:46,224 - INFO - Found 5 tables for RIDI
+2026-06-12 16:44:46,232 - INFO - Table 3 for RIDI: 11r x 4c
+2026-06-12 16:44:46,233 - INFO - Table 4 for RIDI: 15r x 4c
+2026-06-12 16:44:46,234 - INFO - Table 5 for RIDI: 13r x 11c
+2026-06-12 16:45:36,732 - INFO - Found 5 tables for RLFL
+2026-06-12 16:45:36,741 - INFO - Table 3 for RLFL: 11r x 4c
+2026-06-12 16:45:36,741 - INFO - Table 4 for RLFL: 11r x 4c
+2026-06-12 16:45:36,743 - INFO - Table 5 for RLFL: 13r x 11c
+2026-06-12 16:46:26,931 - INFO - Found 5 tables for RNLI
+2026-06-12 16:46:26,939 - INFO - Table 3 for RNLI: 11r x 4c
+2026-06-12 16:46:26,940 - INFO - Table 4 for RNLI: 11r x 4c
+2026-06-12 16:46:26,942 - INFO - Table 5 for RNLI: 13r x 11c
+2026-06-12 16:47:16,751 - INFO - Found 5 tables for RSDC
+2026-06-12 16:47:16,759 - INFO - Table 3 for RSDC: 11r x 4c
+2026-06-12 16:47:16,760 - INFO - Table 4 for RSDC: 11r x 4c
+2026-06-12 16:47:16,762 - INFO - Table 5 for RSDC: 13r x 11c
+2026-06-12 16:48:06,427 - INFO - Found 5 tables for RURU
+2026-06-12 16:48:06,436 - INFO - Table 3 for RURU: 11r x 4c
+2026-06-12 16:48:06,437 - INFO - Table 4 for RURU: 15r x 4c
+2026-06-12 16:48:06,438 - INFO - Table 5 for RURU: 13r x 11c
+2026-06-12 16:49:08,473 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=SADBL: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=SADBL", waiting until "networkidle"
+
+2026-06-12 16:49:58,880 - INFO - Found 5 tables for SAHAS
+2026-06-12 16:49:58,889 - INFO - Table 3 for SAHAS: 11r x 4c
+2026-06-12 16:49:58,890 - INFO - Table 4 for SAHAS: 15r x 4c
+2026-06-12 16:49:58,891 - INFO - Table 5 for SAHAS: 13r x 11c
+2026-06-12 16:50:48,810 - INFO - Found 5 tables for SALICO
+2026-06-12 16:50:48,818 - INFO - Table 3 for SALICO: 11r x 4c
+2026-06-12 16:50:48,819 - INFO - Table 4 for SALICO: 11r x 4c
+2026-06-12 16:50:48,821 - INFO - Table 5 for SALICO: 13r x 11c
+2026-06-12 16:51:39,084 - INFO - Found 5 tables for SAMAJ
+2026-06-12 16:51:39,092 - INFO - Table 3 for SAMAJ: 11r x 4c
+2026-06-12 16:51:39,093 - INFO - Table 4 for SAMAJ: 11r x 4c
+2026-06-12 16:51:39,095 - INFO - Table 5 for SAMAJ: 13r x 8c
+2026-06-12 16:52:28,744 - INFO - Found 5 tables for SANIMA
+2026-06-12 16:52:28,753 - INFO - Table 3 for SANIMA: 11r x 4c
+2026-06-12 16:52:28,754 - INFO - Table 4 for SANIMA: 11r x 4c
+2026-06-12 16:52:28,755 - INFO - Table 5 for SANIMA: 13r x 11c
+2026-06-12 16:53:18,304 - INFO - Found 5 tables for SANVI
+2026-06-12 16:53:18,312 - INFO - Table 3 for SANVI: 11r x 4c
+2026-06-12 16:53:18,313 - INFO - Table 4 for SANVI: 15r x 4c
+2026-06-12 16:53:18,314 - INFO - Table 5 for SANVI: 13r x 7c
+2026-06-12 16:54:08,709 - INFO - Found 5 tables for SAPDBL
+2026-06-12 16:54:08,718 - INFO - Table 3 for SAPDBL: 11r x 4c
+2026-06-12 16:54:08,719 - INFO - Table 4 for SAPDBL: 11r x 4c
+2026-06-12 16:54:08,720 - INFO - Table 5 for SAPDBL: 13r x 11c
+2026-06-12 16:55:10,755 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=SARBTM: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=SARBTM", waiting until "networkidle"
+
+2026-06-12 16:56:01,321 - INFO - Found 5 tables for SBI
+2026-06-12 16:56:01,329 - INFO - Table 3 for SBI: 11r x 4c
+2026-06-12 16:56:01,330 - INFO - Table 4 for SBI: 11r x 4c
+2026-06-12 16:56:01,332 - INFO - Table 5 for SBI: 13r x 11c
+2026-06-12 16:56:51,100 - INFO - Found 5 tables for SBL
+2026-06-12 16:56:51,108 - INFO - Table 3 for SBL: 11r x 4c
+2026-06-12 16:56:51,109 - INFO - Table 4 for SBL: 11r x 4c
+2026-06-12 16:56:51,111 - INFO - Table 5 for SBL: 13r x 11c
+2026-06-12 16:57:42,652 - INFO - Found 5 tables for SCB
+2026-06-12 16:57:42,660 - INFO - Table 3 for SCB: 11r x 4c
+2026-06-12 16:57:42,661 - INFO - Table 4 for SCB: 11r x 4c
+2026-06-12 16:57:42,663 - INFO - Table 5 for SCB: 13r x 11c
+2026-06-12 16:58:32,791 - INFO - Found 5 tables for SFCL
+2026-06-12 16:58:32,799 - INFO - Table 3 for SFCL: 11r x 4c
+2026-06-12 16:58:32,800 - INFO - Table 4 for SFCL: 11r x 4c
+2026-06-12 16:58:32,802 - INFO - Table 5 for SFCL: 13r x 11c
+2026-06-12 16:59:34,833 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=SGHC: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=SGHC", waiting until "networkidle"
+
+2026-06-12 17:00:24,624 - INFO - Found 5 tables for SGIC
+2026-06-12 17:00:24,632 - INFO - Table 3 for SGIC: 11r x 4c
+2026-06-12 17:00:24,633 - INFO - Table 4 for SGIC: 11r x 4c
+2026-06-12 17:00:24,634 - INFO - Table 5 for SGIC: 13r x 11c
+2026-06-12 17:01:15,029 - INFO - Found 5 tables for SHEL
+2026-06-12 17:01:15,037 - INFO - Table 3 for SHEL: 11r x 4c
+2026-06-12 17:01:15,038 - INFO - Table 4 for SHEL: 15r x 4c
+2026-06-12 17:01:15,040 - INFO - Table 5 for SHEL: 13r x 11c
+2026-06-12 17:02:04,971 - INFO - Found 5 tables for SHINE
+2026-06-12 17:02:04,979 - INFO - Table 3 for SHINE: 11r x 4c
+2026-06-12 17:02:04,980 - INFO - Table 4 for SHINE: 11r x 4c
+2026-06-12 17:02:04,982 - INFO - Table 5 for SHINE: 13r x 11c
+2026-06-12 17:02:55,474 - INFO - Found 5 tables for SHIVM
+2026-06-12 17:02:55,482 - INFO - Table 3 for SHIVM: 11r x 4c
+2026-06-12 17:02:55,483 - INFO - Table 4 for SHIVM: 11r x 4c
+2026-06-12 17:02:55,485 - INFO - Table 5 for SHIVM: 13r x 11c
+2026-06-12 17:03:57,516 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=SHL: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=SHL", waiting until "networkidle"
+
+2026-06-12 17:04:59,553 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=SHLB: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=SHLB", waiting until "networkidle"
+
+2026-06-12 17:06:01,592 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=SHPC: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=SHPC", waiting until "networkidle"
+
+2026-06-12 17:06:51,128 - INFO - Found 5 tables for SICL
+2026-06-12 17:06:51,136 - INFO - Table 3 for SICL: 11r x 4c
+2026-06-12 17:06:51,137 - INFO - Table 4 for SICL: 11r x 4c
+2026-06-12 17:06:51,139 - INFO - Table 5 for SICL: 13r x 11c
+2026-06-12 17:07:53,171 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=SIFC: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=SIFC", waiting until "networkidle"
+
+2026-06-12 17:08:43,870 - INFO - Found 5 tables for SIKLES
+2026-06-12 17:08:43,878 - INFO - Table 3 for SIKLES: 11r x 4c
+2026-06-12 17:08:43,880 - INFO - Table 4 for SIKLES: 15r x 4c
+2026-06-12 17:08:43,881 - INFO - Table 5 for SIKLES: 13r x 11c
+2026-06-12 17:09:34,452 - INFO - Found 5 tables for SINDU
+2026-06-12 17:09:34,461 - INFO - Table 3 for SINDU: 11r x 4c
+2026-06-12 17:09:34,461 - INFO - Table 4 for SINDU: 11r x 4c
+2026-06-12 17:09:34,463 - INFO - Table 5 for SINDU: 13r x 11c
+2026-06-12 17:10:24,023 - INFO - Found 5 tables for SJCL
+2026-06-12 17:10:24,031 - INFO - Table 3 for SJCL: 11r x 4c
+2026-06-12 17:10:24,032 - INFO - Table 4 for SJCL: 15r x 4c
+2026-06-12 17:10:24,034 - INFO - Table 5 for SJCL: 13r x 11c
+2026-06-12 17:11:14,485 - INFO - Found 5 tables for SJLIC
+2026-06-12 17:11:14,494 - INFO - Table 3 for SJLIC: 11r x 4c
+2026-06-12 17:11:14,495 - INFO - Table 4 for SJLIC: 11r x 4c
+2026-06-12 17:11:14,496 - INFO - Table 5 for SJLIC: 13r x 11c
+2026-06-12 17:12:06,208 - INFO - Found 5 tables for SKBBL
+2026-06-12 17:12:06,217 - INFO - Table 3 for SKBBL: 11r x 4c
+2026-06-12 17:12:06,217 - INFO - Table 4 for SKBBL: 11r x 4c
+2026-06-12 17:12:06,219 - INFO - Table 5 for SKBBL: 13r x 11c
+2026-06-12 17:12:55,882 - INFO - Found 5 tables for SLBBL
+2026-06-12 17:12:55,890 - INFO - Table 3 for SLBBL: 11r x 4c
+2026-06-12 17:12:55,891 - INFO - Table 4 for SLBBL: 11r x 4c
+2026-06-12 17:12:55,892 - INFO - Table 5 for SLBBL: 13r x 11c
+2026-06-12 17:13:46,621 - INFO - Found 5 tables for SLBSL
+2026-06-12 17:13:46,630 - INFO - Table 3 for SLBSL: 11r x 4c
+2026-06-12 17:13:46,631 - INFO - Table 4 for SLBSL: 11r x 4c
+2026-06-12 17:13:46,632 - INFO - Table 5 for SLBSL: 13r x 11c
+2026-06-12 17:14:36,208 - INFO - Found 5 tables for SMATA
+2026-06-12 17:14:36,217 - INFO - Table 3 for SMATA: 11r x 4c
+2026-06-12 17:14:36,218 - INFO - Table 4 for SMATA: 11r x 4c
+2026-06-12 17:14:36,220 - INFO - Table 5 for SMATA: 13r x 11c
+2026-06-12 17:15:25,850 - INFO - Found 5 tables for SMB
+2026-06-12 17:15:25,859 - INFO - Table 3 for SMB: 11r x 4c
+2026-06-12 17:15:25,860 - INFO - Table 4 for SMB: 11r x 4c
+2026-06-12 17:15:25,861 - INFO - Table 5 for SMB: 13r x 11c
+2026-06-12 17:16:16,534 - INFO - Found 5 tables for SMFBS
+2026-06-12 17:16:16,544 - INFO - Table 3 for SMFBS: 11r x 4c
+2026-06-12 17:16:16,545 - INFO - Table 4 for SMFBS: 11r x 4c
+2026-06-12 17:16:16,546 - INFO - Table 5 for SMFBS: 13r x 11c
+2026-06-12 17:17:06,578 - INFO - Found 5 tables for SMH
+2026-06-12 17:17:06,587 - INFO - Table 3 for SMH: 11r x 4c
+2026-06-12 17:17:06,588 - INFO - Table 4 for SMH: 15r x 4c
+2026-06-12 17:17:06,590 - INFO - Table 5 for SMH: 13r x 11c
+2026-06-12 17:17:57,123 - INFO - Found 5 tables for SMHL
+2026-06-12 17:17:57,132 - INFO - Table 3 for SMHL: 11r x 4c
+2026-06-12 17:17:57,133 - INFO - Table 4 for SMHL: 15r x 4c
+2026-06-12 17:17:57,135 - INFO - Table 5 for SMHL: 13r x 11c
+2026-06-12 17:18:47,892 - INFO - Found 5 tables for SMJC
+2026-06-12 17:18:47,902 - INFO - Table 3 for SMJC: 11r x 4c
+2026-06-12 17:18:47,903 - INFO - Table 4 for SMJC: 15r x 4c
+2026-06-12 17:18:47,905 - INFO - Table 5 for SMJC: 13r x 11c
+2026-06-12 17:19:37,459 - INFO - Found 5 tables for SMPDA
+2026-06-12 17:19:37,467 - INFO - Table 3 for SMPDA: 11r x 4c
+2026-06-12 17:19:37,468 - INFO - Table 4 for SMPDA: 11r x 4c
+2026-06-12 17:19:37,469 - INFO - Table 5 for SMPDA: 13r x 11c
+2026-06-12 17:20:27,732 - INFO - Found 5 tables for SNLI
+2026-06-12 17:20:27,740 - INFO - Table 3 for SNLI: 11r x 4c
+2026-06-12 17:20:27,741 - INFO - Table 4 for SNLI: 11r x 4c
+2026-06-12 17:20:27,743 - INFO - Table 5 for SNLI: 13r x 11c
+2026-06-12 17:21:18,094 - INFO - Found 5 tables for SONA
+2026-06-12 17:21:18,102 - INFO - Table 3 for SONA: 11r x 4c
+2026-06-12 17:21:18,103 - INFO - Table 4 for SONA: 11r x 4c
+2026-06-12 17:21:18,105 - INFO - Table 5 for SONA: 13r x 11c
+2026-06-12 17:22:08,872 - INFO - Found 5 tables for SPC
+2026-06-12 17:22:08,881 - INFO - Table 3 for SPC: 11r x 4c
+2026-06-12 17:22:08,882 - INFO - Table 4 for SPC: 15r x 4c
+2026-06-12 17:22:08,883 - INFO - Table 5 for SPC: 13r x 11c
+2026-06-12 17:23:10,917 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=SPDL: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=SPDL", waiting until "networkidle"
+
+2026-06-12 17:24:00,476 - INFO - Found 5 tables for SPHL
+2026-06-12 17:24:00,484 - INFO - Table 3 for SPHL: 11r x 4c
+2026-06-12 17:24:00,485 - INFO - Table 4 for SPHL: 15r x 4c
+2026-06-12 17:24:00,486 - INFO - Table 5 for SPHL: 13r x 11c
+2026-06-12 17:24:50,780 - INFO - Found 5 tables for SPIL
+2026-06-12 17:24:50,788 - INFO - Table 3 for SPIL: 11r x 4c
+2026-06-12 17:24:50,789 - INFO - Table 4 for SPIL: 11r x 4c
+2026-06-12 17:24:50,791 - INFO - Table 5 for SPIL: 13r x 11c
+2026-06-12 17:25:52,824 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=SPL: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=SPL", waiting until "networkidle"
+
+2026-06-12 17:26:43,357 - INFO - Found 5 tables for SRLI
+2026-06-12 17:26:43,366 - INFO - Table 3 for SRLI: 11r x 4c
+2026-06-12 17:26:43,367 - INFO - Table 4 for SRLI: 11r x 4c
+2026-06-12 17:26:43,368 - INFO - Table 5 for SRLI: 13r x 11c
+2026-06-12 17:27:33,285 - INFO - Found 5 tables for SSHL
+2026-06-12 17:27:33,293 - INFO - Table 3 for SSHL: 11r x 4c
+2026-06-12 17:27:33,294 - INFO - Table 4 for SSHL: 15r x 4c
+2026-06-12 17:27:33,296 - INFO - Table 5 for SSHL: 13r x 10c
+2026-06-12 17:28:35,328 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=STC: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=STC", waiting until "networkidle"
+
+2026-06-12 17:29:25,806 - INFO - Found 5 tables for SWBBL
+2026-06-12 17:29:25,814 - INFO - Table 3 for SWBBL: 11r x 4c
+2026-06-12 17:29:25,815 - INFO - Table 4 for SWBBL: 11r x 4c
+2026-06-12 17:29:25,817 - INFO - Table 5 for SWBBL: 13r x 11c
+2026-06-12 17:30:16,249 - INFO - Found 5 tables for SWMF
+2026-06-12 17:30:16,258 - INFO - Table 3 for SWMF: 11r x 4c
+2026-06-12 17:30:16,259 - INFO - Table 4 for SWMF: 11r x 4c
+2026-06-12 17:30:16,260 - INFO - Table 5 for SWMF: 13r x 11c
+2026-06-12 17:31:05,928 - INFO - Found 5 tables for TAMOR
+2026-06-12 17:31:05,936 - INFO - Table 3 for TAMOR: 11r x 4c
+2026-06-12 17:31:05,937 - INFO - Table 4 for TAMOR: 15r x 4c
+2026-06-12 17:31:05,939 - INFO - Table 5 for TAMOR: 13r x 11c
+2026-06-12 17:31:56,403 - INFO - Found 5 tables for TPC
+2026-06-12 17:31:56,412 - INFO - Table 3 for TPC: 11r x 4c
+2026-06-12 17:31:56,413 - INFO - Table 4 for TPC: 15r x 4c
+2026-06-12 17:31:56,415 - INFO - Table 5 for TPC: 13r x 11c
+2026-06-12 17:32:46,340 - INFO - Found 5 tables for TRH
+2026-06-12 17:32:46,349 - INFO - Table 3 for TRH: 11r x 4c
+2026-06-12 17:32:46,350 - INFO - Table 4 for TRH: 11r x 4c
+2026-06-12 17:32:46,351 - INFO - Table 5 for TRH: 13r x 11c
+2026-06-12 17:33:36,864 - INFO - Found 5 tables for TSHL
+2026-06-12 17:33:36,872 - INFO - Table 3 for TSHL: 11r x 4c
+2026-06-12 17:33:36,873 - INFO - Table 4 for TSHL: 15r x 4c
+2026-06-12 17:33:36,875 - INFO - Table 5 for TSHL: 13r x 11c
+2026-06-12 17:34:26,662 - INFO - Found 5 tables for TTL
+2026-06-12 17:34:26,671 - INFO - Table 3 for TTL: 11r x 4c
+2026-06-12 17:34:26,672 - INFO - Table 4 for TTL: 11r x 4c
+2026-06-12 17:34:26,673 - INFO - Table 5 for TTL: 13r x 7c
+2026-06-12 17:35:18,932 - INFO - Found 5 tables for TVCL
+2026-06-12 17:35:18,941 - INFO - Table 3 for TVCL: 11r x 4c
+2026-06-12 17:35:18,942 - INFO - Table 4 for TVCL: 15r x 4c
+2026-06-12 17:35:18,943 - INFO - Table 5 for TVCL: 13r x 11c
+2026-06-12 17:36:09,046 - INFO - Found 5 tables for UAIL
+2026-06-12 17:36:09,055 - INFO - Table 3 for UAIL: 11r x 4c
+2026-06-12 17:36:09,056 - INFO - Table 4 for UAIL: 11r x 4c
+2026-06-12 17:36:09,057 - INFO - Table 5 for UAIL: 13r x 11c
+2026-06-12 17:36:59,543 - INFO - Found 5 tables for UHEWA
+2026-06-12 17:36:59,552 - INFO - Table 3 for UHEWA: 11r x 4c
+2026-06-12 17:36:59,553 - INFO - Table 4 for UHEWA: 15r x 4c
+2026-06-12 17:36:59,554 - INFO - Table 5 for UHEWA: 13r x 11c
+2026-06-12 17:37:49,096 - INFO - Found 5 tables for ULBSL
+2026-06-12 17:37:49,105 - INFO - Table 3 for ULBSL: 11r x 4c
+2026-06-12 17:37:49,105 - INFO - Table 4 for ULBSL: 11r x 4c
+2026-06-12 17:37:49,107 - INFO - Table 5 for ULBSL: 13r x 11c
+2026-06-12 17:38:39,592 - INFO - Found 5 tables for ULHC
+2026-06-12 17:38:39,601 - INFO - Table 3 for ULHC: 11r x 4c
+2026-06-12 17:38:39,602 - INFO - Table 4 for ULHC: 15r x 4c
+2026-06-12 17:38:39,603 - INFO - Table 5 for ULHC: 13r x 10c
+2026-06-12 17:39:29,952 - INFO - Found 5 tables for UMHL
+2026-06-12 17:39:29,960 - INFO - Table 3 for UMHL: 11r x 4c
+2026-06-12 17:39:29,961 - INFO - Table 4 for UMHL: 15r x 4c
+2026-06-12 17:39:29,964 - INFO - Table 5 for UMHL: 13r x 11c
+2026-06-12 17:40:20,540 - INFO - Found 5 tables for UMRH
+2026-06-12 17:40:20,548 - INFO - Table 3 for UMRH: 11r x 4c
+2026-06-12 17:40:20,549 - INFO - Table 4 for UMRH: 15r x 4c
+2026-06-12 17:40:20,551 - INFO - Table 5 for UMRH: 13r x 11c
+2026-06-12 17:41:10,122 - INFO - Found 5 tables for UNHPL
+2026-06-12 17:41:10,130 - INFO - Table 3 for UNHPL: 11r x 4c
+2026-06-12 17:41:10,131 - INFO - Table 4 for UNHPL: 15r x 4c
+2026-06-12 17:41:10,133 - INFO - Table 5 for UNHPL: 13r x 11c
+2026-06-12 17:42:00,721 - INFO - Found 5 tables for UNL
+2026-06-12 17:42:00,730 - INFO - Table 3 for UNL: 11r x 4c
+2026-06-12 17:42:00,731 - INFO - Table 4 for UNL: 11r x 4c
+2026-06-12 17:42:00,732 - INFO - Table 5 for UNL: 13r x 11c
+2026-06-12 17:42:51,141 - INFO - Found 5 tables for UNLB
+2026-06-12 17:42:51,149 - INFO - Table 3 for UNLB: 11r x 4c
+2026-06-12 17:42:51,150 - INFO - Table 4 for UNLB: 11r x 4c
+2026-06-12 17:42:51,152 - INFO - Table 5 for UNLB: 13r x 11c
+2026-06-12 17:43:53,187 - ERROR - Playwright fetch error for https://nepsealpha.com/search?q=UPCL: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://nepsealpha.com/search?q=UPCL", waiting until "networkidle"
+
+2026-06-12 17:44:43,457 - INFO - Found 5 tables for UPPER
+2026-06-12 17:44:43,465 - INFO - Table 3 for UPPER: 11r x 4c
+2026-06-12 17:44:43,466 - INFO - Table 4 for UPPER: 15r x 4c
+2026-06-12 17:44:43,468 - INFO - Table 5 for UPPER: 13r x 11c
+2026-06-12 17:45:34,069 - INFO - Found 5 tables for USHEC
+2026-06-12 17:45:34,077 - INFO - Table 3 for USHEC: 11r x 4c
+2026-06-12 17:45:34,078 - INFO - Table 4 for USHEC: 15r x 4c
+2026-06-12 17:45:34,079 - INFO - Table 5 for USHEC: 13r x 11c
+2026-06-12 17:46:24,029 - INFO - Found 5 tables for USHL
+2026-06-12 17:46:24,038 - INFO - Table 3 for USHL: 11r x 4c
+2026-06-12 17:46:24,039 - INFO - Table 4 for USHL: 15r x 4c
+2026-06-12 17:46:24,040 - INFO - Table 5 for USHL: 13r x 11c
+2026-06-12 17:47:13,984 - INFO - Found 5 tables for USLB
+2026-06-12 17:47:13,993 - INFO - Table 3 for USLB: 11r x 4c
+2026-06-12 17:47:13,994 - INFO - Table 4 for USLB: 11r x 4c
+2026-06-12 17:47:13,995 - INFO - Table 5 for USLB: 13r x 11c
+2026-06-12 17:48:03,915 - INFO - Found 5 tables for VLBS
+2026-06-12 17:48:03,924 - INFO - Table 3 for VLBS: 11r x 4c
+2026-06-12 17:48:03,925 - INFO - Table 4 for VLBS: 11r x 4c
+2026-06-12 17:48:03,926 - INFO - Table 5 for VLBS: 13r x 11c
+2026-06-12 17:48:54,421 - INFO - Found 5 tables for VLUCL
+2026-06-12 17:48:54,429 - INFO - Table 3 for VLUCL: 11r x 4c
+2026-06-12 17:48:54,430 - INFO - Table 4 for VLUCL: 15r x 4c
+2026-06-12 17:48:54,432 - INFO - Table 5 for VLUCL: 13r x 11c
+2026-06-12 17:49:44,869 - INFO - Found 5 tables for WNLB
+2026-06-12 17:49:44,877 - INFO - Table 3 for WNLB: 11r x 4c
+2026-06-12 17:49:44,878 - INFO - Table 4 for WNLB: 11r x 4c
+2026-06-12 17:49:44,879 - INFO - Table 5 for WNLB: 13r x 11c
+2026-06-12 17:49:48,506 - INFO - CSV saved: Link_Attributes.csv
+2026-06-12 17:49:48,561 - INFO - CSV saved: Link_Additional.csv
+2026-06-12 17:49:49,858 - INFO - Dashboard saved: index.html
