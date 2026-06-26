@@ -67,16 +67,16 @@ tr:hover td{background:var(--surface2)}
     <h1>📊 NEPSE Stock Analyzer</h1>
     <div class="subtitle">Fundamental + Technical scoring across all scraped NEPSE stocks</div>
   </div>
-  <div class="updated">🕐 Last updated<br/>2026-06-24 16:50:07 NPT</div>
+  <div class="updated">🕐 Last updated<br/>2026-06-26 14:26:48 NPT</div>
 </div>
 <div class="container">
   <div class="stats">
-    <div class="stat green"><div class="val">250</div><div class="lbl">Stocks Analyzed</div></div>
+    <div class="stat green"><div class="val">251</div><div class="lbl">Stocks Analyzed</div></div>
     <div class="stat green"><div class="val">0</div><div class="lbl">Strong Buy</div></div>
     <div class="stat blue"><div class="val">0</div><div class="lbl">Buy</div></div>
     <div class="stat orange"><div class="val">0</div><div class="lbl">Hold</div></div>
     <div class="stat purple"><div class="val">28</div><div class="lbl">Watch</div></div>
-    <div class="stat red"><div class="val">222</div><div class="lbl">Avoid</div></div>
+    <div class="stat red"><div class="val">223</div><div class="lbl">Avoid</div></div>
   </div>
   <div class="section-title">🏆 Top 10 Stock Picks</div>
   <div class="cards">
@@ -232,12 +232,12 @@ tr:hover td{background:var(--surface2)}
   </div>
   <div class="filters">
     <input id="search" type="text" placeholder="🔍 Search symbol..."/>
-    <button class="filter-btn active" onclick="filterTable('all',this)">All (250)</button>
+    <button class="filter-btn active" onclick="filterTable('all',this)">All (251)</button>
     <button class="filter-btn" onclick="filterTable('strong-buy',this)">Strong Buy (0)</button>
     <button class="filter-btn" onclick="filterTable('buy',this)">Buy (0)</button>
     <button class="filter-btn" onclick="filterTable('hold',this)">Hold (0)</button>
     <button class="filter-btn" onclick="filterTable('watch',this)">Watch (28)</button>
-    <button class="filter-btn" onclick="filterTable('avoid',this)">Avoid (222)</button>
+    <button class="filter-btn" onclick="filterTable('avoid',this)">Avoid (223)</button>
   </div>
   <div class="table-wrap">
     <table id="stockTable">
@@ -969,7 +969,7 @@ tr:hover td{background:var(--surface2)}
 const barCtx = document.getElementById('barChart').getContext('2d');
 new Chart(barCtx,{type:'bar',data:{labels:["ACLBSL", "ALBSL", "ANLB", "AVYAN", "CHDC", "DDBL", "GILB", "GLBSL", "GMFBS", "HDL"],datasets:[{label:'Score',data:[15, 15, 15, 15, 15, 15, 15, 15, 15, 15],backgroundColor:["#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336", "#f44336"],borderRadius:6,borderSkipped:false}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b949e'},grid:{color:'#21262d'}},y:{ticks:{color:'#8b949e'},grid:{color:'#21262d'},min:0,max:100}}}});
 const pieCtx = document.getElementById('pieChart').getContext('2d');
-new Chart(pieCtx,{type:'doughnut',data:{labels:['Strong Buy','Buy','Hold','Watch','Avoid'],datasets:[{data:[0,0,0,28,222],backgroundColor:['#00c896','#4caf50','#ff9800','#58a6ff','#f85149'],borderWidth:0,hoverOffset:8}]},options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:'#8b949e',font:{size:11}}}}}});
+new Chart(pieCtx,{type:'doughnut',data:{labels:['Strong Buy','Buy','Hold','Watch','Avoid'],datasets:[{data:[0,0,0,28,223],backgroundColor:['#00c896','#4caf50','#ff9800','#58a6ff','#f85149'],borderWidth:0,hoverOffset:8}]},options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:'#8b949e',font:{size:11}}}}}});
 function filterTable(badge,btn){document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.stock-row').forEach(row=>{row.style.display=(badge==='all'||row.dataset.badge===badge)?'':'none'})}
 document.getElementById('search').addEventListener('input',function(){const q=this.value.toLowerCase();document.querySelectorAll('.stock-row').forEach(row=>{row.style.display=row.querySelector('.symbol-cell').textContent.toLowerCase().includes(q)?'':'none'})});
 let sortDir={};
