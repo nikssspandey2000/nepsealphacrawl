@@ -179588,3 +179588,326 @@ Call log:
 2026-09-19 14:45:17,057 - INFO - CSV saved: Link_Attributes.csv
 2026-09-19 14:45:17,130 - INFO - CSV saved: Link_Additional.csv
 2026-09-19 14:45:18,551 - INFO - Dashboard saved: index.html
+2026-09-20 14:42:03,803 - INFO - Found 251 URLs
+2026-09-20 14:42:07,644 - INFO - Found 5 tables for ACLBSL
+2026-09-20 14:42:07,655 - INFO - Table 3 for ACLBSL: 11r x 4c
+2026-09-20 14:42:07,656 - INFO - Table 4 for ACLBSL: 11r x 4c
+2026-09-20 14:42:07,658 - INFO - Table 5 for ACLBSL: 13r x 11c
+2026-09-20 14:42:12,774 - INFO - Found 5 tables for ADBL
+2026-09-20 14:42:12,785 - INFO - Table 3 for ADBL: 11r x 4c
+2026-09-20 14:42:12,786 - INFO - Table 4 for ADBL: 11r x 4c
+2026-09-20 14:42:12,789 - INFO - Table 5 for ADBL: 13r x 11c
+2026-09-20 14:42:17,785 - INFO - Found 5 tables for AHL
+2026-09-20 14:42:17,796 - INFO - Table 3 for AHL: 11r x 4c
+2026-09-20 14:42:17,797 - INFO - Table 4 for AHL: 15r x 4c
+2026-09-20 14:42:17,798 - INFO - Table 5 for AHL: 13r x 11c
+2026-09-20 14:42:22,121 - INFO - Found 5 tables for AHPC
+2026-09-20 14:42:22,132 - INFO - Table 3 for AHPC: 11r x 4c
+2026-09-20 14:42:22,133 - INFO - Table 4 for AHPC: 15r x 4c
+2026-09-20 14:42:22,134 - INFO - Table 5 for AHPC: 13r x 11c
+2026-09-20 14:42:27,155 - INFO - Found 5 tables for AKJCL
+2026-09-20 14:42:27,166 - INFO - Table 3 for AKJCL: 11r x 4c
+2026-09-20 14:42:27,167 - INFO - Table 4 for AKJCL: 15r x 4c
+2026-09-20 14:42:27,168 - INFO - Table 5 for AKJCL: 13r x 11c
+2026-09-20 14:42:31,805 - INFO - Found 5 tables for AKPL
+2026-09-20 14:42:31,817 - INFO - Table 3 for AKPL: 11r x 4c
+2026-09-20 14:42:31,818 - INFO - Table 4 for AKPL: 15r x 4c
+2026-09-20 14:42:31,819 - INFO - Table 5 for AKPL: 13r x 11c
+2026-09-20 14:42:36,164 - INFO - Found 5 tables for ALBSL
+2026-09-20 14:42:36,175 - INFO - Table 3 for ALBSL: 11r x 4c
+2026-09-20 14:42:36,176 - INFO - Table 4 for ALBSL: 11r x 4c
+2026-09-20 14:42:36,177 - INFO - Table 5 for ALBSL: 13r x 11c
+2026-09-20 14:42:40,653 - INFO - Found 5 tables for ALICL
+2026-09-20 14:42:40,664 - INFO - Table 3 for ALICL: 11r x 4c
+2026-09-20 14:42:40,665 - INFO - Table 4 for ALICL: 11r x 4c
+2026-09-20 14:42:40,666 - INFO - Table 5 for ALICL: 13r x 11c
+2026-09-20 14:42:45,009 - INFO - Found 5 tables for ANLB
+2026-09-20 14:42:45,020 - INFO - Table 3 for ANLB: 11r x 4c
+2026-09-20 14:42:45,021 - INFO - Table 4 for ANLB: 11r x 4c
+2026-09-20 14:42:45,023 - INFO - Table 5 for ANLB: 13r x 11c
+2026-09-20 14:42:49,341 - INFO - Found 5 tables for API
+2026-09-20 14:42:49,351 - INFO - Table 3 for API: 11r x 4c
+2026-09-20 14:42:49,353 - INFO - Table 4 for API: 15r x 4c
+2026-09-20 14:42:49,354 - INFO - Table 5 for API: 13r x 11c
+2026-09-20 14:42:54,333 - INFO - Found 5 tables for AVYAN
+2026-09-20 14:42:54,344 - INFO - Table 3 for AVYAN: 11r x 4c
+2026-09-20 14:42:54,345 - INFO - Table 4 for AVYAN: 11r x 4c
+2026-09-20 14:42:54,346 - INFO - Table 5 for AVYAN: 13r x 11c
+2026-09-20 14:42:58,831 - INFO - Found 5 tables for BARUN
+2026-09-20 14:42:58,842 - INFO - Table 3 for BARUN: 11r x 4c
+2026-09-20 14:42:58,843 - INFO - Table 4 for BARUN: 15r x 4c
+2026-09-20 14:42:58,845 - INFO - Table 5 for BARUN: 13r x 11c
+2026-09-20 14:43:03,154 - INFO - Found 4 tables for BBC
+2026-09-20 14:43:03,165 - INFO - Table 3 for BBC: 11r x 4c
+2026-09-20 14:43:03,166 - INFO - Table 4 for BBC: 11r x 4c
+2026-09-20 14:43:07,602 - INFO - Found 5 tables for BEDC
+2026-09-20 14:43:07,613 - INFO - Table 3 for BEDC: 11r x 4c
+2026-09-20 14:43:07,614 - INFO - Table 4 for BEDC: 15r x 4c
+2026-09-20 14:43:07,615 - INFO - Table 5 for BEDC: 13r x 11c
+2026-09-20 14:43:12,221 - INFO - Found 5 tables for BFC
+2026-09-20 14:43:12,232 - INFO - Table 3 for BFC: 11r x 4c
+2026-09-20 14:43:12,233 - INFO - Table 4 for BFC: 11r x 4c
+2026-09-20 14:43:12,234 - INFO - Table 5 for BFC: 13r x 11c
+2026-09-20 14:43:16,730 - INFO - Found 5 tables for BGWT
+2026-09-20 14:43:16,741 - INFO - Table 3 for BGWT: 11r x 4c
+2026-09-20 14:43:16,742 - INFO - Table 4 for BGWT: 15r x 4c
+2026-09-20 14:43:16,744 - INFO - Table 5 for BGWT: 13r x 11c
+2026-09-20 14:43:21,186 - INFO - Found 5 tables for BHDC
+2026-09-20 14:43:21,197 - INFO - Table 3 for BHDC: 11r x 4c
+2026-09-20 14:43:21,198 - INFO - Table 4 for BHDC: 15r x 4c
+2026-09-20 14:43:21,199 - INFO - Table 5 for BHDC: 13r x 11c
+2026-09-20 14:43:25,616 - INFO - Found 5 tables for BHL
+2026-09-20 14:43:25,627 - INFO - Table 3 for BHL: 11r x 4c
+2026-09-20 14:43:25,629 - INFO - Table 4 for BHL: 15r x 4c
+2026-09-20 14:43:25,630 - INFO - Table 5 for BHL: 13r x 11c
+2026-09-20 14:43:29,950 - INFO - Found 5 tables for BHPL
+2026-09-20 14:43:29,961 - INFO - Table 3 for BHPL: 11r x 4c
+2026-09-20 14:43:29,962 - INFO - Table 4 for BHPL: 15r x 4c
+2026-09-20 14:43:29,964 - INFO - Table 5 for BHPL: 13r x 11c
+2026-09-20 14:43:34,333 - INFO - Found 5 tables for BNHC
+2026-09-20 14:43:34,344 - INFO - Table 3 for BNHC: 11r x 4c
+2026-09-20 14:43:34,345 - INFO - Table 4 for BNHC: 15r x 4c
+2026-09-20 14:43:34,347 - INFO - Table 5 for BNHC: 13r x 11c
+2026-09-20 14:43:38,751 - INFO - Found 5 tables for BNL
+2026-09-20 14:43:38,762 - INFO - Table 3 for BNL: 11r x 4c
+2026-09-20 14:43:38,763 - INFO - Table 4 for BNL: 11r x 4c
+2026-09-20 14:43:38,765 - INFO - Table 5 for BNL: 13r x 11c
+2026-09-20 14:43:43,151 - INFO - Found 5 tables for BNT
+2026-09-20 14:43:43,162 - INFO - Table 3 for BNT: 11r x 4c
+2026-09-20 14:43:43,163 - INFO - Table 4 for BNT: 11r x 4c
+2026-09-20 14:43:43,165 - INFO - Table 5 for BNT: 13r x 11c
+2026-09-20 14:43:47,608 - INFO - Found 5 tables for BPCL
+2026-09-20 14:43:47,618 - INFO - Table 3 for BPCL: 11r x 4c
+2026-09-20 14:43:47,619 - INFO - Table 4 for BPCL: 15r x 4c
+2026-09-20 14:43:47,621 - INFO - Table 5 for BPCL: 13r x 11c
+2026-09-20 14:44:50,192 - INFO - Found 0 tables for CBBL
+2026-09-20 14:45:11,333 - INFO - Found 0 tables for CFCL
+2026-09-20 14:45:32,570 - INFO - Found 0 tables for CGH
+2026-09-20 14:45:50,949 - INFO - Found 0 tables for CHCL
+2026-09-20 14:46:08,966 - INFO - Found 0 tables for CHDC
+2026-09-20 14:46:27,201 - INFO - Found 0 tables for CHL
+2026-09-20 14:46:45,304 - INFO - Found 0 tables for CIT
+2026-09-20 14:47:03,450 - INFO - Found 0 tables for CITY
+2026-09-20 14:47:21,516 - INFO - Found 0 tables for CKHL
+2026-09-20 14:47:42,857 - INFO - Found 0 tables for CLI
+2026-09-20 14:48:01,315 - INFO - Found 0 tables for CORBL
+2026-09-20 14:48:19,535 - INFO - Found 0 tables for CREST
+2026-09-20 14:48:37,776 - INFO - Found 0 tables for CYCL
+2026-09-20 14:48:55,957 - INFO - Found 0 tables for CZBIL
+2026-09-20 14:49:14,102 - INFO - Found 0 tables for DDBL
+2026-09-20 14:49:32,141 - INFO - Found 0 tables for DHPL
+2026-09-20 14:49:50,352 - INFO - Found 0 tables for DLBS
+2026-09-20 14:50:08,514 - INFO - Found 0 tables for DOLTI
+2026-09-20 14:50:26,719 - INFO - Found 0 tables for DORDI
+2026-09-20 14:50:44,846 - INFO - Found 0 tables for EBL
+2026-09-20 14:51:03,348 - INFO - Found 0 tables for EDBL
+2026-09-20 14:51:21,412 - INFO - Found 0 tables for EHPL
+2026-09-20 14:51:39,636 - INFO - Found 0 tables for ENL
+2026-09-20 14:51:57,923 - INFO - Found 0 tables for FMDBL
+2026-09-20 14:52:15,995 - INFO - Found 0 tables for FOWAD
+2026-09-20 14:52:34,112 - INFO - Found 0 tables for GBBL
+2026-09-20 14:52:52,561 - INFO - Found 0 tables for GBIME
+2026-09-20 14:53:10,815 - INFO - Found 0 tables for GBLBS
+2026-09-20 14:53:29,122 - INFO - Found 0 tables for GCIL
+2026-09-20 14:53:47,394 - INFO - Found 0 tables for GFCL
+2026-09-20 14:54:05,679 - INFO - Found 0 tables for GHL
+2026-09-20 14:54:23,864 - INFO - Found 0 tables for GILB
+2026-09-20 14:54:41,978 - INFO - Found 0 tables for GLBSL
+2026-09-20 14:55:03,365 - INFO - Found 0 tables for GLH
+2026-09-20 14:55:21,570 - INFO - Found 0 tables for GMFBS
+2026-09-20 14:55:39,844 - INFO - Found 0 tables for GMFIL
+2026-09-20 14:55:58,683 - INFO - Found 0 tables for GMLI
+2026-09-20 14:56:17,014 - INFO - Found 0 tables for GRDBL
+2026-09-20 14:56:35,239 - INFO - Found 0 tables for GUFL
+2026-09-20 14:56:53,676 - INFO - Found 0 tables for GVL
+2026-09-20 14:57:11,984 - INFO - Found 0 tables for HATHY
+2026-09-20 14:57:33,737 - INFO - Found 0 tables for HBL
+2026-09-20 14:57:51,893 - INFO - Found 0 tables for HDHPC
+2026-09-20 14:58:10,117 - INFO - Found 0 tables for HDL
+2026-09-20 14:58:28,629 - INFO - Found 0 tables for HEI
+2026-09-20 14:58:47,099 - INFO - Found 0 tables for HHL
+2026-09-20 14:59:05,890 - INFO - Found 0 tables for HIDCL
+2026-09-20 14:59:23,998 - INFO - Found 0 tables for HLBSL
+2026-09-20 14:59:42,189 - INFO - Found 0 tables for HLI
+2026-09-20 15:00:03,574 - INFO - Found 0 tables for HPPL
+2026-09-20 15:00:22,173 - INFO - Found 0 tables for HRL
+2026-09-20 15:00:40,386 - INFO - Found 0 tables for HURJA
+2026-09-20 15:00:58,567 - INFO - Found 0 tables for ICFC
+2026-09-20 15:01:16,862 - INFO - Found 0 tables for IGI
+2026-09-20 15:01:35,035 - INFO - Found 0 tables for IHL
+2026-09-20 15:01:56,126 - INFO - Found 0 tables for ILBS
+2026-09-20 15:02:14,205 - INFO - Found 0 tables for ILI
+2026-09-20 15:02:32,366 - INFO - Found 0 tables for JBBL
+2026-09-20 15:02:50,556 - INFO - Found 0 tables for JBLB
+2026-09-20 15:03:08,901 - INFO - Found 0 tables for JFL
+2026-09-20 15:03:30,100 - INFO - Found 0 tables for JOSHI
+2026-09-20 15:03:51,595 - INFO - Found 0 tables for JSLBB
+2026-09-20 15:04:10,050 - INFO - Found 0 tables for KBL
+2026-09-20 15:04:28,119 - INFO - Found 0 tables for KBSH
+2026-09-20 15:04:46,333 - INFO - Found 0 tables for KDL
+2026-09-20 15:05:04,509 - INFO - Found 0 tables for KKHC
+2026-09-20 15:05:22,646 - INFO - Found 0 tables for KMCDB
+2026-09-20 15:05:40,680 - INFO - Found 0 tables for KPCL
+2026-09-20 15:05:58,899 - INFO - Found 0 tables for KSBBL
+2026-09-20 15:06:17,155 - INFO - Found 0 tables for LBBL
+2026-09-20 15:06:35,265 - INFO - Found 0 tables for LEC
+2026-09-20 15:06:53,467 - INFO - Found 0 tables for LICN
+2026-09-20 15:07:11,740 - INFO - Found 0 tables for LLBS
+2026-09-20 15:07:29,949 - INFO - Found 0 tables for LSL
+2026-09-20 15:07:48,005 - INFO - Found 0 tables for MAKAR
+2026-09-20 15:08:06,519 - INFO - Found 0 tables for MANDU
+2026-09-20 15:08:24,688 - INFO - Found 0 tables for MATRI
+2026-09-20 15:08:43,082 - INFO - Found 0 tables for MBJC
+2026-09-20 15:09:01,243 - INFO - Found 0 tables for MBL
+2026-09-20 15:09:19,561 - INFO - Found 0 tables for MCHL
+2026-09-20 15:09:39,812 - INFO - Found 0 tables for MDB
+2026-09-20 15:09:58,132 - INFO - Found 0 tables for MEHL
+2026-09-20 15:10:16,662 - INFO - Found 0 tables for MEL
+2026-09-20 15:10:34,831 - INFO - Found 0 tables for MEN
+2026-09-20 15:10:53,208 - INFO - Found 0 tables for MERO
+2026-09-20 15:11:11,426 - INFO - Found 0 tables for MFIL
+2026-09-20 15:11:29,762 - INFO - Found 0 tables for MHCL
+2026-09-20 15:11:48,011 - INFO - Found 0 tables for MHL
+2026-09-20 15:12:06,311 - INFO - Found 0 tables for MHNL
+2026-09-20 15:12:27,506 - INFO - Found 0 tables for MKCL
+2026-09-20 15:12:45,911 - INFO - Found 0 tables for MKHC
+2026-09-20 15:13:03,936 - INFO - Found 0 tables for MKHL
+2026-09-20 15:13:22,022 - INFO - Found 0 tables for MKJC
+2026-09-20 15:13:40,240 - INFO - Found 0 tables for MLBBL
+2026-09-20 15:13:58,776 - INFO - Found 0 tables for MLBL
+2026-09-20 15:14:17,284 - INFO - Found 0 tables for MLBS
+2026-09-20 15:14:35,597 - INFO - Found 0 tables for MLBSL
+2026-09-20 15:14:53,818 - INFO - Found 0 tables for MMKJL
+2026-09-20 15:15:11,984 - INFO - Found 0 tables for MNBBL
+2026-09-20 15:15:30,372 - INFO - Found 0 tables for MPFL
+2026-09-20 15:15:48,591 - INFO - Found 0 tables for MSHL
+2026-09-20 15:16:06,856 - INFO - Found 0 tables for MSLB
+2026-09-20 15:16:25,200 - INFO - Found 0 tables for NABBC
+2026-09-20 15:16:43,340 - INFO - Found 0 tables for NABIL
+2026-09-20 15:17:01,423 - INFO - Found 0 tables for NADEP
+2026-09-20 15:17:19,614 - INFO - Found 0 tables for NBL
+2026-09-20 15:17:37,990 - INFO - Found 0 tables for NESDO
+2026-09-20 15:17:56,161 - INFO - Found 0 tables for NFS
+2026-09-20 15:18:17,590 - INFO - Found 0 tables for NGPL
+2026-09-20 15:18:35,716 - INFO - Found 0 tables for NHDL
+2026-09-20 15:18:54,168 - INFO - Found 0 tables for NHPC
+2026-09-20 15:19:14,261 - INFO - Found 0 tables for NICA
+2026-09-20 15:19:35,787 - INFO - Found 0 tables for NICL
+2026-09-20 15:19:53,850 - INFO - Found 0 tables for NICLBSL
+2026-09-20 15:20:11,973 - INFO - Found 0 tables for NIFRA
+2026-09-20 15:20:30,369 - INFO - Found 0 tables for NIL
+2026-09-20 15:20:48,590 - INFO - Found 0 tables for NIMB
+2026-09-20 15:21:06,809 - INFO - Found 0 tables for NLG
+2026-09-20 15:21:25,282 - INFO - Found 0 tables for NLIC
+2026-09-20 15:21:43,452 - INFO - Found 0 tables for NLICL
+2026-09-20 15:22:02,102 - INFO - Found 0 tables for NLO
+2026-09-20 15:22:20,699 - INFO - Found 0 tables for NMB
+2026-09-20 15:22:39,053 - INFO - Found 0 tables for NMBMF
+2026-09-20 15:22:57,282 - INFO - Found 0 tables for NMFBS
+2026-09-20 15:23:15,959 - INFO - Found 0 tables for NMIC
+2026-09-20 15:23:34,091 - INFO - Found 0 tables for NMLBBL
+2026-09-20 15:23:52,254 - INFO - Found 0 tables for NRIC
+2026-09-20 15:24:10,438 - INFO - Found 0 tables for NRM
+2026-09-20 15:24:28,882 - INFO - Found 0 tables for NRN
+2026-09-20 15:24:47,613 - INFO - Found 0 tables for NTC
+2026-09-20 15:25:05,940 - INFO - Found 0 tables for NUBL
+2026-09-20 15:25:24,094 - INFO - Found 0 tables for NWCL
+2026-09-20 15:25:42,204 - INFO - Found 0 tables for NYADI
+2026-09-20 15:26:03,836 - INFO - Found 0 tables for OHL
+2026-09-20 15:26:22,288 - INFO - Found 0 tables for OMPL
+2026-09-20 15:26:40,562 - INFO - Found 0 tables for PCBL
+2026-09-20 15:26:59,138 - INFO - Found 0 tables for PFL
+2026-09-20 15:27:17,299 - INFO - Found 0 tables for PHCL
+2026-09-20 15:27:35,395 - INFO - Found 0 tables for PMHPL
+2026-09-20 15:27:53,924 - INFO - Found 0 tables for PMLI
+2026-09-20 15:28:12,101 - INFO - Found 0 tables for PPCL
+2026-09-20 15:28:30,290 - INFO - Found 0 tables for PPL
+2026-09-20 15:28:48,414 - INFO - Found 0 tables for PRIN
+2026-09-20 15:29:06,730 - INFO - Found 0 tables for PROFL
+2026-09-20 15:29:25,474 - INFO - Found 0 tables for PRVU
+2026-09-20 15:29:43,861 - INFO - Found 0 tables for PURE
+2026-09-20 15:30:02,118 - INFO - Found 0 tables for RADHI
+2026-09-20 15:30:20,345 - INFO - Found 0 tables for RAWA
+2026-09-20 15:30:38,955 - INFO - Found 0 tables for RBCL
+2026-09-20 15:30:57,243 - INFO - Found 0 tables for RFPL
+2026-09-20 15:31:15,544 - INFO - Found 0 tables for RHGCL
+2026-09-20 15:31:33,962 - INFO - Found 0 tables for RHPL
+2026-09-20 15:31:52,730 - INFO - Found 0 tables for RIDI
+2026-09-20 15:32:11,283 - INFO - Found 0 tables for RLFL
+2026-09-20 15:32:29,584 - INFO - Found 0 tables for RNLI
+2026-09-20 15:32:48,183 - INFO - Found 0 tables for RSDC
+2026-09-20 15:33:06,627 - INFO - Found 0 tables for RURU
+2026-09-20 15:33:25,135 - INFO - Found 0 tables for SADBL
+2026-09-20 15:33:43,897 - INFO - Found 0 tables for SAHAS
+2026-09-20 15:34:02,385 - INFO - Found 0 tables for SALICO
+2026-09-20 15:34:21,277 - INFO - Found 0 tables for SAMAJ
+2026-09-20 15:34:42,569 - INFO - Found 0 tables for SANIMA
+2026-09-20 15:35:00,985 - INFO - Found 0 tables for SANVI
+2026-09-20 15:35:19,132 - INFO - Found 0 tables for SAPDBL
+2026-09-20 15:35:40,481 - INFO - Found 0 tables for SARBTM
+2026-09-20 15:35:58,726 - INFO - Found 0 tables for SBI
+2026-09-20 15:36:16,908 - INFO - Found 0 tables for SBL
+2026-09-20 15:36:35,327 - INFO - Found 0 tables for SCB
+2026-09-20 15:36:54,299 - INFO - Found 0 tables for SFCL
+2026-09-20 15:37:12,739 - INFO - Found 0 tables for SGHC
+2026-09-20 15:37:30,878 - INFO - Found 0 tables for SGIC
+2026-09-20 15:37:52,363 - INFO - Found 0 tables for SHEL
+2026-09-20 15:38:10,753 - INFO - Found 0 tables for SHINE
+2026-09-20 15:38:29,107 - INFO - Found 0 tables for SHIVM
+2026-09-20 15:38:47,693 - INFO - Found 0 tables for SHL
+2026-09-20 15:39:08,997 - INFO - Found 0 tables for SHLB
+2026-09-20 15:39:27,412 - INFO - Found 0 tables for SHPC
+2026-09-20 15:39:45,550 - INFO - Found 0 tables for SICL
+2026-09-20 15:40:04,310 - INFO - Found 0 tables for SIFC
+2026-09-20 15:40:22,523 - INFO - Found 0 tables for SIKLES
+2026-09-20 15:40:40,994 - INFO - Found 0 tables for SINDU
+2026-09-20 15:40:59,353 - INFO - Found 0 tables for SJCL
+2026-09-20 15:41:17,645 - INFO - Found 0 tables for SJLIC
+2026-09-20 15:41:35,959 - INFO - Found 0 tables for SKBBL
+2026-09-20 15:41:54,182 - INFO - Found 0 tables for SLBBL
+2026-09-20 15:42:12,278 - INFO - Found 0 tables for SLBSL
+2026-09-20 15:42:30,582 - INFO - Found 0 tables for SMATA
+2026-09-20 15:42:48,825 - INFO - Found 0 tables for SMB
+2026-09-20 15:43:07,282 - INFO - Found 0 tables for SMFBS
+2026-09-20 15:43:26,400 - INFO - Found 0 tables for SMH
+2026-09-20 15:43:44,803 - INFO - Found 0 tables for SMHL
+2026-09-20 15:44:03,193 - INFO - Found 0 tables for SMJC
+2026-09-20 15:44:21,655 - INFO - Found 0 tables for SMPDA
+2026-09-20 15:44:40,073 - INFO - Found 0 tables for SNLI
+2026-09-20 15:44:58,555 - INFO - Found 0 tables for SONA
+2026-09-20 15:45:16,915 - INFO - Found 0 tables for SPC
+2026-09-20 15:45:35,033 - INFO - Found 0 tables for SPDL
+2026-09-20 15:45:53,246 - INFO - Found 0 tables for SPHL
+2026-09-20 15:46:11,723 - INFO - Found 0 tables for SPIL
+2026-09-20 15:46:30,169 - INFO - Found 0 tables for SPL
+2026-09-20 15:46:48,498 - INFO - Found 0 tables for SRLI
+2026-09-20 15:47:06,943 - INFO - Found 0 tables for SSHL
+2026-09-20 15:47:25,179 - INFO - Found 0 tables for STC
+2026-09-20 15:47:43,516 - INFO - Found 0 tables for SWBBL
+2026-09-20 15:48:02,053 - INFO - Found 0 tables for SWMF
+2026-09-20 15:48:20,966 - INFO - Found 0 tables for TAMOR
+2026-09-20 15:48:39,269 - INFO - Found 0 tables for TPC
+2026-09-20 15:48:57,958 - INFO - Found 0 tables for TRH
+2026-09-20 15:49:16,315 - INFO - Found 0 tables for TSHL
+2026-09-20 15:49:34,507 - INFO - Found 0 tables for TTL
+2026-09-20 15:49:53,063 - INFO - Found 0 tables for TVCL
+2026-09-20 15:50:11,445 - INFO - Found 0 tables for UAIL
+2026-09-20 15:50:29,751 - INFO - Found 0 tables for UHEWA
+2026-09-20 15:50:48,135 - INFO - Found 0 tables for ULBSL
+2026-09-20 15:51:06,425 - INFO - Found 0 tables for ULHC
+2026-09-20 15:51:24,835 - INFO - Found 0 tables for UMHL
+2026-09-20 15:51:42,961 - INFO - Found 0 tables for UMRH
+2026-09-20 15:52:01,161 - INFO - Found 0 tables for UNHPL
+2026-09-20 15:52:19,546 - INFO - Found 0 tables for UNL
+2026-09-20 15:52:37,757 - INFO - Found 0 tables for UNLB
+2026-09-20 15:52:55,797 - INFO - Found 0 tables for UPCL
+2026-09-20 15:53:14,162 - INFO - Found 0 tables for UPPER
+2026-09-20 15:53:32,427 - INFO - Found 0 tables for USHEC
+2026-09-20 15:53:50,669 - INFO - Found 0 tables for USHL
+2026-09-20 15:54:12,131 - INFO - Found 0 tables for USLB
+2026-09-20 15:54:30,236 - INFO - Found 0 tables for VLBS
+2026-09-20 15:54:48,422 - INFO - Found 0 tables for VLUCL
+2026-09-20 15:55:06,836 - INFO - Found 0 tables for WNLB
+2026-09-20 15:55:09,809 - INFO - CSV saved: Link_Attributes.csv
+2026-09-20 15:55:09,839 - INFO - CSV saved: Link_Additional.csv
+2026-09-20 15:55:09,913 - INFO - Dashboard saved: index.html
