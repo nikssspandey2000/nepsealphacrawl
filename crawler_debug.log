@@ -201058,3 +201058,1010 @@ Call log:
 2026-10-12 20:38:28,152 - INFO - CSV saved: Link_Attributes.csv
 2026-10-12 20:38:28,258 - INFO - CSV saved: Link_Additional.csv
 2026-10-12 20:38:29,782 - INFO - Dashboard saved: index.html
+2026-10-13 18:18:15,750 - INFO - Found 251 URLs
+2026-10-13 18:18:20,538 - INFO - Found 5 tables for ACLBSL
+2026-10-13 18:18:20,548 - INFO - Table 3 for ACLBSL: 11r x 4c
+2026-10-13 18:18:20,549 - INFO - Table 4 for ACLBSL: 11r x 4c
+2026-10-13 18:18:20,551 - INFO - Table 5 for ACLBSL: 13r x 11c
+2026-10-13 18:18:25,285 - INFO - Found 5 tables for ADBL
+2026-10-13 18:18:25,294 - INFO - Table 3 for ADBL: 11r x 4c
+2026-10-13 18:18:25,295 - INFO - Table 4 for ADBL: 11r x 4c
+2026-10-13 18:18:25,297 - INFO - Table 5 for ADBL: 13r x 11c
+2026-10-13 18:18:30,011 - INFO - Found 5 tables for AHL
+2026-10-13 18:18:30,020 - INFO - Table 3 for AHL: 11r x 4c
+2026-10-13 18:18:30,021 - INFO - Table 4 for AHL: 15r x 4c
+2026-10-13 18:18:30,023 - INFO - Table 5 for AHL: 13r x 11c
+2026-10-13 18:18:34,929 - INFO - Found 5 tables for AHPC
+2026-10-13 18:18:34,938 - INFO - Table 3 for AHPC: 11r x 4c
+2026-10-13 18:18:34,939 - INFO - Table 4 for AHPC: 15r x 4c
+2026-10-13 18:18:34,941 - INFO - Table 5 for AHPC: 13r x 11c
+2026-10-13 18:18:39,653 - INFO - Found 5 tables for AKJCL
+2026-10-13 18:18:39,662 - INFO - Table 3 for AKJCL: 11r x 4c
+2026-10-13 18:18:39,663 - INFO - Table 4 for AKJCL: 15r x 4c
+2026-10-13 18:18:39,665 - INFO - Table 5 for AKJCL: 13r x 11c
+2026-10-13 18:18:44,511 - INFO - Found 5 tables for AKPL
+2026-10-13 18:18:44,521 - INFO - Table 3 for AKPL: 11r x 4c
+2026-10-13 18:18:44,522 - INFO - Table 4 for AKPL: 15r x 4c
+2026-10-13 18:18:44,523 - INFO - Table 5 for AKPL: 13r x 11c
+2026-10-13 18:18:49,937 - INFO - Found 5 tables for ALBSL
+2026-10-13 18:18:49,947 - INFO - Table 3 for ALBSL: 11r x 4c
+2026-10-13 18:18:49,948 - INFO - Table 4 for ALBSL: 11r x 4c
+2026-10-13 18:18:49,950 - INFO - Table 5 for ALBSL: 13r x 11c
+2026-10-13 18:18:55,714 - INFO - Found 5 tables for ALICL
+2026-10-13 18:18:55,723 - INFO - Table 3 for ALICL: 11r x 4c
+2026-10-13 18:18:55,724 - INFO - Table 4 for ALICL: 11r x 4c
+2026-10-13 18:18:55,726 - INFO - Table 5 for ALICL: 13r x 11c
+2026-10-13 18:19:00,376 - INFO - Found 5 tables for ANLB
+2026-10-13 18:19:00,385 - INFO - Table 3 for ANLB: 11r x 4c
+2026-10-13 18:19:00,386 - INFO - Table 4 for ANLB: 11r x 4c
+2026-10-13 18:19:00,388 - INFO - Table 5 for ANLB: 13r x 11c
+2026-10-13 18:19:04,985 - INFO - Found 5 tables for API
+2026-10-13 18:19:04,994 - INFO - Table 3 for API: 11r x 4c
+2026-10-13 18:19:04,995 - INFO - Table 4 for API: 15r x 4c
+2026-10-13 18:19:04,996 - INFO - Table 5 for API: 13r x 11c
+2026-10-13 18:19:09,702 - INFO - Found 5 tables for AVYAN
+2026-10-13 18:19:09,712 - INFO - Table 3 for AVYAN: 11r x 4c
+2026-10-13 18:19:09,713 - INFO - Table 4 for AVYAN: 11r x 4c
+2026-10-13 18:19:09,714 - INFO - Table 5 for AVYAN: 13r x 11c
+2026-10-13 18:19:14,558 - INFO - Found 5 tables for BARUN
+2026-10-13 18:19:14,567 - INFO - Table 3 for BARUN: 11r x 4c
+2026-10-13 18:19:14,568 - INFO - Table 4 for BARUN: 15r x 4c
+2026-10-13 18:19:14,570 - INFO - Table 5 for BARUN: 13r x 11c
+2026-10-13 18:19:19,181 - INFO - Found 4 tables for BBC
+2026-10-13 18:19:19,190 - INFO - Table 3 for BBC: 11r x 4c
+2026-10-13 18:19:19,191 - INFO - Table 4 for BBC: 11r x 4c
+2026-10-13 18:19:24,026 - INFO - Found 5 tables for BEDC
+2026-10-13 18:19:24,035 - INFO - Table 3 for BEDC: 11r x 4c
+2026-10-13 18:19:24,036 - INFO - Table 4 for BEDC: 15r x 4c
+2026-10-13 18:19:24,038 - INFO - Table 5 for BEDC: 13r x 11c
+2026-10-13 18:19:28,906 - INFO - Found 5 tables for BFC
+2026-10-13 18:19:28,916 - INFO - Table 3 for BFC: 11r x 4c
+2026-10-13 18:19:28,917 - INFO - Table 4 for BFC: 11r x 4c
+2026-10-13 18:19:28,918 - INFO - Table 5 for BFC: 13r x 11c
+2026-10-13 18:19:33,616 - INFO - Found 5 tables for BGWT
+2026-10-13 18:19:33,625 - INFO - Table 3 for BGWT: 11r x 4c
+2026-10-13 18:19:33,626 - INFO - Table 4 for BGWT: 15r x 4c
+2026-10-13 18:19:33,628 - INFO - Table 5 for BGWT: 13r x 11c
+2026-10-13 18:19:38,324 - INFO - Found 5 tables for BHDC
+2026-10-13 18:19:38,333 - INFO - Table 3 for BHDC: 11r x 4c
+2026-10-13 18:19:38,334 - INFO - Table 4 for BHDC: 15r x 4c
+2026-10-13 18:19:38,336 - INFO - Table 5 for BHDC: 13r x 11c
+2026-10-13 18:19:42,951 - INFO - Found 5 tables for BHL
+2026-10-13 18:19:42,960 - INFO - Table 3 for BHL: 11r x 4c
+2026-10-13 18:19:42,961 - INFO - Table 4 for BHL: 15r x 4c
+2026-10-13 18:19:42,962 - INFO - Table 5 for BHL: 13r x 11c
+2026-10-13 18:19:47,750 - INFO - Found 5 tables for BHPL
+2026-10-13 18:19:47,760 - INFO - Table 3 for BHPL: 11r x 4c
+2026-10-13 18:19:47,761 - INFO - Table 4 for BHPL: 15r x 4c
+2026-10-13 18:19:47,763 - INFO - Table 5 for BHPL: 13r x 11c
+2026-10-13 18:19:52,543 - INFO - Found 5 tables for BNHC
+2026-10-13 18:19:52,553 - INFO - Table 3 for BNHC: 11r x 4c
+2026-10-13 18:19:52,554 - INFO - Table 4 for BNHC: 15r x 4c
+2026-10-13 18:19:52,555 - INFO - Table 5 for BNHC: 13r x 11c
+2026-10-13 18:19:57,176 - INFO - Found 5 tables for BNL
+2026-10-13 18:19:57,185 - INFO - Table 3 for BNL: 11r x 4c
+2026-10-13 18:19:57,186 - INFO - Table 4 for BNL: 11r x 4c
+2026-10-13 18:19:57,188 - INFO - Table 5 for BNL: 13r x 11c
+2026-10-13 18:20:01,834 - INFO - Found 5 tables for BNT
+2026-10-13 18:20:01,843 - INFO - Table 3 for BNT: 11r x 4c
+2026-10-13 18:20:01,845 - INFO - Table 4 for BNT: 11r x 4c
+2026-10-13 18:20:01,847 - INFO - Table 5 for BNT: 13r x 11c
+2026-10-13 18:20:06,496 - INFO - Found 5 tables for BPCL
+2026-10-13 18:20:06,505 - INFO - Table 3 for BPCL: 11r x 4c
+2026-10-13 18:20:06,506 - INFO - Table 4 for BPCL: 15r x 4c
+2026-10-13 18:20:06,508 - INFO - Table 5 for BPCL: 13r x 11c
+2026-10-13 18:20:11,542 - INFO - Found 5 tables for CBBL
+2026-10-13 18:20:11,552 - INFO - Table 3 for CBBL: 11r x 4c
+2026-10-13 18:20:11,553 - INFO - Table 4 for CBBL: 11r x 4c
+2026-10-13 18:20:11,555 - INFO - Table 5 for CBBL: 13r x 11c
+2026-10-13 18:20:16,339 - INFO - Found 5 tables for CFCL
+2026-10-13 18:20:16,348 - INFO - Table 3 for CFCL: 11r x 4c
+2026-10-13 18:20:16,349 - INFO - Table 4 for CFCL: 11r x 4c
+2026-10-13 18:20:16,350 - INFO - Table 5 for CFCL: 13r x 11c
+2026-10-13 18:20:21,057 - INFO - Found 5 tables for CGH
+2026-10-13 18:20:21,067 - INFO - Table 3 for CGH: 11r x 4c
+2026-10-13 18:20:21,068 - INFO - Table 4 for CGH: 11r x 4c
+2026-10-13 18:20:21,070 - INFO - Table 5 for CGH: 13r x 11c
+2026-10-13 18:20:26,048 - INFO - Found 5 tables for CHCL
+2026-10-13 18:20:26,058 - INFO - Table 3 for CHCL: 11r x 4c
+2026-10-13 18:20:26,059 - INFO - Table 4 for CHCL: 15r x 4c
+2026-10-13 18:20:26,060 - INFO - Table 5 for CHCL: 13r x 11c
+2026-10-13 18:20:30,756 - INFO - Found 5 tables for CHDC
+2026-10-13 18:20:30,765 - INFO - Table 3 for CHDC: 11r x 4c
+2026-10-13 18:20:30,766 - INFO - Table 4 for CHDC: 11r x 4c
+2026-10-13 18:20:30,768 - INFO - Table 5 for CHDC: 13r x 11c
+2026-10-13 18:20:35,570 - INFO - Found 5 tables for CHL
+2026-10-13 18:20:35,580 - INFO - Table 3 for CHL: 11r x 4c
+2026-10-13 18:20:35,581 - INFO - Table 4 for CHL: 15r x 4c
+2026-10-13 18:20:35,582 - INFO - Table 5 for CHL: 13r x 11c
+2026-10-13 18:20:40,283 - INFO - Found 5 tables for CIT
+2026-10-13 18:20:40,292 - INFO - Table 3 for CIT: 11r x 4c
+2026-10-13 18:20:40,294 - INFO - Table 4 for CIT: 11r x 4c
+2026-10-13 18:20:40,295 - INFO - Table 5 for CIT: 13r x 11c
+2026-10-13 18:20:44,951 - INFO - Found 5 tables for CITY
+2026-10-13 18:20:44,960 - INFO - Table 3 for CITY: 11r x 4c
+2026-10-13 18:20:44,961 - INFO - Table 4 for CITY: 11r x 4c
+2026-10-13 18:20:44,963 - INFO - Table 5 for CITY: 13r x 11c
+2026-10-13 18:20:49,685 - INFO - Found 5 tables for CKHL
+2026-10-13 18:20:49,694 - INFO - Table 3 for CKHL: 11r x 4c
+2026-10-13 18:20:49,695 - INFO - Table 4 for CKHL: 15r x 4c
+2026-10-13 18:20:49,697 - INFO - Table 5 for CKHL: 13r x 11c
+2026-10-13 18:20:54,990 - INFO - Found 5 tables for CLI
+2026-10-13 18:20:54,999 - INFO - Table 3 for CLI: 11r x 4c
+2026-10-13 18:20:55,000 - INFO - Table 4 for CLI: 11r x 4c
+2026-10-13 18:20:55,001 - INFO - Table 5 for CLI: 13r x 11c
+2026-10-13 18:20:59,750 - INFO - Found 5 tables for CORBL
+2026-10-13 18:20:59,759 - INFO - Table 3 for CORBL: 11r x 4c
+2026-10-13 18:20:59,760 - INFO - Table 4 for CORBL: 11r x 4c
+2026-10-13 18:20:59,762 - INFO - Table 5 for CORBL: 13r x 11c
+2026-10-13 18:21:04,436 - INFO - Found 5 tables for CREST
+2026-10-13 18:21:04,445 - INFO - Table 3 for CREST: 11r x 4c
+2026-10-13 18:21:04,446 - INFO - Table 4 for CREST: 11r x 4c
+2026-10-13 18:21:04,447 - INFO - Table 5 for CREST: 13r x 9c
+2026-10-13 18:21:09,143 - INFO - Found 5 tables for CYCL
+2026-10-13 18:21:09,152 - INFO - Table 3 for CYCL: 11r x 4c
+2026-10-13 18:21:09,153 - INFO - Table 4 for CYCL: 11r x 4c
+2026-10-13 18:21:09,154 - INFO - Table 5 for CYCL: 13r x 11c
+2026-10-13 18:21:13,808 - INFO - Found 5 tables for CZBIL
+2026-10-13 18:21:13,817 - INFO - Table 3 for CZBIL: 11r x 4c
+2026-10-13 18:21:13,818 - INFO - Table 4 for CZBIL: 11r x 4c
+2026-10-13 18:21:13,820 - INFO - Table 5 for CZBIL: 13r x 11c
+2026-10-13 18:21:18,519 - INFO - Found 5 tables for DDBL
+2026-10-13 18:21:18,529 - INFO - Table 3 for DDBL: 11r x 4c
+2026-10-13 18:21:18,530 - INFO - Table 4 for DDBL: 11r x 4c
+2026-10-13 18:21:18,532 - INFO - Table 5 for DDBL: 13r x 11c
+2026-10-13 18:21:23,300 - INFO - Found 5 tables for DHPL
+2026-10-13 18:21:23,309 - INFO - Table 3 for DHPL: 11r x 4c
+2026-10-13 18:21:23,310 - INFO - Table 4 for DHPL: 15r x 4c
+2026-10-13 18:21:23,311 - INFO - Table 5 for DHPL: 13r x 11c
+2026-10-13 18:21:28,029 - INFO - Found 5 tables for DLBS
+2026-10-13 18:21:28,038 - INFO - Table 3 for DLBS: 11r x 4c
+2026-10-13 18:21:28,039 - INFO - Table 4 for DLBS: 11r x 4c
+2026-10-13 18:21:28,041 - INFO - Table 5 for DLBS: 13r x 10c
+2026-10-13 18:21:32,774 - INFO - Found 5 tables for DOLTI
+2026-10-13 18:21:32,783 - INFO - Table 3 for DOLTI: 11r x 4c
+2026-10-13 18:21:32,784 - INFO - Table 4 for DOLTI: 15r x 4c
+2026-10-13 18:21:32,785 - INFO - Table 5 for DOLTI: 13r x 11c
+2026-10-13 18:21:37,473 - INFO - Found 5 tables for DORDI
+2026-10-13 18:21:37,482 - INFO - Table 3 for DORDI: 11r x 4c
+2026-10-13 18:21:37,483 - INFO - Table 4 for DORDI: 15r x 4c
+2026-10-13 18:21:37,485 - INFO - Table 5 for DORDI: 13r x 11c
+2026-10-13 18:21:42,243 - INFO - Found 5 tables for EBL
+2026-10-13 18:21:42,253 - INFO - Table 3 for EBL: 11r x 4c
+2026-10-13 18:21:42,254 - INFO - Table 4 for EBL: 11r x 4c
+2026-10-13 18:21:42,255 - INFO - Table 5 for EBL: 13r x 11c
+2026-10-13 18:21:46,906 - INFO - Found 5 tables for EDBL
+2026-10-13 18:21:46,915 - INFO - Table 3 for EDBL: 11r x 4c
+2026-10-13 18:21:46,915 - INFO - Table 4 for EDBL: 11r x 4c
+2026-10-13 18:21:46,917 - INFO - Table 5 for EDBL: 13r x 11c
+2026-10-13 18:21:51,602 - INFO - Found 5 tables for EHPL
+2026-10-13 18:21:51,611 - INFO - Table 3 for EHPL: 11r x 4c
+2026-10-13 18:21:51,612 - INFO - Table 4 for EHPL: 15r x 4c
+2026-10-13 18:21:51,614 - INFO - Table 5 for EHPL: 13r x 11c
+2026-10-13 18:21:56,277 - INFO - Found 5 tables for ENL
+2026-10-13 18:21:56,286 - INFO - Table 3 for ENL: 11r x 4c
+2026-10-13 18:21:56,287 - INFO - Table 4 for ENL: 11r x 4c
+2026-10-13 18:21:56,289 - INFO - Table 5 for ENL: 13r x 11c
+2026-10-13 18:22:01,046 - INFO - Found 5 tables for FMDBL
+2026-10-13 18:22:01,054 - INFO - Table 3 for FMDBL: 11r x 4c
+2026-10-13 18:22:01,055 - INFO - Table 4 for FMDBL: 11r x 4c
+2026-10-13 18:22:01,057 - INFO - Table 5 for FMDBL: 13r x 11c
+2026-10-13 18:22:06,473 - INFO - Found 5 tables for FOWAD
+2026-10-13 18:22:06,482 - INFO - Table 3 for FOWAD: 11r x 4c
+2026-10-13 18:22:06,483 - INFO - Table 4 for FOWAD: 11r x 4c
+2026-10-13 18:22:06,485 - INFO - Table 5 for FOWAD: 13r x 11c
+2026-10-13 18:22:11,206 - INFO - Found 5 tables for GBBL
+2026-10-13 18:22:11,215 - INFO - Table 3 for GBBL: 11r x 4c
+2026-10-13 18:22:11,216 - INFO - Table 4 for GBBL: 11r x 4c
+2026-10-13 18:22:11,218 - INFO - Table 5 for GBBL: 13r x 11c
+2026-10-13 18:22:15,847 - INFO - Found 5 tables for GBIME
+2026-10-13 18:22:15,856 - INFO - Table 3 for GBIME: 11r x 4c
+2026-10-13 18:22:15,857 - INFO - Table 4 for GBIME: 11r x 4c
+2026-10-13 18:22:15,858 - INFO - Table 5 for GBIME: 13r x 11c
+2026-10-13 18:22:20,469 - INFO - Found 5 tables for GBLBS
+2026-10-13 18:22:20,478 - INFO - Table 3 for GBLBS: 11r x 4c
+2026-10-13 18:22:20,479 - INFO - Table 4 for GBLBS: 11r x 4c
+2026-10-13 18:22:20,480 - INFO - Table 5 for GBLBS: 13r x 10c
+2026-10-13 18:22:25,509 - INFO - Found 5 tables for GCIL
+2026-10-13 18:22:25,518 - INFO - Table 3 for GCIL: 11r x 4c
+2026-10-13 18:22:25,519 - INFO - Table 4 for GCIL: 11r x 4c
+2026-10-13 18:22:25,520 - INFO - Table 5 for GCIL: 13r x 11c
+2026-10-13 18:22:30,164 - INFO - Found 5 tables for GFCL
+2026-10-13 18:22:30,174 - INFO - Table 3 for GFCL: 11r x 4c
+2026-10-13 18:22:30,175 - INFO - Table 4 for GFCL: 11r x 4c
+2026-10-13 18:22:30,176 - INFO - Table 5 for GFCL: 13r x 11c
+2026-10-13 18:22:34,994 - INFO - Found 5 tables for GHL
+2026-10-13 18:22:35,003 - INFO - Table 3 for GHL: 11r x 4c
+2026-10-13 18:22:35,004 - INFO - Table 4 for GHL: 15r x 4c
+2026-10-13 18:22:35,005 - INFO - Table 5 for GHL: 13r x 11c
+2026-10-13 18:22:39,618 - INFO - Found 5 tables for GILB
+2026-10-13 18:22:39,628 - INFO - Table 3 for GILB: 11r x 4c
+2026-10-13 18:22:39,628 - INFO - Table 4 for GILB: 11r x 4c
+2026-10-13 18:22:39,630 - INFO - Table 5 for GILB: 13r x 11c
+2026-10-13 18:22:44,291 - INFO - Found 5 tables for GLBSL
+2026-10-13 18:22:44,300 - INFO - Table 3 for GLBSL: 11r x 4c
+2026-10-13 18:22:44,301 - INFO - Table 4 for GLBSL: 11r x 4c
+2026-10-13 18:22:44,302 - INFO - Table 5 for GLBSL: 13r x 11c
+2026-10-13 18:22:49,137 - INFO - Found 5 tables for GLH
+2026-10-13 18:22:49,146 - INFO - Table 3 for GLH: 11r x 4c
+2026-10-13 18:22:49,147 - INFO - Table 4 for GLH: 15r x 4c
+2026-10-13 18:22:49,148 - INFO - Table 5 for GLH: 13r x 10c
+2026-10-13 18:22:53,752 - INFO - Found 5 tables for GMFBS
+2026-10-13 18:22:53,762 - INFO - Table 3 for GMFBS: 11r x 4c
+2026-10-13 18:22:53,763 - INFO - Table 4 for GMFBS: 11r x 4c
+2026-10-13 18:22:53,764 - INFO - Table 5 for GMFBS: 13r x 11c
+2026-10-13 18:22:58,442 - INFO - Found 5 tables for GMFIL
+2026-10-13 18:22:58,451 - INFO - Table 3 for GMFIL: 11r x 4c
+2026-10-13 18:22:58,452 - INFO - Table 4 for GMFIL: 11r x 4c
+2026-10-13 18:22:58,454 - INFO - Table 5 for GMFIL: 13r x 11c
+2026-10-13 18:23:03,234 - INFO - Found 5 tables for GMLI
+2026-10-13 18:23:03,242 - INFO - Table 3 for GMLI: 11r x 4c
+2026-10-13 18:23:03,243 - INFO - Table 4 for GMLI: 11r x 4c
+2026-10-13 18:23:03,245 - INFO - Table 5 for GMLI: 13r x 10c
+2026-10-13 18:23:07,954 - INFO - Found 5 tables for GRDBL
+2026-10-13 18:23:07,963 - INFO - Table 3 for GRDBL: 11r x 4c
+2026-10-13 18:23:07,964 - INFO - Table 4 for GRDBL: 11r x 4c
+2026-10-13 18:23:07,966 - INFO - Table 5 for GRDBL: 13r x 11c
+2026-10-13 18:23:12,659 - INFO - Found 5 tables for GUFL
+2026-10-13 18:23:12,668 - INFO - Table 3 for GUFL: 11r x 4c
+2026-10-13 18:23:12,669 - INFO - Table 4 for GUFL: 11r x 4c
+2026-10-13 18:23:12,671 - INFO - Table 5 for GUFL: 13r x 11c
+2026-10-13 18:23:17,422 - INFO - Found 5 tables for GVL
+2026-10-13 18:23:17,431 - INFO - Table 3 for GVL: 11r x 4c
+2026-10-13 18:23:17,432 - INFO - Table 4 for GVL: 15r x 4c
+2026-10-13 18:23:17,433 - INFO - Table 5 for GVL: 13r x 11c
+2026-10-13 18:23:22,150 - INFO - Found 5 tables for HATHY
+2026-10-13 18:23:22,159 - INFO - Table 3 for HATHY: 11r x 4c
+2026-10-13 18:23:22,160 - INFO - Table 4 for HATHY: 11r x 4c
+2026-10-13 18:23:22,162 - INFO - Table 5 for HATHY: 13r x 11c
+2026-10-13 18:23:26,832 - INFO - Found 5 tables for HBL
+2026-10-13 18:23:26,842 - INFO - Table 3 for HBL: 11r x 4c
+2026-10-13 18:23:26,843 - INFO - Table 4 for HBL: 11r x 4c
+2026-10-13 18:23:26,844 - INFO - Table 5 for HBL: 13r x 11c
+2026-10-13 18:23:31,604 - INFO - Found 5 tables for HDHPC
+2026-10-13 18:23:31,613 - INFO - Table 3 for HDHPC: 11r x 4c
+2026-10-13 18:23:31,615 - INFO - Table 4 for HDHPC: 15r x 4c
+2026-10-13 18:23:31,616 - INFO - Table 5 for HDHPC: 13r x 11c
+2026-10-13 18:23:36,352 - INFO - Found 5 tables for HDL
+2026-10-13 18:23:36,361 - INFO - Table 3 for HDL: 11r x 4c
+2026-10-13 18:23:36,362 - INFO - Table 4 for HDL: 11r x 4c
+2026-10-13 18:23:36,363 - INFO - Table 5 for HDL: 13r x 11c
+2026-10-13 18:23:41,076 - INFO - Found 5 tables for HEI
+2026-10-13 18:23:41,084 - INFO - Table 3 for HEI: 11r x 4c
+2026-10-13 18:23:41,085 - INFO - Table 4 for HEI: 11r x 4c
+2026-10-13 18:23:41,087 - INFO - Table 5 for HEI: 13r x 10c
+2026-10-13 18:23:45,831 - INFO - Found 5 tables for HHL
+2026-10-13 18:23:45,839 - INFO - Table 3 for HHL: 11r x 4c
+2026-10-13 18:23:45,840 - INFO - Table 4 for HHL: 15r x 4c
+2026-10-13 18:23:45,842 - INFO - Table 5 for HHL: 13r x 11c
+2026-10-13 18:23:50,539 - INFO - Found 5 tables for HIDCL
+2026-10-13 18:23:50,548 - INFO - Table 3 for HIDCL: 11r x 4c
+2026-10-13 18:23:50,549 - INFO - Table 4 for HIDCL: 11r x 4c
+2026-10-13 18:23:50,551 - INFO - Table 5 for HIDCL: 13r x 11c
+2026-10-13 18:23:55,287 - INFO - Found 5 tables for HLBSL
+2026-10-13 18:23:55,296 - INFO - Table 3 for HLBSL: 11r x 4c
+2026-10-13 18:23:55,297 - INFO - Table 4 for HLBSL: 11r x 4c
+2026-10-13 18:23:55,298 - INFO - Table 5 for HLBSL: 13r x 11c
+2026-10-13 18:23:59,942 - INFO - Found 5 tables for HLI
+2026-10-13 18:23:59,951 - INFO - Table 3 for HLI: 11r x 4c
+2026-10-13 18:23:59,952 - INFO - Table 4 for HLI: 11r x 4c
+2026-10-13 18:23:59,953 - INFO - Table 5 for HLI: 13r x 11c
+2026-10-13 18:24:04,679 - INFO - Found 5 tables for HPPL
+2026-10-13 18:24:04,688 - INFO - Table 3 for HPPL: 11r x 4c
+2026-10-13 18:24:04,689 - INFO - Table 4 for HPPL: 15r x 4c
+2026-10-13 18:24:04,690 - INFO - Table 5 for HPPL: 13r x 11c
+2026-10-13 18:24:09,649 - INFO - Found 5 tables for HRL
+2026-10-13 18:24:09,657 - INFO - Table 3 for HRL: 11r x 4c
+2026-10-13 18:24:09,658 - INFO - Table 4 for HRL: 11r x 4c
+2026-10-13 18:24:09,660 - INFO - Table 5 for HRL: 13r x 11c
+2026-10-13 18:24:14,449 - INFO - Found 5 tables for HURJA
+2026-10-13 18:24:14,458 - INFO - Table 3 for HURJA: 11r x 4c
+2026-10-13 18:24:14,459 - INFO - Table 4 for HURJA: 15r x 4c
+2026-10-13 18:24:14,460 - INFO - Table 5 for HURJA: 13r x 11c
+2026-10-13 18:24:19,245 - INFO - Found 5 tables for ICFC
+2026-10-13 18:24:19,254 - INFO - Table 3 for ICFC: 11r x 4c
+2026-10-13 18:24:19,255 - INFO - Table 4 for ICFC: 11r x 4c
+2026-10-13 18:24:19,257 - INFO - Table 5 for ICFC: 13r x 11c
+2026-10-13 18:24:24,062 - INFO - Found 5 tables for IGI
+2026-10-13 18:24:24,071 - INFO - Table 3 for IGI: 11r x 4c
+2026-10-13 18:24:24,071 - INFO - Table 4 for IGI: 11r x 4c
+2026-10-13 18:24:24,073 - INFO - Table 5 for IGI: 13r x 11c
+2026-10-13 18:24:28,682 - INFO - Found 5 tables for IHL
+2026-10-13 18:24:28,691 - INFO - Table 3 for IHL: 11r x 4c
+2026-10-13 18:24:28,692 - INFO - Table 4 for IHL: 15r x 4c
+2026-10-13 18:24:28,694 - INFO - Table 5 for IHL: 13r x 11c
+2026-10-13 18:24:33,413 - INFO - Found 5 tables for ILBS
+2026-10-13 18:24:33,422 - INFO - Table 3 for ILBS: 11r x 4c
+2026-10-13 18:24:33,423 - INFO - Table 4 for ILBS: 11r x 4c
+2026-10-13 18:24:33,425 - INFO - Table 5 for ILBS: 13r x 11c
+2026-10-13 18:24:38,221 - INFO - Found 5 tables for ILI
+2026-10-13 18:24:38,230 - INFO - Table 3 for ILI: 11r x 4c
+2026-10-13 18:24:38,231 - INFO - Table 4 for ILI: 11r x 4c
+2026-10-13 18:24:38,232 - INFO - Table 5 for ILI: 13r x 11c
+2026-10-13 18:24:42,984 - INFO - Found 5 tables for JBBL
+2026-10-13 18:24:42,994 - INFO - Table 3 for JBBL: 11r x 4c
+2026-10-13 18:24:42,995 - INFO - Table 4 for JBBL: 11r x 4c
+2026-10-13 18:24:42,996 - INFO - Table 5 for JBBL: 13r x 11c
+2026-10-13 18:24:47,662 - INFO - Found 5 tables for JBLB
+2026-10-13 18:24:47,671 - INFO - Table 3 for JBLB: 11r x 4c
+2026-10-13 18:24:47,672 - INFO - Table 4 for JBLB: 11r x 4c
+2026-10-13 18:24:47,674 - INFO - Table 5 for JBLB: 13r x 11c
+2026-10-13 18:24:52,311 - INFO - Found 5 tables for JFL
+2026-10-13 18:24:52,320 - INFO - Table 3 for JFL: 11r x 4c
+2026-10-13 18:24:52,321 - INFO - Table 4 for JFL: 11r x 4c
+2026-10-13 18:24:52,323 - INFO - Table 5 for JFL: 13r x 11c
+2026-10-13 18:24:57,121 - INFO - Found 5 tables for JOSHI
+2026-10-13 18:24:57,130 - INFO - Table 3 for JOSHI: 11r x 4c
+2026-10-13 18:24:57,131 - INFO - Table 4 for JOSHI: 15r x 4c
+2026-10-13 18:24:57,132 - INFO - Table 5 for JOSHI: 13r x 11c
+2026-10-13 18:25:01,785 - INFO - Found 5 tables for JSLBB
+2026-10-13 18:25:01,794 - INFO - Table 3 for JSLBB: 11r x 4c
+2026-10-13 18:25:01,795 - INFO - Table 4 for JSLBB: 11r x 4c
+2026-10-13 18:25:01,797 - INFO - Table 5 for JSLBB: 13r x 11c
+2026-10-13 18:25:06,668 - INFO - Found 5 tables for KBL
+2026-10-13 18:25:06,679 - INFO - Table 3 for KBL: 11r x 4c
+2026-10-13 18:25:06,680 - INFO - Table 4 for KBL: 11r x 4c
+2026-10-13 18:25:06,682 - INFO - Table 5 for KBL: 13r x 11c
+2026-10-13 18:25:11,360 - INFO - Found 5 tables for KBSH
+2026-10-13 18:25:11,369 - INFO - Table 3 for KBSH: 11r x 4c
+2026-10-13 18:25:11,370 - INFO - Table 4 for KBSH: 15r x 4c
+2026-10-13 18:25:11,372 - INFO - Table 5 for KBSH: 13r x 11c
+2026-10-13 18:25:16,084 - INFO - Found 5 tables for KDL
+2026-10-13 18:25:16,093 - INFO - Table 3 for KDL: 11r x 4c
+2026-10-13 18:25:16,094 - INFO - Table 4 for KDL: 11r x 4c
+2026-10-13 18:25:16,096 - INFO - Table 5 for KDL: 13r x 11c
+2026-10-13 18:25:20,880 - INFO - Found 5 tables for KKHC
+2026-10-13 18:25:20,890 - INFO - Table 3 for KKHC: 11r x 4c
+2026-10-13 18:25:20,891 - INFO - Table 4 for KKHC: 15r x 4c
+2026-10-13 18:25:20,892 - INFO - Table 5 for KKHC: 13r x 11c
+2026-10-13 18:25:25,630 - INFO - Found 5 tables for KMCDB
+2026-10-13 18:25:25,639 - INFO - Table 3 for KMCDB: 11r x 4c
+2026-10-13 18:25:25,640 - INFO - Table 4 for KMCDB: 11r x 4c
+2026-10-13 18:25:25,642 - INFO - Table 5 for KMCDB: 13r x 11c
+2026-10-13 18:25:30,279 - INFO - Found 5 tables for KPCL
+2026-10-13 18:25:30,287 - INFO - Table 3 for KPCL: 11r x 4c
+2026-10-13 18:25:30,288 - INFO - Table 4 for KPCL: 15r x 4c
+2026-10-13 18:25:30,290 - INFO - Table 5 for KPCL: 13r x 11c
+2026-10-13 18:25:34,978 - INFO - Found 5 tables for KSBBL
+2026-10-13 18:25:34,987 - INFO - Table 3 for KSBBL: 11r x 4c
+2026-10-13 18:25:34,988 - INFO - Table 4 for KSBBL: 11r x 4c
+2026-10-13 18:25:34,990 - INFO - Table 5 for KSBBL: 13r x 11c
+2026-10-13 18:25:39,730 - INFO - Found 5 tables for LBBL
+2026-10-13 18:25:39,739 - INFO - Table 3 for LBBL: 11r x 4c
+2026-10-13 18:25:39,740 - INFO - Table 4 for LBBL: 11r x 4c
+2026-10-13 18:25:39,742 - INFO - Table 5 for LBBL: 13r x 11c
+2026-10-13 18:25:44,403 - INFO - Found 5 tables for LEC
+2026-10-13 18:25:44,412 - INFO - Table 3 for LEC: 11r x 4c
+2026-10-13 18:25:44,413 - INFO - Table 4 for LEC: 15r x 4c
+2026-10-13 18:25:44,414 - INFO - Table 5 for LEC: 13r x 11c
+2026-10-13 18:25:49,057 - INFO - Found 5 tables for LICN
+2026-10-13 18:25:49,066 - INFO - Table 3 for LICN: 11r x 4c
+2026-10-13 18:25:49,067 - INFO - Table 4 for LICN: 11r x 4c
+2026-10-13 18:25:49,069 - INFO - Table 5 for LICN: 13r x 11c
+2026-10-13 18:25:53,775 - INFO - Found 5 tables for LLBS
+2026-10-13 18:25:53,784 - INFO - Table 3 for LLBS: 11r x 4c
+2026-10-13 18:25:53,784 - INFO - Table 4 for LLBS: 11r x 4c
+2026-10-13 18:25:53,786 - INFO - Table 5 for LLBS: 13r x 11c
+2026-10-13 18:25:58,484 - INFO - Found 5 tables for LSL
+2026-10-13 18:25:58,493 - INFO - Table 3 for LSL: 11r x 4c
+2026-10-13 18:25:58,494 - INFO - Table 4 for LSL: 11r x 4c
+2026-10-13 18:25:58,496 - INFO - Table 5 for LSL: 13r x 11c
+2026-10-13 18:26:03,239 - INFO - Found 5 tables for MAKAR
+2026-10-13 18:26:03,248 - INFO - Table 3 for MAKAR: 11r x 4c
+2026-10-13 18:26:03,249 - INFO - Table 4 for MAKAR: 15r x 4c
+2026-10-13 18:26:03,251 - INFO - Table 5 for MAKAR: 13r x 11c
+2026-10-13 18:26:07,897 - INFO - Found 5 tables for MANDU
+2026-10-13 18:26:07,906 - INFO - Table 3 for MANDU: 11r x 4c
+2026-10-13 18:26:07,907 - INFO - Table 4 for MANDU: 15r x 4c
+2026-10-13 18:26:07,909 - INFO - Table 5 for MANDU: 13r x 11c
+2026-10-13 18:26:12,523 - INFO - Found 5 tables for MATRI
+2026-10-13 18:26:12,532 - INFO - Table 3 for MATRI: 11r x 4c
+2026-10-13 18:26:12,533 - INFO - Table 4 for MATRI: 11r x 4c
+2026-10-13 18:26:12,535 - INFO - Table 5 for MATRI: 13r x 11c
+2026-10-13 18:26:17,286 - INFO - Found 5 tables for MBJC
+2026-10-13 18:26:17,295 - INFO - Table 3 for MBJC: 11r x 4c
+2026-10-13 18:26:17,296 - INFO - Table 4 for MBJC: 15r x 4c
+2026-10-13 18:26:17,297 - INFO - Table 5 for MBJC: 13r x 11c
+2026-10-13 18:26:22,013 - INFO - Found 5 tables for MBL
+2026-10-13 18:26:22,023 - INFO - Table 3 for MBL: 11r x 4c
+2026-10-13 18:26:22,023 - INFO - Table 4 for MBL: 11r x 4c
+2026-10-13 18:26:22,025 - INFO - Table 5 for MBL: 13r x 11c
+2026-10-13 18:26:26,653 - INFO - Found 5 tables for MCHL
+2026-10-13 18:26:26,662 - INFO - Table 3 for MCHL: 11r x 4c
+2026-10-13 18:26:26,663 - INFO - Table 4 for MCHL: 15r x 4c
+2026-10-13 18:26:26,664 - INFO - Table 5 for MCHL: 13r x 11c
+2026-10-13 18:26:31,339 - INFO - Found 5 tables for MDB
+2026-10-13 18:26:31,348 - INFO - Table 3 for MDB: 11r x 4c
+2026-10-13 18:26:31,349 - INFO - Table 4 for MDB: 11r x 4c
+2026-10-13 18:26:31,351 - INFO - Table 5 for MDB: 13r x 11c
+2026-10-13 18:26:36,021 - INFO - Found 5 tables for MEHL
+2026-10-13 18:26:36,030 - INFO - Table 3 for MEHL: 11r x 4c
+2026-10-13 18:26:36,031 - INFO - Table 4 for MEHL: 15r x 4c
+2026-10-13 18:26:36,032 - INFO - Table 5 for MEHL: 13r x 11c
+2026-10-13 18:26:40,721 - INFO - Found 5 tables for MEL
+2026-10-13 18:26:40,730 - INFO - Table 3 for MEL: 11r x 4c
+2026-10-13 18:26:40,731 - INFO - Table 4 for MEL: 15r x 4c
+2026-10-13 18:26:40,732 - INFO - Table 5 for MEL: 13r x 11c
+2026-10-13 18:26:45,461 - INFO - Found 5 tables for MEN
+2026-10-13 18:26:45,470 - INFO - Table 3 for MEN: 11r x 4c
+2026-10-13 18:26:45,471 - INFO - Table 4 for MEN: 15r x 4c
+2026-10-13 18:26:45,472 - INFO - Table 5 for MEN: 13r x 11c
+2026-10-13 18:26:50,091 - INFO - Found 5 tables for MERO
+2026-10-13 18:26:50,101 - INFO - Table 3 for MERO: 11r x 4c
+2026-10-13 18:26:50,102 - INFO - Table 4 for MERO: 11r x 4c
+2026-10-13 18:26:50,103 - INFO - Table 5 for MERO: 13r x 11c
+2026-10-13 18:26:54,704 - INFO - Found 5 tables for MFIL
+2026-10-13 18:26:54,713 - INFO - Table 3 for MFIL: 11r x 4c
+2026-10-13 18:26:54,714 - INFO - Table 4 for MFIL: 11r x 4c
+2026-10-13 18:26:54,715 - INFO - Table 5 for MFIL: 13r x 11c
+2026-10-13 18:26:59,370 - INFO - Found 5 tables for MHCL
+2026-10-13 18:26:59,379 - INFO - Table 3 for MHCL: 11r x 4c
+2026-10-13 18:26:59,380 - INFO - Table 4 for MHCL: 15r x 4c
+2026-10-13 18:26:59,382 - INFO - Table 5 for MHCL: 13r x 11c
+2026-10-13 18:27:04,855 - INFO - Found 5 tables for MHL
+2026-10-13 18:27:04,864 - INFO - Table 3 for MHL: 11r x 4c
+2026-10-13 18:27:04,865 - INFO - Table 4 for MHL: 15r x 4c
+2026-10-13 18:27:04,866 - INFO - Table 5 for MHL: 13r x 11c
+2026-10-13 18:27:09,543 - INFO - Found 5 tables for MHNL
+2026-10-13 18:27:09,552 - INFO - Table 3 for MHNL: 11r x 4c
+2026-10-13 18:27:09,553 - INFO - Table 4 for MHNL: 15r x 4c
+2026-10-13 18:27:09,554 - INFO - Table 5 for MHNL: 13r x 11c
+2026-10-13 18:27:14,235 - INFO - Found 5 tables for MKCL
+2026-10-13 18:27:14,244 - INFO - Table 3 for MKCL: 11r x 4c
+2026-10-13 18:27:14,245 - INFO - Table 4 for MKCL: 11r x 4c
+2026-10-13 18:27:14,247 - INFO - Table 5 for MKCL: 13r x 11c
+2026-10-13 18:27:18,885 - INFO - Found 5 tables for MKHC
+2026-10-13 18:27:18,894 - INFO - Table 3 for MKHC: 11r x 4c
+2026-10-13 18:27:18,895 - INFO - Table 4 for MKHC: 15r x 4c
+2026-10-13 18:27:18,896 - INFO - Table 5 for MKHC: 13r x 11c
+2026-10-13 18:27:23,566 - INFO - Found 5 tables for MKHL
+2026-10-13 18:27:23,575 - INFO - Table 3 for MKHL: 11r x 4c
+2026-10-13 18:27:23,576 - INFO - Table 4 for MKHL: 15r x 4c
+2026-10-13 18:27:23,577 - INFO - Table 5 for MKHL: 13r x 11c
+2026-10-13 18:27:28,393 - INFO - Found 5 tables for MKJC
+2026-10-13 18:27:28,403 - INFO - Table 3 for MKJC: 11r x 4c
+2026-10-13 18:27:28,404 - INFO - Table 4 for MKJC: 15r x 4c
+2026-10-13 18:27:28,405 - INFO - Table 5 for MKJC: 13r x 11c
+2026-10-13 18:27:33,359 - INFO - Found 5 tables for MLBBL
+2026-10-13 18:27:33,368 - INFO - Table 3 for MLBBL: 11r x 4c
+2026-10-13 18:27:33,369 - INFO - Table 4 for MLBBL: 11r x 4c
+2026-10-13 18:27:33,371 - INFO - Table 5 for MLBBL: 13r x 11c
+2026-10-13 18:27:38,030 - INFO - Found 5 tables for MLBL
+2026-10-13 18:27:38,039 - INFO - Table 3 for MLBL: 11r x 4c
+2026-10-13 18:27:38,040 - INFO - Table 4 for MLBL: 11r x 4c
+2026-10-13 18:27:38,042 - INFO - Table 5 for MLBL: 13r x 11c
+2026-10-13 18:27:42,663 - INFO - Found 5 tables for MLBS
+2026-10-13 18:27:42,672 - INFO - Table 3 for MLBS: 11r x 4c
+2026-10-13 18:27:42,673 - INFO - Table 4 for MLBS: 11r x 4c
+2026-10-13 18:27:42,674 - INFO - Table 5 for MLBS: 13r x 11c
+2026-10-13 18:27:47,427 - INFO - Found 5 tables for MLBSL
+2026-10-13 18:27:47,436 - INFO - Table 3 for MLBSL: 11r x 4c
+2026-10-13 18:27:47,436 - INFO - Table 4 for MLBSL: 11r x 4c
+2026-10-13 18:27:47,438 - INFO - Table 5 for MLBSL: 13r x 11c
+2026-10-13 18:27:52,198 - INFO - Found 5 tables for MMKJL
+2026-10-13 18:27:52,207 - INFO - Table 3 for MMKJL: 11r x 4c
+2026-10-13 18:27:52,208 - INFO - Table 4 for MMKJL: 15r x 4c
+2026-10-13 18:27:52,210 - INFO - Table 5 for MMKJL: 13r x 11c
+2026-10-13 18:27:57,419 - INFO - Found 5 tables for MNBBL
+2026-10-13 18:27:57,428 - INFO - Table 3 for MNBBL: 11r x 4c
+2026-10-13 18:27:57,429 - INFO - Table 4 for MNBBL: 11r x 4c
+2026-10-13 18:27:57,431 - INFO - Table 5 for MNBBL: 13r x 11c
+2026-10-13 18:28:02,510 - INFO - Found 5 tables for MPFL
+2026-10-13 18:28:02,519 - INFO - Table 3 for MPFL: 11r x 4c
+2026-10-13 18:28:02,520 - INFO - Table 4 for MPFL: 11r x 4c
+2026-10-13 18:28:02,521 - INFO - Table 5 for MPFL: 13r x 11c
+2026-10-13 18:28:07,203 - INFO - Found 5 tables for MSHL
+2026-10-13 18:28:07,212 - INFO - Table 3 for MSHL: 11r x 4c
+2026-10-13 18:28:07,213 - INFO - Table 4 for MSHL: 15r x 4c
+2026-10-13 18:28:07,215 - INFO - Table 5 for MSHL: 13r x 11c
+2026-10-13 18:28:11,997 - INFO - Found 5 tables for MSLB
+2026-10-13 18:28:12,007 - INFO - Table 3 for MSLB: 11r x 4c
+2026-10-13 18:28:12,008 - INFO - Table 4 for MSLB: 11r x 4c
+2026-10-13 18:28:12,009 - INFO - Table 5 for MSLB: 13r x 11c
+2026-10-13 18:28:16,730 - INFO - Found 5 tables for NABBC
+2026-10-13 18:28:16,739 - INFO - Table 3 for NABBC: 11r x 4c
+2026-10-13 18:28:16,741 - INFO - Table 4 for NABBC: 11r x 4c
+2026-10-13 18:28:16,742 - INFO - Table 5 for NABBC: 13r x 11c
+2026-10-13 18:28:21,623 - INFO - Found 5 tables for NABIL
+2026-10-13 18:28:21,632 - INFO - Table 3 for NABIL: 11r x 4c
+2026-10-13 18:28:21,633 - INFO - Table 4 for NABIL: 11r x 4c
+2026-10-13 18:28:21,635 - INFO - Table 5 for NABIL: 13r x 11c
+2026-10-13 18:28:26,409 - INFO - Found 5 tables for NADEP
+2026-10-13 18:28:26,419 - INFO - Table 3 for NADEP: 11r x 4c
+2026-10-13 18:28:26,420 - INFO - Table 4 for NADEP: 11r x 4c
+2026-10-13 18:28:26,421 - INFO - Table 5 for NADEP: 13r x 11c
+2026-10-13 18:28:31,249 - INFO - Found 5 tables for NBL
+2026-10-13 18:28:31,258 - INFO - Table 3 for NBL: 11r x 4c
+2026-10-13 18:28:31,259 - INFO - Table 4 for NBL: 11r x 4c
+2026-10-13 18:28:31,261 - INFO - Table 5 for NBL: 13r x 11c
+2026-10-13 18:28:36,005 - INFO - Found 5 tables for NESDO
+2026-10-13 18:28:36,014 - INFO - Table 3 for NESDO: 11r x 4c
+2026-10-13 18:28:36,015 - INFO - Table 4 for NESDO: 11r x 4c
+2026-10-13 18:28:36,017 - INFO - Table 5 for NESDO: 13r x 11c
+2026-10-13 18:28:40,726 - INFO - Found 5 tables for NFS
+2026-10-13 18:28:40,735 - INFO - Table 3 for NFS: 11r x 4c
+2026-10-13 18:28:40,736 - INFO - Table 4 for NFS: 11r x 4c
+2026-10-13 18:28:40,737 - INFO - Table 5 for NFS: 13r x 11c
+2026-10-13 18:28:46,098 - INFO - Found 5 tables for NGPL
+2026-10-13 18:28:46,107 - INFO - Table 3 for NGPL: 11r x 4c
+2026-10-13 18:28:46,108 - INFO - Table 4 for NGPL: 15r x 4c
+2026-10-13 18:28:46,109 - INFO - Table 5 for NGPL: 13r x 11c
+2026-10-13 18:28:50,766 - INFO - Found 5 tables for NHDL
+2026-10-13 18:28:50,775 - INFO - Table 3 for NHDL: 11r x 4c
+2026-10-13 18:28:50,776 - INFO - Table 4 for NHDL: 15r x 4c
+2026-10-13 18:28:50,777 - INFO - Table 5 for NHDL: 13r x 11c
+2026-10-13 18:28:55,604 - INFO - Found 5 tables for NHPC
+2026-10-13 18:28:55,613 - INFO - Table 3 for NHPC: 11r x 4c
+2026-10-13 18:28:55,614 - INFO - Table 4 for NHPC: 15r x 4c
+2026-10-13 18:28:55,616 - INFO - Table 5 for NHPC: 13r x 11c
+2026-10-13 18:29:00,316 - INFO - Found 5 tables for NICA
+2026-10-13 18:29:00,326 - INFO - Table 3 for NICA: 11r x 4c
+2026-10-13 18:29:00,327 - INFO - Table 4 for NICA: 11r x 4c
+2026-10-13 18:29:00,328 - INFO - Table 5 for NICA: 13r x 11c
+2026-10-13 18:29:04,965 - INFO - Found 5 tables for NICL
+2026-10-13 18:29:04,974 - INFO - Table 3 for NICL: 11r x 4c
+2026-10-13 18:29:04,975 - INFO - Table 4 for NICL: 11r x 4c
+2026-10-13 18:29:04,976 - INFO - Table 5 for NICL: 13r x 11c
+2026-10-13 18:29:09,702 - INFO - Found 5 tables for NICLBSL
+2026-10-13 18:29:09,712 - INFO - Table 3 for NICLBSL: 11r x 4c
+2026-10-13 18:29:09,713 - INFO - Table 4 for NICLBSL: 11r x 4c
+2026-10-13 18:29:09,714 - INFO - Table 5 for NICLBSL: 13r x 11c
+2026-10-13 18:29:14,415 - INFO - Found 5 tables for NIFRA
+2026-10-13 18:29:14,425 - INFO - Table 3 for NIFRA: 11r x 4c
+2026-10-13 18:29:14,426 - INFO - Table 4 for NIFRA: 11r x 4c
+2026-10-13 18:29:14,427 - INFO - Table 5 for NIFRA: 13r x 11c
+2026-10-13 18:29:19,260 - INFO - Found 5 tables for NIL
+2026-10-13 18:29:19,269 - INFO - Table 3 for NIL: 11r x 4c
+2026-10-13 18:29:19,270 - INFO - Table 4 for NIL: 11r x 4c
+2026-10-13 18:29:19,272 - INFO - Table 5 for NIL: 13r x 10c
+2026-10-13 18:29:23,972 - INFO - Found 5 tables for NIMB
+2026-10-13 18:29:23,981 - INFO - Table 3 for NIMB: 11r x 4c
+2026-10-13 18:29:23,982 - INFO - Table 4 for NIMB: 11r x 4c
+2026-10-13 18:29:23,984 - INFO - Table 5 for NIMB: 13r x 11c
+2026-10-13 18:29:28,678 - INFO - Found 5 tables for NLG
+2026-10-13 18:29:28,688 - INFO - Table 3 for NLG: 11r x 4c
+2026-10-13 18:29:28,688 - INFO - Table 4 for NLG: 11r x 4c
+2026-10-13 18:29:28,690 - INFO - Table 5 for NLG: 13r x 11c
+2026-10-13 18:29:33,284 - INFO - Found 5 tables for NLIC
+2026-10-13 18:29:33,293 - INFO - Table 3 for NLIC: 11r x 4c
+2026-10-13 18:29:33,294 - INFO - Table 4 for NLIC: 11r x 4c
+2026-10-13 18:29:33,295 - INFO - Table 5 for NLIC: 13r x 11c
+2026-10-13 18:29:38,032 - INFO - Found 5 tables for NLICL
+2026-10-13 18:29:38,041 - INFO - Table 3 for NLICL: 11r x 4c
+2026-10-13 18:29:38,042 - INFO - Table 4 for NLICL: 11r x 4c
+2026-10-13 18:29:38,044 - INFO - Table 5 for NLICL: 13r x 11c
+2026-10-13 18:29:42,992 - INFO - Found 5 tables for NLO
+2026-10-13 18:29:43,001 - INFO - Table 3 for NLO: 11r x 4c
+2026-10-13 18:29:43,002 - INFO - Table 4 for NLO: 11r x 4c
+2026-10-13 18:29:43,003 - INFO - Table 5 for NLO: 13r x 11c
+2026-10-13 18:29:47,674 - INFO - Found 5 tables for NMB
+2026-10-13 18:29:47,684 - INFO - Table 3 for NMB: 11r x 4c
+2026-10-13 18:29:47,685 - INFO - Table 4 for NMB: 11r x 4c
+2026-10-13 18:29:47,686 - INFO - Table 5 for NMB: 13r x 11c
+2026-10-13 18:29:52,327 - INFO - Found 5 tables for NMBMF
+2026-10-13 18:29:52,336 - INFO - Table 3 for NMBMF: 11r x 4c
+2026-10-13 18:29:52,337 - INFO - Table 4 for NMBMF: 11r x 4c
+2026-10-13 18:29:52,338 - INFO - Table 5 for NMBMF: 13r x 11c
+2026-10-13 18:29:57,030 - INFO - Found 5 tables for NMFBS
+2026-10-13 18:29:57,039 - INFO - Table 3 for NMFBS: 11r x 4c
+2026-10-13 18:29:57,040 - INFO - Table 4 for NMFBS: 11r x 4c
+2026-10-13 18:29:57,042 - INFO - Table 5 for NMFBS: 13r x 11c
+2026-10-13 18:30:01,748 - INFO - Found 5 tables for NMIC
+2026-10-13 18:30:01,757 - INFO - Table 3 for NMIC: 11r x 4c
+2026-10-13 18:30:01,758 - INFO - Table 4 for NMIC: 11r x 4c
+2026-10-13 18:30:01,760 - INFO - Table 5 for NMIC: 13r x 9c
+2026-10-13 18:30:07,784 - INFO - Found 5 tables for NMLBBL
+2026-10-13 18:30:07,793 - INFO - Table 3 for NMLBBL: 11r x 4c
+2026-10-13 18:30:07,794 - INFO - Table 4 for NMLBBL: 11r x 4c
+2026-10-13 18:30:07,796 - INFO - Table 5 for NMLBBL: 13r x 11c
+2026-10-13 18:30:12,487 - INFO - Found 5 tables for NRIC
+2026-10-13 18:30:12,496 - INFO - Table 3 for NRIC: 11r x 4c
+2026-10-13 18:30:12,497 - INFO - Table 4 for NRIC: 11r x 4c
+2026-10-13 18:30:12,498 - INFO - Table 5 for NRIC: 13r x 11c
+2026-10-13 18:30:18,925 - INFO - Found 5 tables for NRM
+2026-10-13 18:30:18,934 - INFO - Table 3 for NRM: 11r x 4c
+2026-10-13 18:30:18,935 - INFO - Table 4 for NRM: 11r x 4c
+2026-10-13 18:30:18,936 - INFO - Table 5 for NRM: 13r x 11c
+2026-10-13 18:30:23,715 - INFO - Found 5 tables for NRN
+2026-10-13 18:30:23,724 - INFO - Table 3 for NRN: 11r x 4c
+2026-10-13 18:30:23,725 - INFO - Table 4 for NRN: 11r x 4c
+2026-10-13 18:30:23,726 - INFO - Table 5 for NRN: 13r x 11c
+2026-10-13 18:30:28,384 - INFO - Found 5 tables for NTC
+2026-10-13 18:30:28,393 - INFO - Table 3 for NTC: 11r x 4c
+2026-10-13 18:30:28,394 - INFO - Table 4 for NTC: 11r x 4c
+2026-10-13 18:30:28,396 - INFO - Table 5 for NTC: 13r x 11c
+2026-10-13 18:30:33,103 - INFO - Found 5 tables for NUBL
+2026-10-13 18:30:33,112 - INFO - Table 3 for NUBL: 11r x 4c
+2026-10-13 18:30:33,113 - INFO - Table 4 for NUBL: 11r x 4c
+2026-10-13 18:30:33,115 - INFO - Table 5 for NUBL: 13r x 11c
+2026-10-13 18:30:37,800 - INFO - Found 5 tables for NWCL
+2026-10-13 18:30:37,809 - INFO - Table 3 for NWCL: 11r x 4c
+2026-10-13 18:30:37,810 - INFO - Table 4 for NWCL: 11r x 4c
+2026-10-13 18:30:37,811 - INFO - Table 5 for NWCL: 13r x 11c
+2026-10-13 18:30:42,536 - INFO - Found 5 tables for NYADI
+2026-10-13 18:30:42,544 - INFO - Table 3 for NYADI: 11r x 4c
+2026-10-13 18:30:42,545 - INFO - Table 4 for NYADI: 15r x 4c
+2026-10-13 18:30:42,547 - INFO - Table 5 for NYADI: 13r x 11c
+2026-10-13 18:30:47,220 - INFO - Found 5 tables for OHL
+2026-10-13 18:30:47,229 - INFO - Table 3 for OHL: 11r x 4c
+2026-10-13 18:30:47,230 - INFO - Table 4 for OHL: 11r x 4c
+2026-10-13 18:30:47,231 - INFO - Table 5 for OHL: 13r x 11c
+2026-10-13 18:30:52,018 - INFO - Found 5 tables for OMPL
+2026-10-13 18:30:52,027 - INFO - Table 3 for OMPL: 11r x 4c
+2026-10-13 18:30:52,028 - INFO - Table 4 for OMPL: 11r x 4c
+2026-10-13 18:30:52,029 - INFO - Table 5 for OMPL: 13r x 9c
+2026-10-13 18:30:56,707 - INFO - Found 5 tables for PCBL
+2026-10-13 18:30:56,717 - INFO - Table 3 for PCBL: 11r x 4c
+2026-10-13 18:30:56,717 - INFO - Table 4 for PCBL: 11r x 4c
+2026-10-13 18:30:56,719 - INFO - Table 5 for PCBL: 13r x 11c
+2026-10-13 18:31:01,353 - INFO - Found 5 tables for PFL
+2026-10-13 18:31:01,362 - INFO - Table 3 for PFL: 11r x 4c
+2026-10-13 18:31:01,362 - INFO - Table 4 for PFL: 11r x 4c
+2026-10-13 18:31:01,364 - INFO - Table 5 for PFL: 13r x 11c
+2026-10-13 18:31:06,012 - INFO - Found 5 tables for PHCL
+2026-10-13 18:31:06,021 - INFO - Table 3 for PHCL: 11r x 4c
+2026-10-13 18:31:06,022 - INFO - Table 4 for PHCL: 15r x 4c
+2026-10-13 18:31:06,024 - INFO - Table 5 for PHCL: 13r x 11c
+2026-10-13 18:31:10,868 - INFO - Found 5 tables for PMHPL
+2026-10-13 18:31:10,878 - INFO - Table 3 for PMHPL: 11r x 4c
+2026-10-13 18:31:10,879 - INFO - Table 4 for PMHPL: 15r x 4c
+2026-10-13 18:31:10,880 - INFO - Table 5 for PMHPL: 13r x 11c
+2026-10-13 18:31:15,463 - INFO - Found 5 tables for PMLI
+2026-10-13 18:31:15,472 - INFO - Table 3 for PMLI: 11r x 4c
+2026-10-13 18:31:15,473 - INFO - Table 4 for PMLI: 11r x 4c
+2026-10-13 18:31:15,474 - INFO - Table 5 for PMLI: 13r x 11c
+2026-10-13 18:31:20,112 - INFO - Found 5 tables for PPCL
+2026-10-13 18:31:20,121 - INFO - Table 3 for PPCL: 11r x 4c
+2026-10-13 18:31:20,122 - INFO - Table 4 for PPCL: 15r x 4c
+2026-10-13 18:31:20,123 - INFO - Table 5 for PPCL: 13r x 11c
+2026-10-13 18:31:24,880 - INFO - Found 5 tables for PPL
+2026-10-13 18:31:24,889 - INFO - Table 3 for PPL: 11r x 4c
+2026-10-13 18:31:24,890 - INFO - Table 4 for PPL: 15r x 4c
+2026-10-13 18:31:24,891 - INFO - Table 5 for PPL: 13r x 11c
+2026-10-13 18:31:29,712 - INFO - Found 5 tables for PRIN
+2026-10-13 18:31:29,721 - INFO - Table 3 for PRIN: 11r x 4c
+2026-10-13 18:31:29,722 - INFO - Table 4 for PRIN: 11r x 4c
+2026-10-13 18:31:29,723 - INFO - Table 5 for PRIN: 13r x 11c
+2026-10-13 18:31:35,103 - INFO - Found 5 tables for PROFL
+2026-10-13 18:31:35,112 - INFO - Table 3 for PROFL: 11r x 4c
+2026-10-13 18:31:35,113 - INFO - Table 4 for PROFL: 11r x 4c
+2026-10-13 18:31:35,115 - INFO - Table 5 for PROFL: 13r x 11c
+2026-10-13 18:31:39,781 - INFO - Found 5 tables for PRVU
+2026-10-13 18:31:39,790 - INFO - Table 3 for PRVU: 11r x 4c
+2026-10-13 18:31:39,791 - INFO - Table 4 for PRVU: 11r x 4c
+2026-10-13 18:31:39,793 - INFO - Table 5 for PRVU: 13r x 11c
+2026-10-13 18:31:44,579 - INFO - Found 5 tables for PURE
+2026-10-13 18:31:44,588 - INFO - Table 3 for PURE: 11r x 4c
+2026-10-13 18:31:44,589 - INFO - Table 4 for PURE: 15r x 4c
+2026-10-13 18:31:44,590 - INFO - Table 5 for PURE: 13r x 8c
+2026-10-13 18:31:49,350 - INFO - Found 5 tables for RADHI
+2026-10-13 18:31:49,360 - INFO - Table 3 for RADHI: 11r x 4c
+2026-10-13 18:31:49,361 - INFO - Table 4 for RADHI: 15r x 4c
+2026-10-13 18:31:49,363 - INFO - Table 5 for RADHI: 13r x 11c
+2026-10-13 18:31:54,055 - INFO - Found 5 tables for RAWA
+2026-10-13 18:31:54,064 - INFO - Table 3 for RAWA: 11r x 4c
+2026-10-13 18:31:54,065 - INFO - Table 4 for RAWA: 15r x 4c
+2026-10-13 18:31:54,067 - INFO - Table 5 for RAWA: 13r x 11c
+2026-10-13 18:31:58,826 - INFO - Found 5 tables for RBCL
+2026-10-13 18:31:58,836 - INFO - Table 3 for RBCL: 11r x 4c
+2026-10-13 18:31:58,837 - INFO - Table 4 for RBCL: 11r x 4c
+2026-10-13 18:31:58,838 - INFO - Table 5 for RBCL: 13r x 11c
+2026-10-13 18:32:03,655 - INFO - Found 5 tables for RFPL
+2026-10-13 18:32:03,665 - INFO - Table 3 for RFPL: 11r x 4c
+2026-10-13 18:32:03,666 - INFO - Table 4 for RFPL: 15r x 4c
+2026-10-13 18:32:03,667 - INFO - Table 5 for RFPL: 13r x 11c
+2026-10-13 18:32:08,419 - INFO - Found 5 tables for RHGCL
+2026-10-13 18:32:08,428 - INFO - Table 3 for RHGCL: 11r x 4c
+2026-10-13 18:32:08,429 - INFO - Table 4 for RHGCL: 15r x 4c
+2026-10-13 18:32:08,431 - INFO - Table 5 for RHGCL: 13r x 11c
+2026-10-13 18:32:13,323 - INFO - Found 5 tables for RHPL
+2026-10-13 18:32:13,332 - INFO - Table 3 for RHPL: 11r x 4c
+2026-10-13 18:32:13,333 - INFO - Table 4 for RHPL: 15r x 4c
+2026-10-13 18:32:13,335 - INFO - Table 5 for RHPL: 13r x 11c
+2026-10-13 18:32:18,030 - INFO - Found 5 tables for RIDI
+2026-10-13 18:32:18,039 - INFO - Table 3 for RIDI: 11r x 4c
+2026-10-13 18:32:18,040 - INFO - Table 4 for RIDI: 15r x 4c
+2026-10-13 18:32:18,042 - INFO - Table 5 for RIDI: 13r x 11c
+2026-10-13 18:32:22,925 - INFO - Found 5 tables for RLFL
+2026-10-13 18:32:22,935 - INFO - Table 3 for RLFL: 11r x 4c
+2026-10-13 18:32:22,936 - INFO - Table 4 for RLFL: 11r x 4c
+2026-10-13 18:32:22,938 - INFO - Table 5 for RLFL: 13r x 11c
+2026-10-13 18:32:27,547 - INFO - Found 5 tables for RNLI
+2026-10-13 18:32:27,556 - INFO - Table 3 for RNLI: 11r x 4c
+2026-10-13 18:32:27,557 - INFO - Table 4 for RNLI: 11r x 4c
+2026-10-13 18:32:27,559 - INFO - Table 5 for RNLI: 13r x 11c
+2026-10-13 18:32:32,398 - INFO - Found 5 tables for RSDC
+2026-10-13 18:32:32,407 - INFO - Table 3 for RSDC: 11r x 4c
+2026-10-13 18:32:32,408 - INFO - Table 4 for RSDC: 11r x 4c
+2026-10-13 18:32:32,410 - INFO - Table 5 for RSDC: 13r x 11c
+2026-10-13 18:32:37,064 - INFO - Found 5 tables for RURU
+2026-10-13 18:32:37,073 - INFO - Table 3 for RURU: 11r x 4c
+2026-10-13 18:32:37,074 - INFO - Table 4 for RURU: 15r x 4c
+2026-10-13 18:32:37,076 - INFO - Table 5 for RURU: 13r x 11c
+2026-10-13 18:32:42,151 - INFO - Found 5 tables for SADBL
+2026-10-13 18:32:42,160 - INFO - Table 3 for SADBL: 11r x 4c
+2026-10-13 18:32:42,161 - INFO - Table 4 for SADBL: 11r x 4c
+2026-10-13 18:32:42,163 - INFO - Table 5 for SADBL: 13r x 11c
+2026-10-13 18:32:46,709 - INFO - Found 5 tables for SAHAS
+2026-10-13 18:32:46,718 - INFO - Table 3 for SAHAS: 11r x 4c
+2026-10-13 18:32:46,719 - INFO - Table 4 for SAHAS: 15r x 4c
+2026-10-13 18:32:46,720 - INFO - Table 5 for SAHAS: 13r x 11c
+2026-10-13 18:32:51,424 - INFO - Found 5 tables for SALICO
+2026-10-13 18:32:51,433 - INFO - Table 3 for SALICO: 11r x 4c
+2026-10-13 18:32:51,434 - INFO - Table 4 for SALICO: 11r x 4c
+2026-10-13 18:32:51,435 - INFO - Table 5 for SALICO: 13r x 11c
+2026-10-13 18:32:56,142 - INFO - Found 5 tables for SAMAJ
+2026-10-13 18:32:56,151 - INFO - Table 3 for SAMAJ: 11r x 4c
+2026-10-13 18:32:56,152 - INFO - Table 4 for SAMAJ: 11r x 4c
+2026-10-13 18:32:56,153 - INFO - Table 5 for SAMAJ: 13r x 7c
+2026-10-13 18:33:00,758 - INFO - Found 5 tables for SANIMA
+2026-10-13 18:33:00,767 - INFO - Table 3 for SANIMA: 11r x 4c
+2026-10-13 18:33:00,768 - INFO - Table 4 for SANIMA: 11r x 4c
+2026-10-13 18:33:00,769 - INFO - Table 5 for SANIMA: 13r x 11c
+2026-10-13 18:33:05,423 - INFO - Found 5 tables for SANVI
+2026-10-13 18:33:05,432 - INFO - Table 3 for SANVI: 11r x 4c
+2026-10-13 18:33:05,433 - INFO - Table 4 for SANVI: 15r x 4c
+2026-10-13 18:33:05,434 - INFO - Table 5 for SANVI: 13r x 8c
+2026-10-13 18:33:10,008 - INFO - Found 5 tables for SAPDBL
+2026-10-13 18:33:10,016 - INFO - Table 3 for SAPDBL: 11r x 4c
+2026-10-13 18:33:10,017 - INFO - Table 4 for SAPDBL: 11r x 4c
+2026-10-13 18:33:10,019 - INFO - Table 5 for SAPDBL: 13r x 11c
+2026-10-13 18:33:14,681 - INFO - Found 5 tables for SARBTM
+2026-10-13 18:33:14,690 - INFO - Table 3 for SARBTM: 11r x 4c
+2026-10-13 18:33:14,691 - INFO - Table 4 for SARBTM: 11r x 4c
+2026-10-13 18:33:14,692 - INFO - Table 5 for SARBTM: 13r x 11c
+2026-10-13 18:33:19,485 - INFO - Found 5 tables for SBI
+2026-10-13 18:33:19,494 - INFO - Table 3 for SBI: 11r x 4c
+2026-10-13 18:33:19,495 - INFO - Table 4 for SBI: 11r x 4c
+2026-10-13 18:33:19,497 - INFO - Table 5 for SBI: 13r x 11c
+2026-10-13 18:33:24,068 - INFO - Found 5 tables for SBL
+2026-10-13 18:33:24,077 - INFO - Table 3 for SBL: 11r x 4c
+2026-10-13 18:33:24,078 - INFO - Table 4 for SBL: 11r x 4c
+2026-10-13 18:33:24,079 - INFO - Table 5 for SBL: 13r x 11c
+2026-10-13 18:33:28,790 - INFO - Found 5 tables for SCB
+2026-10-13 18:33:28,799 - INFO - Table 3 for SCB: 11r x 4c
+2026-10-13 18:33:28,800 - INFO - Table 4 for SCB: 11r x 4c
+2026-10-13 18:33:28,801 - INFO - Table 5 for SCB: 13r x 11c
+2026-10-13 18:33:33,368 - INFO - Found 5 tables for SFCL
+2026-10-13 18:33:33,377 - INFO - Table 3 for SFCL: 11r x 4c
+2026-10-13 18:33:33,377 - INFO - Table 4 for SFCL: 11r x 4c
+2026-10-13 18:33:33,379 - INFO - Table 5 for SFCL: 13r x 10c
+2026-10-13 18:33:38,115 - INFO - Found 5 tables for SGHC
+2026-10-13 18:33:38,125 - INFO - Table 3 for SGHC: 11r x 4c
+2026-10-13 18:33:38,126 - INFO - Table 4 for SGHC: 15r x 4c
+2026-10-13 18:33:38,127 - INFO - Table 5 for SGHC: 13r x 11c
+2026-10-13 18:33:43,042 - INFO - Found 5 tables for SGIC
+2026-10-13 18:33:43,052 - INFO - Table 3 for SGIC: 11r x 4c
+2026-10-13 18:33:43,053 - INFO - Table 4 for SGIC: 11r x 4c
+2026-10-13 18:33:43,055 - INFO - Table 5 for SGIC: 13r x 11c
+2026-10-13 18:33:48,577 - INFO - Found 5 tables for SHEL
+2026-10-13 18:33:48,587 - INFO - Table 3 for SHEL: 11r x 4c
+2026-10-13 18:33:48,588 - INFO - Table 4 for SHEL: 15r x 4c
+2026-10-13 18:33:48,589 - INFO - Table 5 for SHEL: 13r x 11c
+2026-10-13 18:33:53,368 - INFO - Found 5 tables for SHINE
+2026-10-13 18:33:53,378 - INFO - Table 3 for SHINE: 11r x 4c
+2026-10-13 18:33:53,379 - INFO - Table 4 for SHINE: 11r x 4c
+2026-10-13 18:33:53,381 - INFO - Table 5 for SHINE: 13r x 11c
+2026-10-13 18:33:58,177 - INFO - Found 5 tables for SHIVM
+2026-10-13 18:33:58,186 - INFO - Table 3 for SHIVM: 11r x 4c
+2026-10-13 18:33:58,187 - INFO - Table 4 for SHIVM: 11r x 4c
+2026-10-13 18:33:58,189 - INFO - Table 5 for SHIVM: 13r x 11c
+2026-10-13 18:34:03,006 - INFO - Found 5 tables for SHL
+2026-10-13 18:34:03,016 - INFO - Table 3 for SHL: 11r x 4c
+2026-10-13 18:34:03,017 - INFO - Table 4 for SHL: 11r x 4c
+2026-10-13 18:34:03,018 - INFO - Table 5 for SHL: 13r x 11c
+2026-10-13 18:34:07,795 - INFO - Found 5 tables for SHLB
+2026-10-13 18:34:07,805 - INFO - Table 3 for SHLB: 11r x 4c
+2026-10-13 18:34:07,806 - INFO - Table 4 for SHLB: 11r x 4c
+2026-10-13 18:34:07,808 - INFO - Table 5 for SHLB: 13r x 11c
+2026-10-13 18:34:12,509 - INFO - Found 5 tables for SHPC
+2026-10-13 18:34:12,518 - INFO - Table 3 for SHPC: 11r x 4c
+2026-10-13 18:34:12,519 - INFO - Table 4 for SHPC: 15r x 4c
+2026-10-13 18:34:12,521 - INFO - Table 5 for SHPC: 13r x 11c
+2026-10-13 18:34:17,976 - INFO - Found 5 tables for SICL
+2026-10-13 18:34:17,986 - INFO - Table 3 for SICL: 11r x 4c
+2026-10-13 18:34:17,987 - INFO - Table 4 for SICL: 11r x 4c
+2026-10-13 18:34:17,989 - INFO - Table 5 for SICL: 13r x 11c
+2026-10-13 18:34:22,824 - INFO - Found 5 tables for SIFC
+2026-10-13 18:34:22,834 - INFO - Table 3 for SIFC: 11r x 4c
+2026-10-13 18:34:22,835 - INFO - Table 4 for SIFC: 11r x 4c
+2026-10-13 18:34:22,837 - INFO - Table 5 for SIFC: 13r x 11c
+2026-10-13 18:34:27,703 - INFO - Found 5 tables for SIKLES
+2026-10-13 18:34:27,713 - INFO - Table 3 for SIKLES: 11r x 4c
+2026-10-13 18:34:27,714 - INFO - Table 4 for SIKLES: 15r x 4c
+2026-10-13 18:34:27,715 - INFO - Table 5 for SIKLES: 13r x 11c
+2026-10-13 18:34:32,544 - INFO - Found 5 tables for SINDU
+2026-10-13 18:34:32,555 - INFO - Table 3 for SINDU: 11r x 4c
+2026-10-13 18:34:32,556 - INFO - Table 4 for SINDU: 11r x 4c
+2026-10-13 18:34:32,558 - INFO - Table 5 for SINDU: 13r x 11c
+2026-10-13 18:34:37,367 - INFO - Found 5 tables for SJCL
+2026-10-13 18:34:37,377 - INFO - Table 3 for SJCL: 11r x 4c
+2026-10-13 18:34:37,378 - INFO - Table 4 for SJCL: 15r x 4c
+2026-10-13 18:34:37,379 - INFO - Table 5 for SJCL: 13r x 11c
+2026-10-13 18:34:42,105 - INFO - Found 5 tables for SJLIC
+2026-10-13 18:34:42,114 - INFO - Table 3 for SJLIC: 11r x 4c
+2026-10-13 18:34:42,114 - INFO - Table 4 for SJLIC: 11r x 4c
+2026-10-13 18:34:42,116 - INFO - Table 5 for SJLIC: 13r x 11c
+2026-10-13 18:34:47,016 - INFO - Found 5 tables for SKBBL
+2026-10-13 18:34:47,025 - INFO - Table 3 for SKBBL: 11r x 4c
+2026-10-13 18:34:47,026 - INFO - Table 4 for SKBBL: 11r x 4c
+2026-10-13 18:34:47,027 - INFO - Table 5 for SKBBL: 13r x 11c
+2026-10-13 18:34:51,756 - INFO - Found 5 tables for SLBBL
+2026-10-13 18:34:51,765 - INFO - Table 3 for SLBBL: 11r x 4c
+2026-10-13 18:34:51,766 - INFO - Table 4 for SLBBL: 11r x 4c
+2026-10-13 18:34:51,767 - INFO - Table 5 for SLBBL: 13r x 11c
+2026-10-13 18:34:56,497 - INFO - Found 5 tables for SLBSL
+2026-10-13 18:34:56,507 - INFO - Table 3 for SLBSL: 11r x 4c
+2026-10-13 18:34:56,508 - INFO - Table 4 for SLBSL: 11r x 4c
+2026-10-13 18:34:56,510 - INFO - Table 5 for SLBSL: 13r x 11c
+2026-10-13 18:35:01,257 - INFO - Found 5 tables for SMATA
+2026-10-13 18:35:01,267 - INFO - Table 3 for SMATA: 11r x 4c
+2026-10-13 18:35:01,268 - INFO - Table 4 for SMATA: 11r x 4c
+2026-10-13 18:35:01,269 - INFO - Table 5 for SMATA: 13r x 11c
+2026-10-13 18:35:05,961 - INFO - Found 5 tables for SMB
+2026-10-13 18:35:05,971 - INFO - Table 3 for SMB: 11r x 4c
+2026-10-13 18:35:05,972 - INFO - Table 4 for SMB: 11r x 4c
+2026-10-13 18:35:05,974 - INFO - Table 5 for SMB: 13r x 11c
+2026-10-13 18:35:10,803 - INFO - Found 5 tables for SMFBS
+2026-10-13 18:35:10,813 - INFO - Table 3 for SMFBS: 11r x 4c
+2026-10-13 18:35:10,814 - INFO - Table 4 for SMFBS: 11r x 4c
+2026-10-13 18:35:10,816 - INFO - Table 5 for SMFBS: 13r x 11c
+2026-10-13 18:35:15,557 - INFO - Found 5 tables for SMH
+2026-10-13 18:35:15,566 - INFO - Table 3 for SMH: 11r x 4c
+2026-10-13 18:35:15,567 - INFO - Table 4 for SMH: 15r x 4c
+2026-10-13 18:35:15,569 - INFO - Table 5 for SMH: 13r x 10c
+2026-10-13 18:35:20,325 - INFO - Found 5 tables for SMHL
+2026-10-13 18:35:20,336 - INFO - Table 3 for SMHL: 11r x 4c
+2026-10-13 18:35:20,337 - INFO - Table 4 for SMHL: 15r x 4c
+2026-10-13 18:35:20,339 - INFO - Table 5 for SMHL: 13r x 11c
+2026-10-13 18:35:25,168 - INFO - Found 5 tables for SMJC
+2026-10-13 18:35:25,177 - INFO - Table 3 for SMJC: 11r x 4c
+2026-10-13 18:35:25,178 - INFO - Table 4 for SMJC: 15r x 4c
+2026-10-13 18:35:25,180 - INFO - Table 5 for SMJC: 13r x 11c
+2026-10-13 18:35:30,118 - INFO - Found 5 tables for SMPDA
+2026-10-13 18:35:30,127 - INFO - Table 3 for SMPDA: 11r x 4c
+2026-10-13 18:35:30,128 - INFO - Table 4 for SMPDA: 11r x 4c
+2026-10-13 18:35:30,130 - INFO - Table 5 for SMPDA: 13r x 11c
+2026-10-13 18:35:35,159 - INFO - Found 5 tables for SNLI
+2026-10-13 18:35:35,169 - INFO - Table 3 for SNLI: 11r x 4c
+2026-10-13 18:35:35,170 - INFO - Table 4 for SNLI: 11r x 4c
+2026-10-13 18:35:35,172 - INFO - Table 5 for SNLI: 13r x 11c
+2026-10-13 18:35:40,008 - INFO - Found 5 tables for SONA
+2026-10-13 18:35:40,018 - INFO - Table 3 for SONA: 11r x 4c
+2026-10-13 18:35:40,019 - INFO - Table 4 for SONA: 11r x 4c
+2026-10-13 18:35:40,021 - INFO - Table 5 for SONA: 13r x 11c
+2026-10-13 18:35:44,836 - INFO - Found 5 tables for SPC
+2026-10-13 18:35:44,846 - INFO - Table 3 for SPC: 11r x 4c
+2026-10-13 18:35:44,847 - INFO - Table 4 for SPC: 15r x 4c
+2026-10-13 18:35:44,848 - INFO - Table 5 for SPC: 13r x 11c
+2026-10-13 18:35:49,685 - INFO - Found 5 tables for SPDL
+2026-10-13 18:35:49,694 - INFO - Table 3 for SPDL: 11r x 4c
+2026-10-13 18:35:49,695 - INFO - Table 4 for SPDL: 15r x 4c
+2026-10-13 18:35:49,697 - INFO - Table 5 for SPDL: 13r x 11c
+2026-10-13 18:35:54,589 - INFO - Found 5 tables for SPHL
+2026-10-13 18:35:54,599 - INFO - Table 3 for SPHL: 11r x 4c
+2026-10-13 18:35:54,600 - INFO - Table 4 for SPHL: 15r x 4c
+2026-10-13 18:35:54,602 - INFO - Table 5 for SPHL: 13r x 11c
+2026-10-13 18:35:59,451 - INFO - Found 5 tables for SPIL
+2026-10-13 18:35:59,461 - INFO - Table 3 for SPIL: 11r x 4c
+2026-10-13 18:35:59,462 - INFO - Table 4 for SPIL: 11r x 4c
+2026-10-13 18:35:59,464 - INFO - Table 5 for SPIL: 13r x 10c
+2026-10-13 18:36:04,952 - INFO - Found 5 tables for SPL
+2026-10-13 18:36:04,962 - INFO - Table 3 for SPL: 11r x 4c
+2026-10-13 18:36:04,963 - INFO - Table 4 for SPL: 15r x 4c
+2026-10-13 18:36:04,964 - INFO - Table 5 for SPL: 13r x 11c
+2026-10-13 18:36:09,707 - INFO - Found 5 tables for SRLI
+2026-10-13 18:36:09,717 - INFO - Table 3 for SRLI: 11r x 4c
+2026-10-13 18:36:09,718 - INFO - Table 4 for SRLI: 11r x 4c
+2026-10-13 18:36:09,719 - INFO - Table 5 for SRLI: 13r x 11c
+2026-10-13 18:36:14,430 - INFO - Found 5 tables for SSHL
+2026-10-13 18:36:14,439 - INFO - Table 3 for SSHL: 11r x 4c
+2026-10-13 18:36:14,440 - INFO - Table 4 for SSHL: 15r x 4c
+2026-10-13 18:36:14,442 - INFO - Table 5 for SSHL: 13r x 11c
+2026-10-13 18:36:19,147 - INFO - Found 5 tables for STC
+2026-10-13 18:36:19,157 - INFO - Table 3 for STC: 11r x 4c
+2026-10-13 18:36:19,158 - INFO - Table 4 for STC: 11r x 4c
+2026-10-13 18:36:19,160 - INFO - Table 5 for STC: 13r x 11c
+2026-10-13 18:36:23,919 - INFO - Found 5 tables for SWBBL
+2026-10-13 18:36:23,928 - INFO - Table 3 for SWBBL: 11r x 4c
+2026-10-13 18:36:23,929 - INFO - Table 4 for SWBBL: 11r x 4c
+2026-10-13 18:36:23,931 - INFO - Table 5 for SWBBL: 13r x 11c
+2026-10-13 18:36:28,568 - INFO - Found 5 tables for SWMF
+2026-10-13 18:36:28,577 - INFO - Table 3 for SWMF: 11r x 4c
+2026-10-13 18:36:28,577 - INFO - Table 4 for SWMF: 11r x 4c
+2026-10-13 18:36:28,579 - INFO - Table 5 for SWMF: 13r x 11c
+2026-10-13 18:36:33,296 - INFO - Found 5 tables for TAMOR
+2026-10-13 18:36:33,305 - INFO - Table 3 for TAMOR: 11r x 4c
+2026-10-13 18:36:33,306 - INFO - Table 4 for TAMOR: 15r x 4c
+2026-10-13 18:36:33,308 - INFO - Table 5 for TAMOR: 13r x 11c
+2026-10-13 18:36:38,079 - INFO - Found 5 tables for TPC
+2026-10-13 18:36:38,087 - INFO - Table 3 for TPC: 11r x 4c
+2026-10-13 18:36:38,089 - INFO - Table 4 for TPC: 15r x 4c
+2026-10-13 18:36:38,090 - INFO - Table 5 for TPC: 13r x 11c
+2026-10-13 18:36:42,835 - INFO - Found 5 tables for TRH
+2026-10-13 18:36:42,844 - INFO - Table 3 for TRH: 11r x 4c
+2026-10-13 18:36:42,845 - INFO - Table 4 for TRH: 11r x 4c
+2026-10-13 18:36:42,846 - INFO - Table 5 for TRH: 13r x 11c
+2026-10-13 18:36:47,568 - INFO - Found 5 tables for TSHL
+2026-10-13 18:36:47,577 - INFO - Table 3 for TSHL: 11r x 4c
+2026-10-13 18:36:47,578 - INFO - Table 4 for TSHL: 15r x 4c
+2026-10-13 18:36:47,579 - INFO - Table 5 for TSHL: 13r x 11c
+2026-10-13 18:36:52,191 - INFO - Found 5 tables for TTL
+2026-10-13 18:36:52,201 - INFO - Table 3 for TTL: 11r x 4c
+2026-10-13 18:36:52,202 - INFO - Table 4 for TTL: 11r x 4c
+2026-10-13 18:36:52,203 - INFO - Table 5 for TTL: 13r x 8c
+2026-10-13 18:36:56,871 - INFO - Found 5 tables for TVCL
+2026-10-13 18:36:56,880 - INFO - Table 3 for TVCL: 11r x 4c
+2026-10-13 18:36:56,881 - INFO - Table 4 for TVCL: 15r x 4c
+2026-10-13 18:36:56,883 - INFO - Table 5 for TVCL: 13r x 11c
+2026-10-13 18:37:03,577 - INFO - Found 5 tables for UAIL
+2026-10-13 18:37:03,586 - INFO - Table 3 for UAIL: 11r x 4c
+2026-10-13 18:37:03,587 - INFO - Table 4 for UAIL: 11r x 4c
+2026-10-13 18:37:03,588 - INFO - Table 5 for UAIL: 13r x 10c
+2026-10-13 18:37:08,396 - INFO - Found 5 tables for UHEWA
+2026-10-13 18:37:08,405 - INFO - Table 3 for UHEWA: 11r x 4c
+2026-10-13 18:37:08,406 - INFO - Table 4 for UHEWA: 15r x 4c
+2026-10-13 18:37:08,408 - INFO - Table 5 for UHEWA: 13r x 11c
+2026-10-13 18:37:13,116 - INFO - Found 5 tables for ULBSL
+2026-10-13 18:37:13,125 - INFO - Table 3 for ULBSL: 11r x 4c
+2026-10-13 18:37:13,126 - INFO - Table 4 for ULBSL: 11r x 4c
+2026-10-13 18:37:13,128 - INFO - Table 5 for ULBSL: 13r x 11c
+2026-10-13 18:37:17,938 - INFO - Found 5 tables for ULHC
+2026-10-13 18:37:17,947 - INFO - Table 3 for ULHC: 11r x 4c
+2026-10-13 18:37:17,949 - INFO - Table 4 for ULHC: 15r x 4c
+2026-10-13 18:37:17,950 - INFO - Table 5 for ULHC: 13r x 11c
+2026-10-13 18:37:22,822 - INFO - Found 5 tables for UMHL
+2026-10-13 18:37:22,831 - INFO - Table 3 for UMHL: 11r x 4c
+2026-10-13 18:37:22,832 - INFO - Table 4 for UMHL: 15r x 4c
+2026-10-13 18:37:22,834 - INFO - Table 5 for UMHL: 13r x 11c
+2026-10-13 18:37:27,490 - INFO - Found 5 tables for UMRH
+2026-10-13 18:37:27,500 - INFO - Table 3 for UMRH: 11r x 4c
+2026-10-13 18:37:27,501 - INFO - Table 4 for UMRH: 15r x 4c
+2026-10-13 18:37:27,502 - INFO - Table 5 for UMRH: 13r x 11c
+2026-10-13 18:37:32,274 - INFO - Found 5 tables for UNHPL
+2026-10-13 18:37:32,283 - INFO - Table 3 for UNHPL: 11r x 4c
+2026-10-13 18:37:32,284 - INFO - Table 4 for UNHPL: 15r x 4c
+2026-10-13 18:37:32,286 - INFO - Table 5 for UNHPL: 13r x 11c
+2026-10-13 18:37:37,029 - INFO - Found 5 tables for UNL
+2026-10-13 18:37:37,038 - INFO - Table 3 for UNL: 11r x 4c
+2026-10-13 18:37:37,039 - INFO - Table 4 for UNL: 11r x 4c
+2026-10-13 18:37:37,041 - INFO - Table 5 for UNL: 13r x 11c
+2026-10-13 18:37:41,662 - INFO - Found 5 tables for UNLB
+2026-10-13 18:37:41,671 - INFO - Table 3 for UNLB: 11r x 4c
+2026-10-13 18:37:41,672 - INFO - Table 4 for UNLB: 11r x 4c
+2026-10-13 18:37:41,674 - INFO - Table 5 for UNLB: 13r x 11c
+2026-10-13 18:37:46,481 - INFO - Found 5 tables for UPCL
+2026-10-13 18:37:46,492 - INFO - Table 3 for UPCL: 11r x 4c
+2026-10-13 18:37:46,493 - INFO - Table 4 for UPCL: 15r x 4c
+2026-10-13 18:37:46,494 - INFO - Table 5 for UPCL: 13r x 11c
+2026-10-13 18:37:51,166 - INFO - Found 5 tables for UPPER
+2026-10-13 18:37:51,176 - INFO - Table 3 for UPPER: 11r x 4c
+2026-10-13 18:37:51,177 - INFO - Table 4 for UPPER: 15r x 4c
+2026-10-13 18:37:51,178 - INFO - Table 5 for UPPER: 13r x 11c
+2026-10-13 18:37:55,883 - INFO - Found 5 tables for USHEC
+2026-10-13 18:37:55,893 - INFO - Table 3 for USHEC: 11r x 4c
+2026-10-13 18:37:55,894 - INFO - Table 4 for USHEC: 15r x 4c
+2026-10-13 18:37:55,895 - INFO - Table 5 for USHEC: 13r x 11c
+2026-10-13 18:38:00,599 - INFO - Found 5 tables for USHL
+2026-10-13 18:38:00,608 - INFO - Table 3 for USHL: 11r x 4c
+2026-10-13 18:38:00,609 - INFO - Table 4 for USHL: 15r x 4c
+2026-10-13 18:38:00,611 - INFO - Table 5 for USHL: 13r x 11c
+2026-10-13 18:38:05,302 - INFO - Found 5 tables for USLB
+2026-10-13 18:38:05,311 - INFO - Table 3 for USLB: 11r x 4c
+2026-10-13 18:38:05,312 - INFO - Table 4 for USLB: 11r x 4c
+2026-10-13 18:38:05,313 - INFO - Table 5 for USLB: 13r x 11c
+2026-10-13 18:38:10,067 - INFO - Found 5 tables for VLBS
+2026-10-13 18:38:10,076 - INFO - Table 3 for VLBS: 11r x 4c
+2026-10-13 18:38:10,077 - INFO - Table 4 for VLBS: 11r x 4c
+2026-10-13 18:38:10,078 - INFO - Table 5 for VLBS: 13r x 11c
+2026-10-13 18:38:14,717 - INFO - Found 5 tables for VLUCL
+2026-10-13 18:38:14,726 - INFO - Table 3 for VLUCL: 11r x 4c
+2026-10-13 18:38:14,727 - INFO - Table 4 for VLUCL: 15r x 4c
+2026-10-13 18:38:14,728 - INFO - Table 5 for VLUCL: 13r x 11c
+2026-10-13 18:38:19,397 - INFO - Found 5 tables for WNLB
+2026-10-13 18:38:19,406 - INFO - Table 3 for WNLB: 11r x 4c
+2026-10-13 18:38:19,407 - INFO - Table 4 for WNLB: 11r x 4c
+2026-10-13 18:38:19,409 - INFO - Table 5 for WNLB: 13r x 11c
+2026-10-13 18:38:23,035 - INFO - CSV saved: Link_Attributes.csv
+2026-10-13 18:38:23,099 - INFO - CSV saved: Link_Additional.csv
+2026-10-13 18:38:24,496 - INFO - Dashboard saved: index.html
